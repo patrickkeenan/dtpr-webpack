@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>DTPR</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/intersection-observer"></script>
+    <script src="https://unpkg.com/scrollama"></script>
+  </head>
+  <body>
+
+    <% 
+      // Story Variables
+      var orgBike = "Bikeshare Co."
+      var orgLibrary ="Library Dept.";
+      var orgStore ="Shop Co.";
+    %> 
+
+    <!-- NAVIGATION -->
+    <div class="nav-container">
+      <%= require("ejs-loader!./templates/header.ejs")({}) %>
+    </div>
+
+    <!-- SECTION PAI -->
+    <div class="step" data-step="section-1">
+      <!-- <div class="sticky-section-header">
+        <%= require("ejs-loader!./templates/section-divider.ejs")({
+          section:"part 1", 
+          title: "title", 
+        }) %>
+      </div> -->
+      <div class="container">
+        <%= require("ejs-loader!./templates/step-header.ejs")({ 
+          title: "Personal<br />Ai Agent", 
+          seal: "Seal_pAi.png", 
+          lead: "A personal data artificial intelligence agent can help individuals understand and use digitally enabled systems in the real world.", 
+          buttons: [
+            { title: "titl", label: "Choose your agent", classes: "btn-primary" },
+            { title: "titl", label: "Skip to the prototype", classes: "btn-secondary" },
+            { title: "titl", label: "See an example definition", classes: "btn-secondary" },
+          ], 
+          features: [ 
+            { title: "Agency for people", label: "label", icon: "hex-icon-accessibility_new", description: "Publishing place definitons allows people to know what functionality is available in a given place." }, 
+            { title: "Interoperable access", label: "label", icon: "hex-icon-power", description: "Rather than relying on a single app, an interoperable API ensures many channels of access." }, 
+            { title: "Data exchange receipts", label: "label", icon: "hex-icon-receipt", description: "Each personal interaction that is digitally recorded is able to be audited and edited by that person." }, 
+            { title: "Zone-based notice",label: "label", icon: "hex-icon-place", description: "Alerts can be set based on geographic areas and a person’s familiarity with that place." }, 
+          ], 
+        }) %>
+    </div>
+  </div>
+  <div class="step" data-step="section-pai-choose" style="background-color: #F6F9FC;">
+    <div class="container" style="padding-top: 150px;padding-bottom: 150px;">
+        <%= require("ejs-loader!./templates/vision-pai.ejs")({
+          section:"part 1", 
+          title: "title", 
+        }) %>
+      </div>
+    </div>
+    
+    <!-- VISION INTRO -->
+    <div class="step" data-step="section-0">
+      <div class="sticky-section-header">
+        <%=
+        require("ejs-loader!./templates/section-divider.ejs")({
+          section:"Vision",
+          title: "Designing places for responsible technology",
+        }) %>
+      </div>
+
+      <div class="container" style="margin-top:150px;">
+        <%= require("ejs-loader!./templates/vision-intro.ejs")({
+          prehead:"A Vision", 
+          title:"How might we design technology in places responsible", 
+          lead:"The following scenarios walk through how people might have more agency in digitally enabled environments.", 
+          features:[ 
+            {icon:"dtpr_icons/tech/air.svg", title:"Grab a book", description:"Rather than relying on a single app, an interoperable API ensures many channels of access." }, 
+            { icon:"dtpr_icons/tech/air.svg", title:"A new look", description:"Rather than relying on a single app, an interoperable API ensures many channels of access." }, 
+            { icon:"dtpr_icons/tech/air.svg", title:"Stop to listen", description:"Rather than relying on a single app, an interoperable API ensures many channels of access." }, 
+            { icon:"dtpr_icons/tech/air.svg", title:"A table for two", description:"Rather than relying on a single app, an interoperable API ensures many channels of access." }, 
+            { icon:"dtpr_icons/tech/air.svg", title:"Recycle, recall", description:"Rather than relying on a single app, an interoperable API ensures many channels of access." }, 
+            { icon:"dtpr_icons/tech/air.svg", title:"Lost & Found", description:"Rather than relying on a single app, an interoperable API ensures many channels of access." }, 
+            { icon:"dtpr_icons/tech/air.svg", title:"Head home together", description:"Rather than relying on a single app, an interoperable API ensures many channels of access." }, 
+          ],
+        })%>
+      </div>
+    </div>
+
+    
+
+    <!-- SECTION 1 -->
+    <div class="step" data-step="section-1">
+      <div class="sticky-section-header">
+        <%= require("ejs-loader!./templates/section-divider.ejs")({
+          section:"Places<br />", 
+          title: "A standardised way to describe the systems, sensors, and technologies in a given area. ", 
+        }) %>
+      </div>
+      <div class="container">
+        <%= require("ejs-loader!./templates/step-header.ejs")({ 
+          title: "Place Definitions", 
+          lead: "A standardised way to describe the systems, sensors, and technologies in a given area.", 
+          seal: "Seal_Place.png", 
+          buttons: [
+            { title: "titl", label: "Start the journey", classes: "btn-primary" },
+            { title: "titl", label: "Skip to the prototype", classes: "btn-secondary" },
+            { title: "titl", label: "See an example definition", classes: "btn-secondary" },
+          ], 
+          features: [ 
+            { title: "Agency for people", label: "label", icon: "hex-icon-accessibility_new", description: "Publishing place definitons allows people to know what functionality is available in a given place." }, 
+            { title: "Interoperable access", label: "label", icon: "hex-icon-power", description: "Rather than relying on a single app, an interoperable API ensures many channels of access." }, 
+            { title: "Data exchange receipts", label: "label", icon: "hex-icon-receipt", description: "Each personal interaction that is digitally recorded is able to be audited and edited by that person." }, 
+            { title: "Zone-based notice",label: "label", icon: "hex-icon-place", description: "Alerts can be set based on geographic areas and a person’s familiarity with that place." }, 
+          ], 
+        }) %>
+      </div>
+      <div>
+        <%= require("ejs-loader!./templates/step-holder.ejs")({
+          contentLeft:false,
+          prototypeType:"dialogflow",
+          prototypeUrl:"https://dtpr.sidewalklabs.com/dtpr_chatbot/place.html", 
+          sign:["face","hex-icon-face","dtpr_icons/tech/air.svg","dtpr_icons/tech/air.svg"],
+          title:"Dock your bike",
+          description:"Arriving at your destination, you dock your bike, and your session is ended. The trip is credited to your monthly membership.",
+          image:"Frame_1.png",
+          sign:["dtpr_icons/purpose/water.svg","dtpr_icons/tech/light.svg","hex-icon-room_service","hex-icon-favorite"],
+          features: [ 
+            { title: "The purpose of this system is", icon: "dtpr_icons/purpose/water.svg", description: "Mobility" }, 
+            { title: "The service is provided by", icon: "dtpr_icons/tech/light.svg", description: orgBike }, 
+            { title: "The user’s symmetrical interface is ", icon: "hex-icon-room_service", description: "Personal AI" }, 
+            { title: "The relationship with this system is", icon: "hex-icon-favorite", description: "Membership" }, 
+          ]
+        }) %>
+      </div>
+      <div>
+        <%= require("ejs-loader!./templates/step-holder.ejs")({
+          contentLeft:true,
+          prototypeType:"framer",
+          prototypeUrl:"prototypes/Step1/index.html",
+          
+          title:"Enter the library",
+          description:"As you enter the library, you are given a link to a chatbot and can ask any questions you have about this place.",
+          image:"Frame_2.png",
+          sign:["dtpr_icons/purpose/water.svg","dtpr_icons/tech/light.svg","hex-icon-room_service","hex-icon-favorite"],
+          features: [ 
+            { title: "The purpose of this system is", icon: "dtpr_icons/purpose/water.svg", description: "Agency" }, 
+            { title: "The service is provided by", icon: "dtpr_icons/tech/light.svg", description: orgLibrary }, 
+            { title: "The user’s symmetrical interface is ", icon: "hex-icon-room_service", description: "Place Chatbot" }, 
+            { title: "The relationship with this system is", icon: "hex-icon-favorite", description: "Membership" }, 
+          ]
+        }) %>
+      </div>
+      <div>
+        <%= require("ejs-loader!./templates/step-holder.ejs")({
+          contentLeft:false,
+          prototypeType:"dialogflow",
+          prototypeUrl:"https://dtpr.sidewalklabs.com/dtpr_chatbot/place.html", 
+          sign:["face","hex-icon-face","dtpr_icons/tech/air.svg","dtpr_icons/tech/air.svg"],
+          title:"Grab a book",
+          description:"You grab a book off the shelf and its added to your virtual cart. You can set these preferences with your personal AI.",
+          image:"Frame_1.png",
+          sign:["dtpr_icons/purpose/water.svg","dtpr_icons/tech/light.svg","hex-icon-room_service","hex-icon-favorite"],
+          features: [ 
+            { title: "The purpose of this system is", icon: "dtpr_icons/purpose/water.svg", description: "Agency" }, 
+            { title: "The service is provided by", icon: "dtpr_icons/tech/light.svg", description: orgLibrary }, 
+            { title: "The user’s symmetrical interface is ", icon: "hex-icon-room_service", description: "Place Chatbot" }, 
+            { title: "The relationship with this system is", icon: "hex-icon-favorite", description: "Membership" }, 
+          ]
+        }) %>
+      </div>
+      <div>
+        <%= require("ejs-loader!./templates/step-holder.ejs")({
+          contentLeft:true,
+          prototypeType:"framer",
+          prototypeUrl:"prototypes/Step1/index.html",
+          
+          title:"Head out to the street",
+          description:"As you leave, the book is checked out with your library card. You can examine the transaction, but you simply continue to the street.",
+          image:"Frame_2.png",
+          sign:["dtpr_icons/purpose/water.svg","dtpr_icons/tech/light.svg","hex-icon-room_service","hex-icon-favorite"],
+          features: [ 
+            { title: "The purpose of this system is", icon: "dtpr_icons/purpose/water.svg", description: "Borrowing" }, 
+            { title: "The service is provided by", icon: "dtpr_icons/tech/light.svg", description: orgLibrary }, 
+            { title: "The user’s symmetrical interface is ", icon: "hex-icon-room_service", description: "Personal AI" }, 
+            { title: "The relationship with this system is", icon: "hex-icon-favorite", description: "Membership" }, 
+          ]
+        }) %>
+      </div>
+    </div>
+    <!-- / SECTION 1 -->
+
+    <!-- SECTION 2 -->
+    <div class="step" data-step="section-1">
+      <div class="sticky-section-header">
+        <%= require("ejs-loader!./templates/section-divider.ejs")({
+          section:"Sensors", 
+          title: "A standardised way to describe the systems, sensors, and technologies in a given area. ", 
+        }) %>
+      </div>
+      <div class="container">
+        <%= require("ejs-loader!./templates/step-header.ejs")({ 
+          title: "Sensor Definitions", 
+          lead: "A standardised way to describe sensors and convey what kind of processing they're performing.", 
+          seal: "Seal_Sensor.png", 
+          buttons: [
+            { title: "titl", label: "Start the journey", classes: "btn-primary" },
+            { title: "titl", label: "Skip to the prototype", classes: "btn-secondary" },
+            { title: "titl", label: "See an example definition", classes: "btn-secondary" },
+          ], 
+          features: [ 
+            { title: "Agency for people", label: "label", icon: "hex-icon-accessibility_new", description: "Publishing place definitons allows people to know what functionality is available in a given place." }, 
+            { title: "Interoperable access", label: "label", icon: "hex-icon-power", description: "Rather than relying on a single app, an interoperable API ensures many channels of access." }, 
+            { title: "Data exchange receipts", label: "label", icon: "hex-icon-receipt", description: "Each personal interaction that is digitally recorded is able to be audited and edited by that person." }, 
+            { title: "Zone-based notice",label: "label", icon: "hex-icon-place", description: "Alerts can be set based on geographic areas and a person’s familiarity with that place." }, 
+          ], 
+        }) %>
+      </div>
+      <div>
+        <%= require("ejs-loader!./templates/step-holder.ejs")({
+          contentLeft:false,
+          prototypeType:"dialogflow",
+          prototypeUrl:"https://dtpr.sidewalklabs.com/dtpr_chatbot/place.html", 
+          sign:["face","hex-icon-face","dtpr_icons/tech/air.svg","dtpr_icons/tech/air.svg"],
+          title:"Enter the shop",
+          description:"You enter a new local shop and are able to connect in the way you choose.",
+          image:"Frame_1.png",
+          sign:["dtpr_icons/purpose/water.svg","dtpr_icons/tech/light.svg","hex-icon-room_service","hex-icon-favorite"],
+          features: [ 
+            { title: "The purpose of this system is", icon: "dtpr_icons/purpose/water.svg", description: "Shopping" }, 
+            { title: "The service is provided by", icon: "dtpr_icons/tech/light.svg", description: orgBike }, 
+            { title: "The user’s symmetrical interface is ", icon: "hex-icon-room_service", description: "Sensor Chatbot" }, 
+            { title: "The relationship with this system is", icon: "hex-icon-favorite", description: "Temporary" }, 
+          ]
+        }) %>
+      </div>
+      <div>
+        <%= require("ejs-loader!./templates/step-holder.ejs")({
+          contentLeft:true,
+          prototypeType:"framer",
+          prototypeUrl:"prototypes/Step1/index.html",
+          
+          title:"Stand in front of mirror",
+          description:"You stand in front of the mirror. You see an option to connect and try on clothes virtually.",
+          image:"Frame_2.png",
+          sign:["dtpr_icons/purpose/water.svg","dtpr_icons/tech/light.svg","hex-icon-room_service","hex-icon-favorite"],
+          features: [ 
+            { title: "The purpose of this system is", icon: "dtpr_icons/purpose/water.svg", description: "Interaction" }, 
+            { title: "The service is provided by", icon: "dtpr_icons/tech/light.svg", description: orgLibrary }, 
+            { title: "The user’s symmetrical interface is ", icon: "hex-icon-room_service", description: "Personal AI" }, 
+            { title: "The relationship with this system is", icon: "hex-icon-favorite", description: "Temporary" }, 
+          ]
+        }) %>
+      </div>
+      <div>
+        <%= require("ejs-loader!./templates/step-holder.ejs")({
+          contentLeft:false,
+          prototypeType:"dialogflow",
+          prototypeUrl:"https://dtpr.sidewalklabs.com/dtpr_chatbot/sensor.html", 
+          sign:["face","hex-icon-face","dtpr_icons/tech/air.svg","dtpr_icons/tech/air.svg"],
+          title:"Save for later",
+          description:"After trying on some items, you decide to purchase one item, save a couple others to a wishlist, and delete your browsing history.",
+          image:"Frame_1.png",
+          sign:["dtpr_icons/purpose/water.svg","dtpr_icons/tech/light.svg","hex-icon-room_service","hex-icon-favorite"],
+          features: [ 
+            { title: "The purpose of this system is", icon: "dtpr_icons/purpose/water.svg", description: "Agency" }, 
+            { title: "The service is provided by", icon: "dtpr_icons/tech/light.svg", description: orgLibrary }, 
+            { title: "The user’s symmetrical interface is ", icon: "hex-icon-room_service", description: "Place Chatbot" }, 
+            { title: "The relationship with this system is", icon: "hex-icon-favorite", description: "Temporary" }, 
+          ]
+        }) %>
+      </div>
+      <div>
+        <%= require("ejs-loader!./templates/step-holder.ejs")({
+          contentLeft:true,
+          prototypeType:"framer",
+          prototypeUrl:"prototypes/Step1/index.html",
+          
+          title:"Upgrade account",
+          description:"You bag your item, leave the store, and are given the option to create a connection with the local merchant, and change your payment method.",
+          image:"Frame_2.png",
+          sign:["dtpr_icons/purpose/water.svg","dtpr_icons/tech/light.svg","hex-icon-room_service","hex-icon-favorite"],
+          features: [ 
+            { title: "The purpose of this system is", icon: "dtpr_icons/purpose/water.svg", description: "Borrowing" }, 
+            { title: "The service is provided by", icon: "dtpr_icons/tech/light.svg", description: orgLibrary }, 
+            { title: "The user’s symmetrical interface is ", icon: "hex-icon-room_service", description: "Personal AI" }, 
+            { title: "The relationship with this system is", icon: "hex-icon-favorite", description: "Membership" }, 
+          ]
+        }) %>
+      </div>
+    </div>
+    <!-- / SECTION 2 -->
+
+    <!-- SECTION 3 -->
+    <div class="step" data-step="section-1">
+      <div class="sticky-section-header">
+        <%= require("ejs-loader!./templates/section-divider.ejs")({
+          section:"Wayfinding", 
+          title: "A standardised way to describe the systems, sensors, and technologies in a given area. ", 
+        }) %>
+      </div>
+      <div class="container">
+        <%= require("ejs-loader!./templates/step-header.ejs")({ 
+          title: "Wayfinding<br /> Standards", 
+          lead: "A standardised way to query information about the places you're in, and the affordances there.", 
+          seal: "Seal_Sensor.png", 
+          buttons: [
+            { title: "titl", label: "Start the journey", classes: "btn-primary" },
+            { title: "titl", label: "Skip to the prototype", classes: "btn-secondary" },
+            { title: "titl", label: "See an example definition", classes: "btn-secondary" },
+          ], 
+          features: [ 
+            { title: "Agency for people", label: "label", icon: "hex-icon-accessibility_new", description: "Publishing place definitons allows people to know what functionality is available in a given place." }, 
+            { title: "Interoperable access", label: "label", icon: "hex-icon-power", description: "Rather than relying on a single app, an interoperable API ensures many channels of access." }, 
+            { title: "Data exchange receipts", label: "label", icon: "hex-icon-receipt", description: "Each personal interaction that is digitally recorded is able to be audited and edited by that person." }, 
+            { title: "Zone-based notice",label: "label", icon: "hex-icon-place", description: "Alerts can be set based on geographic areas and a person’s familiarity with that place." }, 
+          ], 
+        }) %>
+      </div>
+      <div>
+        <%= require("ejs-loader!./templates/step-holder.ejs")({
+          contentLeft:false,
+          prototypeType:"dialogflow",
+          prototypeUrl:"https://dtpr.sidewalklabs.com/dtpr_chatbot/place.html", 
+          sign:["face","hex-icon-face","dtpr_icons/tech/air.svg","dtpr_icons/tech/air.svg"],
+          title:"Pass by busker",
+          description:"You hear some music and follow it to the source. A busker is playing a nostalgic tune and you listen for a while.",
+          image:"Frame_1.png",
+          sign:["dtpr_icons/purpose/water.svg","dtpr_icons/tech/light.svg","hex-icon-room_service","hex-icon-favorite"],
+          features: [ 
+            { title: "The purpose of this system is", icon: "dtpr_icons/purpose/water.svg", description: "Shopping" }, 
+            { title: "The service is provided by", icon: "dtpr_icons/tech/light.svg", description: orgBike }, 
+            { title: "The user’s symmetrical interface is ", icon: "hex-icon-room_service", description: "Sensor Chatbot" }, 
+            { title: "The relationship with this system is", icon: "hex-icon-favorite", description: "Temporary" }, 
+          ]
+        }) %>
+      </div>
+      <div>
+        <%= require("ejs-loader!./templates/step-holder.ejs")({
+          contentLeft:true,
+          prototypeType:"framer",
+          prototypeUrl:"prototypes/Step1/index.html",
+          
+          title:"Find out more",
+          description:"Summoning your assistant, you ask to learn more about this busker. You're able to see artist information, and even tip.",
+          image:"Frame_2.png",
+          sign:["dtpr_icons/purpose/water.svg","dtpr_icons/tech/light.svg","hex-icon-room_service","hex-icon-favorite"],
+          features: [ 
+            { title: "The purpose of this system is", icon: "dtpr_icons/purpose/water.svg", description: "Interaction" }, 
+            { title: "The service is provided by", icon: "dtpr_icons/tech/light.svg", description: orgLibrary }, 
+            { title: "The user’s symmetrical interface is ", icon: "hex-icon-room_service", description: "Personal AI" }, 
+            { title: "The relationship with this system is", icon: "hex-icon-favorite", description: "Temporary" }, 
+          ]
+        }) %>
+      </div>
+      <div>
+        <%= require("ejs-loader!./templates/step-holder.ejs")({
+          contentLeft:false,
+          prototypeType:"dialogflow",
+          prototypeUrl:"https://dtpr.sidewalklabs.com/dtpr_chatbot/place.html", 
+          sign:["face","hex-icon-face","dtpr_icons/tech/air.svg","dtpr_icons/tech/air.svg"],
+          title:"See wider place",
+          description:"The busker is presented on a shared and real-time map of this place. You can see other facilities, businesses, and those who have given you permission.",
+          image:"Frame_1.png",
+          sign:["dtpr_icons/purpose/water.svg","dtpr_icons/tech/light.svg","hex-icon-room_service","hex-icon-favorite"],
+          features: [ 
+            { title: "The purpose of this system is", icon: "dtpr_icons/purpose/water.svg", description: "Agency" }, 
+            { title: "The service is provided by", icon: "dtpr_icons/tech/light.svg", description: orgLibrary }, 
+            { title: "The user’s symmetrical interface is ", icon: "hex-icon-room_service", description: "Place Chatbot" }, 
+            { title: "The relationship with this system is", icon: "hex-icon-favorite", description: "Temporary" }, 
+          ]
+        }) %>
+      </div>
+      <div>
+        <%= require("ejs-loader!./templates/step-holder.ejs")({
+          contentLeft:true,
+          prototypeType:"framer",
+          prototypeUrl:"prototypes/Step1/index.html",
+          
+          title:"Bumping into a friend",
+          description:"You see your friend on the map, who you share your location with. You both decide to grab lunch together.",
+          image:"Frame_2.png",
+          sign:["dtpr_icons/purpose/water.svg","dtpr_icons/tech/light.svg","hex-icon-room_service","hex-icon-favorite"],
+          features: [ 
+            { title: "The purpose of this system is", icon: "dtpr_icons/purpose/water.svg", description: "Borrowing" }, 
+            { title: "The service is provided by", icon: "dtpr_icons/tech/light.svg", description: orgLibrary }, 
+            { title: "The user’s symmetrical interface is ", icon: "hex-icon-room_service", description: "Personal AI" }, 
+            { title: "The relationship with this system is", icon: "hex-icon-favorite", description: "Membership" }, 
+          ]
+        }) %>
+      </div>
+    </div>
+    <!-- / SECTION 3 -->
+
+    <!-- SECTION 4 -->
+    <div class="step" data-step="section-1">
+      <div class="sticky-section-header">
+        <%= require("ejs-loader!./templates/section-divider.ejs")({
+          section:"Assets", 
+          title: "An interoperable way to book, request, and control assets in a shared space. ", 
+        }) %>
+      </div>
+      <div class="container">
+        <%= require("ejs-loader!./templates/step-header.ejs")({ 
+          title: "Agency<br />over assets", 
+          lead: "An interoperable way to book, request, and control assets in a shared space.", 
+          seal: "Seal_Place.png", 
+          buttons: [
+            { title: "titl", label: "Start the journey", classes: "btn-primary" },
+            { title: "titl", label: "Skip to the prototype", classes: "btn-secondary" },
+            { title: "titl", label: "See an example definition", classes: "btn-secondary" },
+          ], 
+          features: [ 
+            { title: "Agency for people", label: "label", icon: "hex-icon-accessibility_new", description: "Publishing place definitons allows people to know what functionality is available in a given place." }, 
+            { title: "Interoperable access", label: "label", icon: "hex-icon-power", description: "Rather than relying on a single app, an interoperable API ensures many channels of access." }, 
+            { title: "Data exchange receipts", label: "label", icon: "hex-icon-receipt", description: "Each personal interaction that is digitally recorded is able to be audited and edited by that person." }, 
+            { title: "Zone-based notice",label: "label", icon: "hex-icon-place", description: "Alerts can be set based on geographic areas and a person’s familiarity with that place." }, 
+          ], 
+        }) %>
+      </div>
+      <div>
+        <%= require("ejs-loader!./templates/step-holder.ejs")({
+          contentLeft:false,
+          prototypeType:"dialogflow",
+          prototypeUrl:"https://dtpr.sidewalklabs.com/dtpr_chatbot/place.html", 
+          sign:["face","hex-icon-face","dtpr_icons/tech/air.svg","dtpr_icons/tech/air.svg"],
+          title:"Order ahead",
+          description:"You select a table and order your meal. You bundle your order with a friend and decide to meet there.",
+          image:"Frame_1.png",
+          sign:["dtpr_icons/purpose/water.svg","dtpr_icons/tech/light.svg","hex-icon-room_service","hex-icon-favorite"],
+          features: [ 
+            { title: "The purpose of this system is", icon: "dtpr_icons/purpose/water.svg", description: "Shopping" }, 
+            { title: "The service is provided by", icon: "dtpr_icons/tech/light.svg", description: orgBike }, 
+            { title: "The user’s symmetrical interface is ", icon: "hex-icon-room_service", description: "Sensor Chatbot" }, 
+            { title: "The relationship with this system is", icon: "hex-icon-favorite", description: "Temporary" }, 
+          ]
+        }) %>
+      </div>
+      <div>
+        <%= require("ejs-loader!./templates/step-holder.ejs")({
+          contentLeft:true,
+          prototypeType:"framer",
+          prototypeUrl:"prototypes/Step1/index.html",
+          
+          title:"This way to your table",
+          description:"You get directions to your table and begin your stroll.",
+          image:"Frame_2.png",
+          sign:["dtpr_icons/purpose/water.svg","dtpr_icons/tech/light.svg","hex-icon-room_service","hex-icon-favorite"],
+          features: [ 
+            { title: "The purpose of this system is", icon: "dtpr_icons/purpose/water.svg", description: "Interaction" }, 
+            { title: "The service is provided by", icon: "dtpr_icons/tech/light.svg", description: orgLibrary }, 
+            { title: "The user’s symmetrical interface is ", icon: "hex-icon-room_service", description: "Personal AI" }, 
+            { title: "The relationship with this system is", icon: "hex-icon-favorite", description: "Temporary" }, 
+          ]
+        }) %>
+      </div>
+      <!-- TODO: Put in numina sensor prototype -->
+      <div>
+        <%= require("ejs-loader!./templates/step-holder.ejs")({
+          contentLeft:false,
+          prototypeType:"dialogflow",
+          prototypeUrl:"https://dtpr.sidewalklabs.com/dtpr_chatbot/place.html", 
+          sign:["face","hex-icon-face","dtpr_icons/tech/air.svg","dtpr_icons/tech/air.svg"],
+          title:"See what it sees",
+          description:"On your way, out of curiousity, you check the live seating status of the seating area.",
+          image:"Frame_1.png",
+          sign:["dtpr_icons/purpose/water.svg","dtpr_icons/tech/light.svg","hex-icon-room_service","hex-icon-favorite"],
+          features: [ 
+            { title: "The purpose of this system is", icon: "dtpr_icons/purpose/water.svg", description: "Agency" }, 
+            { title: "The service is provided by", icon: "dtpr_icons/tech/light.svg", description: orgLibrary }, 
+            { title: "The user’s symmetrical interface is ", icon: "hex-icon-room_service", description: "Place Chatbot" }, 
+            { title: "The relationship with this system is", icon: "hex-icon-favorite", description: "Temporary" }, 
+          ]
+        }) %>
+      </div>
+      <div>
+        <%= require("ejs-loader!./templates/step-holder.ejs")({
+          contentLeft:true,
+          prototypeType:"framer",
+          prototypeUrl:"prototypes/Step1/index.html",
+          
+          title:"Food is ready",
+          description:"After catching up with your friend, the food arrives. You have a quick chat with the server, thank them, and chow down.",
+          image:"Frame_2.png",
+          sign:["dtpr_icons/purpose/water.svg","dtpr_icons/tech/light.svg","hex-icon-room_service","hex-icon-favorite"],
+          features: [ 
+            { title: "The purpose of this system is", icon: "dtpr_icons/purpose/water.svg", description: "Borrowing" }, 
+            { title: "The service is provided by", icon: "dtpr_icons/tech/light.svg", description: orgLibrary }, 
+            { title: "The user’s symmetrical interface is ", icon: "hex-icon-room_service", description: "Personal AI" }, 
+            { title: "The relationship with this system is", icon: "hex-icon-favorite", description: "Membership" }, 
+          ]
+        }) %>
+      </div>
+    </div>
+    <!-- / SECTION 4 -->
+
+    <!-- SECTION 5 -->
+    <div class="step" data-step="section-1">
+      <div class="sticky-section-header">
+        <%= require("ejs-loader!./templates/section-divider.ejs")({
+          section:"Systems", 
+          title: "A standard way to describe systems within places, and what sensors, processing, and purposes they serve. ", 
+        }) %>
+      </div>
+      <div class="container">
+        <%= require("ejs-loader!./templates/step-header.ejs")({ 
+          title: "System<br />Definitions", 
+          lead: "A standard way to describe systems within places, and what sensors, processing, and purposes they serve.", 
+          seal: "Seal_System.png", 
+          buttons: [
+            { title: "titl", label: "Start the journey", classes: "btn-primary" },
+            { title: "titl", label: "Skip to the prototype", classes: "btn-secondary" },
+            { title: "titl", label: "See an example definition", classes: "btn-secondary" },
+          ], 
+          features: [ 
+            { title: "Agency for people", label: "label", icon: "hex-icon-accessibility_new", description: "Publishing place definitons allows people to know what functionality is available in a given place." }, 
+            { title: "Interoperable access", label: "label", icon: "hex-icon-power", description: "Rather than relying on a single app, an interoperable API ensures many channels of access." }, 
+            { title: "Data exchange receipts", label: "label", icon: "hex-icon-receipt", description: "Each personal interaction that is digitally recorded is able to be audited and edited by that person." }, 
+            { title: "Zone-based notice",label: "label", icon: "hex-icon-place", description: "Alerts can be set based on geographic areas and a person’s familiarity with that place." }, 
+          ], 
+        }) %>
+      </div>
+      <div>
+        <%= require("ejs-loader!./templates/step-holder.ejs")({
+          contentLeft:false,
+          prototypeType:"dialogflow",
+          prototypeUrl:"https://dtpr.sidewalklabs.com/dtpr_chatbot/system.html", 
+          sign:["face","hex-icon-face","dtpr_icons/tech/air.svg","dtpr_icons/tech/air.svg"],
+          title:"Recycle",
+          description:"You get guidance from the waste bin. You put the compost in the right bin, and place reusables in a tray.",
+          image:"Frame_1.png",
+          sign:["dtpr_icons/purpose/water.svg","dtpr_icons/tech/light.svg","hex-icon-room_service","hex-icon-favorite"],
+          features: [ 
+            { title: "The purpose of this system is", icon: "dtpr_icons/purpose/water.svg", description: "Shopping" }, 
+            { title: "The service is provided by", icon: "dtpr_icons/tech/light.svg", description: orgBike }, 
+            { title: "The user’s symmetrical interface is ", icon: "hex-icon-room_service", description: "Sensor Chatbot" }, 
+            { title: "The relationship with this system is", icon: "hex-icon-favorite", description: "Temporary" }, 
+          ]
+        }) %>
+      </div>
+      <div>
+        <%= require("ejs-loader!./templates/step-holder.ejs")({
+          contentLeft:true,
+          prototypeType:"framer",
+          prototypeUrl:"prototypes/Step1/index.html",
+          
+          title:"Claim your points",
+          description:"If you'd like to participate in the sustainability points program, you can connect anonymously.",
+          image:"Frame_2.png",
+          sign:["dtpr_icons/purpose/water.svg","dtpr_icons/tech/light.svg","hex-icon-room_service","hex-icon-favorite"],
+          features: [ 
+            { title: "The purpose of this system is", icon: "dtpr_icons/purpose/water.svg", description: "Interaction" }, 
+            { title: "The service is provided by", icon: "dtpr_icons/tech/light.svg", description: orgLibrary }, 
+            { title: "The user’s symmetrical interface is ", icon: "hex-icon-room_service", description: "Personal AI" }, 
+            { title: "The relationship with this system is", icon: "hex-icon-favorite", description: "Temporary" }, 
+          ]
+        }) %>
+      </div>
+      <!-- TODO: Put in numina sensor prototype -->
+      <div>
+        <%= require("ejs-loader!./templates/step-holder.ejs")({
+          contentLeft:false,
+          prototypeType:"dialogflow",
+          prototypeUrl:"https://dtpr.sidewalklabs.com/dtpr_chatbot/place.html", 
+          sign:["face","hex-icon-face","dtpr_icons/tech/air.svg","dtpr_icons/tech/air.svg"],
+          title:"Learn about the system",
+          description:"You can learn more about all the systems in this place or save it for later reading.",
+          image:"Frame_1.png",
+          sign:["dtpr_icons/purpose/water.svg","dtpr_icons/tech/light.svg","hex-icon-room_service","hex-icon-favorite"],
+          features: [ 
+            { title: "The purpose of this system is", icon: "dtpr_icons/purpose/water.svg", description: "Agency" }, 
+            { title: "The service is provided by", icon: "dtpr_icons/tech/light.svg", description: orgLibrary }, 
+            { title: "The user’s symmetrical interface is ", icon: "hex-icon-room_service", description: "Place Chatbot" }, 
+            { title: "The relationship with this system is", icon: "hex-icon-favorite", description: "Temporary" }, 
+          ]
+        }) %>
+      </div>
+      <div>
+        <%= require("ejs-loader!./templates/step-holder.ejs")({
+          contentLeft:true,
+          prototypeType:"framer",
+          prototypeUrl:"prototypes/Step1/index.html",
+          
+          title:"Occupancy sensor",
+          description:"You want to learn more about the occupancy sensor, you are able to ask questions about how it works, and why its important.",
+          image:"Frame_2.png",
+          sign:["dtpr_icons/purpose/water.svg","dtpr_icons/tech/light.svg","hex-icon-room_service","hex-icon-favorite"],
+          features: [ 
+            { title: "The purpose of this system is", icon: "dtpr_icons/purpose/water.svg", description: "Borrowing" }, 
+            { title: "The service is provided by", icon: "dtpr_icons/tech/light.svg", description: orgLibrary }, 
+            { title: "The user’s symmetrical interface is ", icon: "hex-icon-room_service", description: "Personal AI" }, 
+            { title: "The relationship with this system is", icon: "hex-icon-favorite", description: "Membership" }, 
+          ]
+        }) %>
+      </div>
+    </div>
+    <!-- / SECTION 5 -->
+
+    <!-- SECTION 6 -->
+    <div class="step" data-step="section-1">
+      <div class="sticky-section-header">
+        <%= require("ejs-loader!./templates/section-divider.ejs")({
+          section:"Encryption", 
+          title: "New methods in preserving privacy while maintaining a way to comply with security operations.", 
+        }) %>
+      </div>
+      <div class="container">
+        <%= require("ejs-loader!./templates/step-header.ejs")({ 
+          title: "Encryption<br />Techniques", 
+          lead: "New methods in preserving privacy while maintaining a way to comply with security operations.", 
+          seal: "Seal_Sensor.png", 
+          buttons: [
+            { title: "titl", label: "Start the journey", classes: "btn-primary" },
+            { title: "titl", label: "Skip to the prototype", classes: "btn-secondary" },
+            { title: "titl", label: "See an example definition", classes: "btn-secondary" },
+          ], 
+          features: [ 
+            { title: "Agency for people", label: "label", icon: "hex-icon-accessibility_new", description: "Publishing place definitons allows people to know what functionality is available in a given place." }, 
+            { title: "Interoperable access", label: "label", icon: "hex-icon-power", description: "Rather than relying on a single app, an interoperable API ensures many channels of access." }, 
+            { title: "Data exchange receipts", label: "label", icon: "hex-icon-receipt", description: "Each personal interaction that is digitally recorded is able to be audited and edited by that person." }, 
+            { title: "Zone-based notice",label: "label", icon: "hex-icon-place", description: "Alerts can be set based on geographic areas and a person’s familiarity with that place." }, 
+          ], 
+        }) %>
+      </div>
+      <div>
+        <%= require("ejs-loader!./templates/step-holder.ejs")({
+          contentLeft:false,
+          prototypeType:"dialogflow",
+          prototypeUrl:"https://dtpr.sidewalklabs.com/dtpr_chatbot/place.html", 
+          sign:["face","hex-icon-face","dtpr_icons/tech/air.svg","dtpr_icons/tech/air.svg"],
+          title:"You've lost your bag",
+          description:"You quickly head to a wall assistant and gesture to contact security.",
+          image:"Frame_1.png",
+          sign:["dtpr_icons/purpose/water.svg","dtpr_icons/tech/light.svg","hex-icon-room_service","hex-icon-favorite"],
+          features: [ 
+            { title: "The purpose of this system is", icon: "dtpr_icons/purpose/water.svg", description: "Shopping" }, 
+            { title: "The service is provided by", icon: "dtpr_icons/tech/light.svg", description: orgBike }, 
+            { title: "The user’s symmetrical interface is ", icon: "hex-icon-room_service", description: "Sensor Chatbot" }, 
+            { title: "The relationship with this system is", icon: "hex-icon-favorite", description: "Temporary" }, 
+          ]
+        }) %>
+      </div>
+      <div>
+        <%= require("ejs-loader!./templates/step-holder.ejs")({
+          contentLeft:true,
+          prototypeType:"framer",
+          prototypeUrl:"prototypes/Step1/index.html",
+          
+          title:"Decrypt when required",
+          description:"The security agent understands, and offers to decrypt based on 2 factor authentication.",
+          image:"Frame_2.png",
+          sign:["dtpr_icons/purpose/water.svg","dtpr_icons/tech/light.svg","hex-icon-room_service","hex-icon-favorite"],
+          features: [ 
+            { title: "The purpose of this system is", icon: "dtpr_icons/purpose/water.svg", description: "Interaction" }, 
+            { title: "The service is provided by", icon: "dtpr_icons/tech/light.svg", description: orgLibrary }, 
+            { title: "The user’s symmetrical interface is ", icon: "hex-icon-room_service", description: "Personal AI" }, 
+            { title: "The relationship with this system is", icon: "hex-icon-favorite", description: "Temporary" }, 
+          ]
+        }) %>
+      </div>
+      <div>
+        <%= require("ejs-loader!./templates/step-holder.ejs")({
+          contentLeft:false,
+          prototypeType:"dialogflow",
+          prototypeUrl:"https://dtpr.sidewalklabs.com/dtpr_chatbot/place.html", 
+          sign:["face","hex-icon-face","dtpr_icons/tech/air.svg","dtpr_icons/tech/air.svg"],
+          title:"Trace your steps",
+          description:"The security helps you trace your steps back to the food court, you get directions there.",
+          image:"Frame_1.png",
+          sign:["dtpr_icons/purpose/water.svg","dtpr_icons/tech/light.svg","hex-icon-room_service","hex-icon-favorite"],
+          features: [ 
+            { title: "The purpose of this system is", icon: "dtpr_icons/purpose/water.svg", description: "Agency" }, 
+            { title: "The service is provided by", icon: "dtpr_icons/tech/light.svg", description: orgLibrary }, 
+            { title: "The user’s symmetrical interface is ", icon: "hex-icon-room_service", description: "Place Chatbot" }, 
+            { title: "The relationship with this system is", icon: "hex-icon-favorite", description: "Temporary" }, 
+          ]
+        }) %>
+      </div>
+      <div>
+        <%= require("ejs-loader!./templates/step-holder.ejs")({
+          contentLeft:true,
+          prototypeType:"framer",
+          prototypeUrl:"prototypes/Step1/index.html",
+          
+          title:"On your way",
+          description:"After getting your bag back, you unlock 2 bikes, one for your friend, and head home together.",
+          image:"Frame_2.png",
+          sign:["dtpr_icons/purpose/water.svg","dtpr_icons/tech/light.svg","hex-icon-room_service","hex-icon-favorite"],
+          features: [ 
+            { title: "The purpose of this system is", icon: "dtpr_icons/purpose/water.svg", description: "Borrowing" }, 
+            { title: "The service is provided by", icon: "dtpr_icons/tech/light.svg", description: orgLibrary }, 
+            { title: "The user’s symmetrical interface is ", icon: "hex-icon-room_service", description: "Personal AI" }, 
+            { title: "The relationship with this system is", icon: "hex-icon-favorite", description: "Membership" }, 
+          ]
+        }) %>
+      </div>
+    </div>
+    <!-- / SECTION 6 -->
+
+    <!-- SECTION 7 -->
+    <div class="step" data-step="section-1">
+      <div class="sticky-section-header">
+        <%= require("ejs-loader!./templates/section-divider.ejs")({
+          section:"Review", 
+          title: "A standard way for people to review their data footprint, delete transactions, and save other for later.", 
+        }) %>
+      </div>
+      <div class="container">
+        <%= require("ejs-loader!./templates/step-header.ejs")({ 
+          title: "Review<br />&amp; Edit", 
+          lead: "A standard way for people to review their data footprint, delete transactions, and save other for later.", 
+          seal: "Seal_Sensor.png", 
+          buttons: [
+            { title: "titl", label: "Start the journey", classes: "btn-primary" },
+            { title: "titl", label: "Skip to the prototype", classes: "btn-secondary" },
+            { title: "titl", label: "See an example definition", classes: "btn-secondary" },
+          ], 
+          features: [ 
+            { title: "Agency for people", label: "label", icon: "hex-icon-accessibility_new", description: "Publishing place definitons allows people to know what functionality is available in a given place." }, 
+            { title: "Interoperable access", label: "label", icon: "hex-icon-power", description: "Rather than relying on a single app, an interoperable API ensures many channels of access." }, 
+            { title: "Data exchange receipts", label: "label", icon: "hex-icon-receipt", description: "Each personal interaction that is digitally recorded is able to be audited and edited by that person." }, 
+            { title: "Zone-based notice",label: "label", icon: "hex-icon-place", description: "Alerts can be set based on geographic areas and a person’s familiarity with that place." }, 
+          ], 
+        }) %>
+      </div>
+      <div>
+        <%= require("ejs-loader!./templates/step-holder.ejs")({
+          contentLeft:false,
+          prototypeType:"dialogflow",
+          prototypeUrl:"https://dtpr.sidewalklabs.com/dtpr_chatbot/place.html", 
+          sign:["face","hex-icon-face","dtpr_icons/tech/air.svg","dtpr_icons/tech/air.svg"],
+          title:"Cycle the green wave",
+          description:"As you wait at a light, you opt into the green wave for this journey. This considers your journey in light changes.",
+          image:"Frame_1.png",
+          sign:["dtpr_icons/purpose/water.svg","dtpr_icons/tech/light.svg","hex-icon-room_service","hex-icon-favorite"],
+          features: [ 
+            { title: "The purpose of this system is", icon: "dtpr_icons/purpose/water.svg", description: "Shopping" }, 
+            { title: "The service is provided by", icon: "dtpr_icons/tech/light.svg", description: orgBike }, 
+            { title: "The user’s symmetrical interface is ", icon: "hex-icon-room_service", description: "Sensor Chatbot" }, 
+            { title: "The relationship with this system is", icon: "hex-icon-favorite", description: "Temporary" }, 
+          ]
+        }) %>
+      </div>
+      <div>
+        <%= require("ejs-loader!./templates/step-holder.ejs")({
+          contentLeft:true,
+          prototypeType:"framer",
+          prototypeUrl:"prototypes/Step1/index.html",
+          
+          title:"Unlock door",
+          description:"You unlock your door with your Personal AI, and your friend can see your home data policies.",
+          image:"Frame_2.png",
+          sign:["dtpr_icons/purpose/water.svg","dtpr_icons/tech/light.svg","hex-icon-room_service","hex-icon-favorite"],
+          features: [ 
+            { title: "The purpose of this system is", icon: "dtpr_icons/purpose/water.svg", description: "Interaction" }, 
+            { title: "The service is provided by", icon: "dtpr_icons/tech/light.svg", description: orgLibrary }, 
+            { title: "The user’s symmetrical interface is ", icon: "hex-icon-room_service", description: "Personal AI" }, 
+            { title: "The relationship with this system is", icon: "hex-icon-favorite", description: "Temporary" }, 
+          ]
+        }) %>
+      </div>
+      <div>
+        <%= require("ejs-loader!./templates/step-holder.ejs")({
+          contentLeft:false,
+          prototypeType:"dialogflow",
+          prototypeUrl:"https://dtpr.sidewalklabs.com/dtpr_chatbot/place.html", 
+          sign:["face","hex-icon-face","dtpr_icons/tech/air.svg","dtpr_icons/tech/air.svg"],
+          title:"Review transactions from the day",
+          description:"Looking back, you're able to see the digital interactions you had throughout the day. You can edit them, delete some, and set future preferences.",
+          image:"Frame_1.png",
+          sign:["dtpr_icons/purpose/water.svg","dtpr_icons/tech/light.svg","hex-icon-room_service","hex-icon-favorite"],
+          features: [ 
+            { title: "The purpose of this system is", icon: "dtpr_icons/purpose/water.svg", description: "Agency" }, 
+            { title: "The service is provided by", icon: "dtpr_icons/tech/light.svg", description: orgLibrary }, 
+            { title: "The user’s symmetrical interface is ", icon: "hex-icon-room_service", description: "Place Chatbot" }, 
+            { title: "The relationship with this system is", icon: "hex-icon-favorite", description: "Temporary" }, 
+          ]
+        }) %>
+      </div>
+      <div>
+        <%= require("ejs-loader!./templates/step-holder.ejs")({
+          contentLeft:true,
+          prototypeType:"framer",
+          prototypeUrl:"prototypes/Step1/index.html",
+          
+          title:"Feedback",
+          description:"You choose to share the busker you saw with a friend.",
+          image:"Frame_2.png",
+          sign:["dtpr_icons/purpose/water.svg","dtpr_icons/tech/light.svg","hex-icon-room_service","hex-icon-favorite"],
+          features: [ 
+            { title: "The purpose of this system is", icon: "dtpr_icons/purpose/water.svg", description: "Borrowing" }, 
+            { title: "The service is provided by", icon: "dtpr_icons/tech/light.svg", description: orgLibrary }, 
+            { title: "The user’s symmetrical interface is ", icon: "hex-icon-room_service", description: "Personal AI" }, 
+            { title: "The relationship with this system is", icon: "hex-icon-favorite", description: "Membership" }, 
+          ]
+        }) %>
+      </div>
+    </div>
+    <!-- / SECTION 7 -->
+
+  </body>
+</html>

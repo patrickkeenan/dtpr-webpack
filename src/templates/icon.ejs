@@ -1,0 +1,10 @@
+<% if(icon.search(/dtpr_icons/) > -1) { %>
+  <img src="<%= icon %>" />
+<% } else if (icon.search(/hex-icon/) > -1) { %>
+  <div class="align-middle hex-icon">
+    <img src="images/hexagon.svg" />
+    <i class="material-icons md-24"><%= icon.split("hex-icon-")[1] %></i>
+  </div>
+<% } else { %>
+  <i class="material-icons md-36"><%= icon %></i>
+<% } %>

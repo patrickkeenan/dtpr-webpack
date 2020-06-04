@@ -1,0 +1,25 @@
+<div class="sticky-image" 
+  <% if(!contentLeft) {%> 
+    style="background: #F6F9FC;"
+  <% } %>
+>
+  <%= require("ejs-loader!./step-image.ejs")({
+  image:image, contentLeft:contentLeft, }) %>
+</div> 
+<div class="container">
+<%=
+  require("ejs-loader!./step-description.ejs")({
+    contentLeft:contentLeft, 
+    sign:sign,
+    title:title,
+    description:description,
+    features: features
+  })
+  %>
+</div>
+
+<div class="container">
+  <%=
+  require("ejs-loader!./step-prototype.ejs")({contentLeft:contentLeft,prototypeType:prototypeType,prototypeUrl:prototypeUrl})
+  %>
+</div>

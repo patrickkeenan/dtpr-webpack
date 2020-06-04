@@ -1,0 +1,30 @@
+
+  <div class="row">
+    <div class="col-12 col-md-10 offset-md-1 text-center">
+      <div class="prehead mb-4 mx-5"><%= prehead %></div>
+      <h1 class="display-4"><%= title %></h1>
+      <p class="lead">
+        <%= lead %>
+      </p>
+    </div>
+  </div>
+  
+  <div class="row">
+    <div class="col-12" style="margin-top: 100px;margin-bottom: 100px;">
+      <img src="images/StoryMap.png" width="100%" />
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-6 col-md-2">
+      start
+    </div>
+    <% for (var i =0; i <features.length; i++ ) { %>
+      <div class="col-6 col-md-3" style="height: 200px;">
+        <%= require("ejs-loader!./icon.ejs")({icon:features[i].icon}) %>
+        <h5 class="mt-1"><%= features[i].title %></h5>
+        <h6><%= features[i].description %></h6>
+      </div>
+    <% } %>
+  </div>
+
