@@ -1,10 +1,19 @@
-
-  <div class="row" style="margin-top:150px;margin-bottom:150px;">
+<div class="row">
+  <div class="col">
+    <div class="card card-darkblue d-flex scenario-card big-card" style="background-image:url(<%= image %>);">
+      <div class="w-50">
+        <h3><span class="badge"><%= stepNumber %></span>How might we...</h3>
+        <h1><%= title %></h1>
+      </div>
+    </div>
+  </div>
+</div>
+  <!-- <div class="row" style="margin-top:150px;margin-bottom:150px;">
     <div class="col-6 offset-3 col-md-3 offset-md-0">
       <img src="images/<%= seal %>" width="100%" />
     </div>
     <div class="col-12 col-md-7 offset-md-1">
-      <h1 class="display-4 text-center text-md-left"><%= title %></h1>
+      <h1 class="display-4 text-center text-md-left"></h1>
       <p class="lead text-center text-md-left">
         <%= lead %>
       </p>
@@ -24,4 +33,4 @@
         <h6><%= features[i].description %></h6>
       </div>
     <% } %>
-  </div>
+  </div> -->

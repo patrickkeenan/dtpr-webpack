@@ -1,8 +1,21 @@
+$blue: #002684;
+$lightblue: #bae6ed;
+$red: #f04a4a;
+$lightred: #fee4e0;
+$green: #0f5153;
+$lightgreen: #bfeedb;
+
 $theme-colors: (
-  "primary": #0074d9,
-  "secondary": #dbe3ff,
-  "danger": #ff4136,
+  "primary": $blue,
+  "secondary": $lightblue,
+  "danger": $red,
 );
+
+$spacer: 2.5rem;
+
+$grid-columns: 12;
+$grid-gutter-width: 20px;
+
 $light_bg: #f6f9fc;
 $enable-responsive-font-sizes: true;
 
@@ -19,11 +32,62 @@ $enable-responsive-font-sizes: true;
 // }
 
 body {
-  font-family: "PT Sans", sans-serif !important;
+  font-family: "Red Hat Text", sans-serif;
+  color: $blue;
 }
 
-.nav-container.sticky-top {
+.btn {
+  background-color: #002684;
+  color: #fff;
+  font-weight: 500;
+  font-size: 16px;
+  border-radius: 32px;
+  padding: 10px 20px;
+}
+
+.nav-container {
   top: 0;
+  padding: 12px 0;
+  z-index: 1000;
+  background: #fff;
+  // border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.navbar {
+  padding: 0;
+}
+.navbar-brand {
+  font-weight: 500;
+  font-size: 18px;
+}
+.nav-item {
+  font-weight: 500;
+  font-size: 18px;
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: 700;
+}
+h2 {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 2.75rem;
+}
+h3 {
+  font-size: 24px;
+  font-weight: 500;
+}
+h4 {
+  font-size: 20px;
+  font-weight: 500;
+}
+h5 {
+  font-size: 18px;
+  font-weight: 500;
+}
+h6 {
+  font-size: 16px;
+  font-weight: 500;
 }
 
 .material-icons.md-18 {
@@ -69,14 +133,163 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  padding: 24px 0;
+  padding: 16px 0;
   z-index: 1000;
   white-space: nowrap;
   overflow: hidden;
   background: #fff;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-  margin-top: 50px;
   // border-top: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.card {
+  background-color: $blue;
+  color: $lightblue;
+  padding: 32px 24px 32px 24px;
+  border-radius: 24px;
+  border: 0 none;
+  overflow: hidden;
+  background-repeat: no-repeat;
+
+  // @extend .d-flex;
+  h4 {
+    margin-top: -4px;
+  }
+  i {
+    margin-top: -4px;
+  }
+  .badge {
+    width: 32px;
+    height: 32px;
+    background-color: $lightblue;
+    color: $blue;
+    border-radius: 32px;
+    line-height: 26px;
+    margin-right: 12px;
+    font-size: 16px;
+    text-align: center;
+  }
+  .btn {
+    background-color: #fff;
+    color: $blue;
+    font-weight: 700;
+    margin: 0 8px 0 0;
+    font-size: 24px;
+    padding: 8px 32px;
+    @extend .mt-auto;
+    @extend .align-self-end;
+  }
+  .btn-circle {
+    @extend .float-right;
+    background-color: $lightblue;
+    color: $blue;
+    width: 48px;
+    height: 48px;
+    border-radius: 24px;
+    padding: 0;
+    margin-top: -8px;
+    text-align: center;
+    i {
+      margin: auto;
+      line-height: 48px;
+    }
+  }
+  &.scenario-card {
+    background-size: 40%;
+    background-position: bottom right;
+  }
+  &.big-card {
+    background-size: 35%;
+    height: 480px;
+    h3 {
+      padding-top: 2rem;
+    }
+    .badge {
+      width: 48px;
+      height: 48px;
+      background-color: $lightblue;
+      color: $blue;
+      border-radius: 32px;
+      line-height: 36px;
+      margin-right: 12px;
+      font-size: 24px;
+      text-align: center;
+      padding-bottom: 24px;
+    }
+  }
+  &.card-image {
+    background-size: cover;
+  }
+  &.card-lightblue {
+    background-color: $lightblue;
+    color: $blue;
+  }
+  &.card-red {
+    background-color: $red;
+    color: $lightred;
+  }
+  &.card-lightred {
+    background-color: $lightred;
+    color: $red;
+    .btn-circle {
+      background-color: $red;
+      color: $lightred;
+    }
+  }
+  &.card-green {
+    background-color: $green;
+    color: $lightgreen;
+  }
+  &.card-lightgreen {
+    background-color: $lightgreen;
+    color: $green;
+    .btn-circle {
+      background-color: $green;
+      color: $lightgreen;
+    }
+  }
+}
+.card .thumbnail {
+  background: #ccc;
+  height: 232px;
+  position: relative;
+  margin: 0 -32px -32px -32px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.step-banner {
+  background-color: $blue;
+  color: $lightblue;
+}
+.step-image {
+  img {
+    // position: absolute;
+    // left: 0;
+  }
+}
+
+.link-list {
+  a {
+    margin-top: 0.5rem;
+    font-size: 20px;
+    color: $primary;
+    margin-bottom: 2.5px;
+    border-bottom: 1.5px solid;
+    display: inline-block;
+    &:hover {
+      text-decoration: none;
+      margin-bottom: 0px;
+      border-bottom: 4px solid;
+    }
+  }
+}
+
+.section-image {
+  height: 640px;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .site-header {
@@ -100,7 +313,44 @@ body {
 .hex-icon i {
   position: absolute;
   left: 6px;
-  top: 6px;
+  top: 10px;
+  color: #000;
+}
+.circle-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 16px;
+  background-color: $blue;
+  color: #fff;
+  display: inline-block;
+  text-align: center;
+  line-height: 36px;
+  font-size: 20px;
+}
+.number-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 16px;
+  background-color: $blue;
+  color: #fff;
+  display: inline-block;
+  text-align: center;
+  line-height: 32px;
+  font-size: 16px;
+}
+
+.sticky-nav {
+  .menu {
+    text-align: right;
+    .circle-icon {
+      margin-left: 10px;
+    }
+  }
+}
+
+.card {
+  display: block;
+  width: 100%;
 }
 
 /*
@@ -206,18 +456,26 @@ body {
 }
 .ai-option {
   background: transparent;
+  h3 {
+    padding: 24px 0 0 0;
+    margin: 0;
+  }
+  p {
+    padding: 4px 0 16px 0;
+    margin: 0;
+  }
 }
 .ai-option .radio {
   height: 96px;
   line-height: 96px;
   width: 65px;
-  margin: 0 15px;
+  margin: 0 4px 0 20px;
 }
 .ai-option .avatar {
   height: 96px;
   line-height: 96px;
   width: 65px;
-  margin: 0 15px;
+  margin: 0 10px 0 0;
 }
 .ai-option .title {
   padding: 24px 0 0 0;
@@ -226,7 +484,7 @@ body {
   background: #ffffff;
   border: 0.5px solid rgba(0, 0, 0, 0.1);
   box-shadow: 0px 8px 16px rgba(131, 137, 174, 0.3);
-  border-radius: 8px;
+  border-radius: 20px;
 }
 .ai-options {
   background: transparent;

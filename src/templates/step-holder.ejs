@@ -4,7 +4,7 @@
   <% } %>
 >
   <%= require("ejs-loader!./step-image.ejs")({
-  image:image, contentLeft:contentLeft, }) %>
+  image:image,frame:frame, contentLeft:contentLeft, }) %>
 </div> 
 <div class="container">
 <%=
@@ -13,12 +13,12 @@
     sign:sign,
     title:title,
     description:description,
-    features: features
+    features: features,
   })
   %>
 </div>
 
-<div class="container">
+<div class="container pb-4">
   <%=
   require("ejs-loader!./step-prototype.ejs")({contentLeft:contentLeft,prototypeType:prototypeType,prototypeUrl:prototypeUrl})
   %>

@@ -9,10 +9,7 @@
       rel="stylesheet"
     />
     <!-- Google Fonts -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@400;500;700&display=swap" rel="stylesheet">
     <script
       src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
       integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
@@ -26,8 +23,9 @@
      
 
     <!-- NAVIGATION -->
-    <div class="nav-container">
-      <nav class="site-header navbar navbar-expand-md navbar-light bg-light">
+    <div class="step" data-step="section-0">
+      <div class="sticky-section-header">
+        <nav class="site-header navbar navbar-expand-md navbar-light bg-light">
 <div class="container">
   <a class="navbar-brand" href="#">
     <img src="images/DTPR_icon.svg" />
@@ -36,16 +34,13 @@
   <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
     <ul class="navbar-nav">
       <li class="nav-item active">
-        <a class="nav-link" href="#">About <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="#about">About</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Vision</a>
+        <a class="nav-link" href="#vision">Vision</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">How it works</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">The tools</i></a>
+        <a class="nav-link" href="#tools">Tools</i></a>
       </li>
     </ul>
     
@@ -53,312 +48,448 @@
   <button class="btn btn-primary">Get Involved</button>
 </div>
 </nav>
+      </div>
+      <div class="section-image" style="background-image: url(images/Intro_header.png);">
+
+      </div>
+      <div class="container">
+        <div class="row mt-4">
+          <div class="col-9">
+            <h3>About</h3>
+            <h2>Digital Transparency in the Public Realm is a project that seeks to facilitate the co-creation of prototypes that can advance digital transparency and enable agency in the world’s public spaces.</h2>
+          </div>
+        </div>
+        <div class="row mt-3">
+          <div class="col-7 d-flex">
+            <div class="card card-darkblue">
+              <h3>The Problem</h3>
+              <h1>Technology can help make our roads safer for people, our buildings greener, and our homes healthier. But we need to know its working.</h1>
+            </div>
+          </div>
+          <div class="col-5">
+            <div class="card card-lightblue">
+              <h3>When it comes to performance, even operators aren’t confident the technology is achieving its goal. Whether seeking safety, sustainability, accessibility, or just usefulness, many are left asking: did it work?</h3>
+              <p>New advances have led to new vulnerabilities. This makes it harder for operators of spaces, who now have to deal with new levels of security threats or malfunctioning systems. We’ve also seen that much technology in the built environment lacks controls for people. Our common experience of technology on our devices is that we can install, remove, change, and share what we want. Our physical spaces don’t meet that standard of user-centered design.</p>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-2">
+          <div class="col-5">
+            <div class="card card-image" style="background-image: url(images/Intro_Mission.png);height: 480px;"></div>
+          </div>
+          <div class="col-7 d-flex">
+            <div class="card card-red">
+              <h3>Our Mission</h3>
+              <h1>Enable human agency in the world's shared spaces.</h1>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-2 flex-nowrap overflow-auto">
+          <div class="col-4 d-flex">
+            <div class="card card-lightred">
+              <div class="btn-circle"><i class="material-icons md-24">arrow_forward</i></div>
+              <h3>5 Principles</h3>
+            </div>
+          </div>
+          <div class="col-4 d-flex">
+            <div class="card card-lightred">
+              <h6>Provide transparency</h6>
+              <p>We want to help people increase their awareness of how digital technology in the public realm works and give them avenues to learn more or follow up.</p>
+            </div>
+          </div>
+          <div class="col-4 d-flex">
+            <div class="card card-lightred">
+              <h6>Offer communication and utility</h6>
+              <p>People may want to know about what data is being collected around them, but they also might want to know how to use that data or even to make better use of the environment itself. How might signage be a starting point for helping people better navigate and utilize their surroundings?</p>
+            </div>
+          </div>
+          <div class="col-4 d-flex">
+            <div class="card card-lightred">
+              <h6>Outcomes not outputs</h6>
+              <p>More signs are often not the answer. As visual noise increases, less meaningful information actually gets across. We want to develop a way to know whether signage or channels are working for people; we need that feedback so we can improve the design over time.</p>
+            </div>
+          </div>
+          <div class="col-4 d-flex">
+            <div class="card card-lightred">
+              <h6>Design for adaptation</h6>
+              <p>We know this is just a first take, and we intend for others to build on this work.</p>
+            </div>
+          </div>
+          <div class="col-4 d-flex">
+            <div class="card card-lightred">
+              <h6>Blend digital and physical</h6>
+              <p>We are in a unique position to consider how people move from a digital to a physical medium and back. This transition should feel useful and coherent.</p>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-2">
+          <div class="col-6 d-flex">
+            <div class="card card-lightred ">
+              <h6>How might users surface information about spaces and systems in a way:</h6>
+              <ul>
+                <li>That isn’t limited to the visual modality</li>
+                <li>That allows rapid information access</li>
+                <li>That provides different levels of detail based on interest</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-6 d-flex">
+            <div class="card card-lightred">
+              <h6>Conversational UI emerged as a possible solution to addressing the many questions we started with:</h6>
+              <ul>
+                <li>Support visual, auditory and tactile modalitie</li>
+                <li>Rapidly surface diverse information</li>
+                <li>Can provide links, schematics, or documentation</li>
+                <li>Level of information detail can adapt to user interest</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row mt-2">
+          <div class="col-7 d-flex">
+            <div class="card card-green">
+              <h3>The Solution</h3>
+              <h1 class="pb-3">We’re working on a standard and some patterns to promote transparency, accountability, and control for people.</h1>
+            </div>
+          </div>
+          <div class="col-5 d-flex">
+            <div class="card card-image" style="background-image: url(images/Intro_Solution.png);"></div>
+          </div>
+        </div>
+        <div class="row mt-2 flex-nowrap overflow-auto">
+          <div class="col-4 d-flex">
+            <div class="card card-lightgreen">
+              <div class="btn-circle"><i class="material-icons md-24">arrow_forward</i></div>
+              <h2>Our Projects</h2>
+            </div>
+          </div>
+          <div class="col-3 d-flex">
+            <div class="card card-lightgreen">
+              <i class="material-icons md-16 float-right">launch</i>
+              <h4>DTPR Taxonomy</h4>
+              <div class="thumbnail"></div>
+            </div>
+          </div>
+          <div class="col-3 d-flex">
+            <div class="card card-lightgreen">
+              <i class="material-icons md-16 float-right">launch</i>
+              <h4>DTPR Taxonomy</h4>
+              <div class="thumbnail"></div>
+            </div>
+          </div>
+          <div class="col-3 d-flex">
+            <div class="card card-lightgreen">
+              <i class="material-icons md-16 float-right">launch</i>
+              <h4>DTPR Taxonomy</h4>
+              <div class="thumbnail"></div>
+            </div>
+          </div>
+          <div class="col-3 d-flex">
+            <div class="card card-lightgreen">
+              <i class="material-icons md-16 float-right">launch</i>
+              <h4>DTPR Taxonomy</h4>
+              <div class="thumbnail"></div>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-4 mb-4">
+          <div class="col-4">
+            <h2>More Projects</h2>
+            <div class="link-list">
+              <div><a href="#">Civic Data Trust</a></div>
+              <div><a href="#">Civic Data Trust</a></div>
+              <div><a href="#">Civic Data Trust</a></div>
+              <div><a href="#">Civic Data Trust</a></div>
+              <div><a href="#">Civic Data Trust</a></div>
+              <div><a href="#">Civic Data Trust</a></div>
+            </div>
+          </div>
+          <div class="col-4">
+            <h2>More Projects</h2>
+            <div class="link-list">
+              <div><a href="#">Civic Data Trust</a></div>
+              <div><a href="#">Civic Data Trust</a></div>
+              <div><a href="#">Civic Data Trust</a></div>
+              <div><a href="#">Civic Data Trust</a></div>
+              <div><a href="#">Civic Data Trust</a></div>
+              <div><a href="#">Civic Data Trust</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+
+
 
     <!-- SECTION PAI -->
     <div class="step" data-step="section-1">
-      <!-- <div class="sticky-section-header">
-        <div class="container">
+      <div class="sticky-section-header">
+        <div class="container sticky-nav">
   <div class="row">
-    <div class="col-3 col-md-1" style="">
-      <div class="prehead mt-1">
-        part 1
-      </div>
+    <div class="col-10">
+      <h4 class="mb-0">
+        
+          
+  <div class="align-middle circle-icon">
+    <i class="material-icons md-18">lock</i>
+  </div>
+
+
+        
+        <span class="pl-1">Designing places for responsible technology</span>
+      </h4>
     </div>
-    <div class="col-9  col-sm-11" style="margin-top:2px;">
-      <h6 class="mt-1">
-        title
-      </h6>
+    <div class="col-2 menu">
+      
+  <div class="align-middle circle-icon">
+    <i class="material-icons md-18">arrow_upward</i>
+  </div>
+
+
+      
+  <div class="align-middle circle-icon">
+    <i class="material-icons md-18">arrow_downward</i>
+  </div>
+
+
+      
+  <div class="align-middle circle-icon">
+    <i class="material-icons md-18">apps</i>
+  </div>
+
+
     </div>
   </div>
 </div>
-      </div> -->
-      <div class="container">
-        
-  <div class="row" style="margin-top:150px;margin-bottom:150px;">
-    <div class="col-6 offset-3 col-md-3 offset-md-0">
-      <img src="images/Seal_pAi.png" width="100%" />
-    </div>
-    <div class="col-12 col-md-7 offset-md-1">
-      <h1 class="display-4 text-center text-md-left">Personal<br />Ai Agent</h1>
-      <p class="lead text-center text-md-left">
-        A personal data artificial intelligence agent can help individuals understand and use digitally enabled systems in the real world.
-      </p>
-      <div class="d-none d-md-block">
-        
-        <button type="button" class="btn mr-2 btn-primary">Choose your agent</button>
-        
-        <button type="button" class="btn mr-2 btn-secondary">Skip to the prototype</button>
-        
-        <button type="button" class="btn mr-2 btn-secondary">See an example definition</button>
-        
       </div>
+      <div class="section-image" style="background-image: url(images/Vision_Map.png);"></div>
+
+      <!-- VISION INTRO -->
+      
+
+      <div class="container" style="margin-top:150px;">
+        
+  <div class="row mt-4">
+    <div class="col-8">
+      <h3>A Vision</h3>
+      <h1>Join us on journey that rejects the false dichotomy between privacy & convenience.</h1>
     </div>
   </div>
-
-  <div class="row mb-5">
-    
-      <div class="col-6 col-md-3">
-        
-  <div class="align-middle hex-icon">
-    <img src="images/hexagon.svg" />
-    <i class="material-icons md-24">accessibility_new</i>
-  </div>
-
-
-        <h5 class="mt-2">Agency for people</h5>
-        <h6>Publishing place definitons allows people to know what functionality is available in a given place.</h6>
-      </div>
-    
-      <div class="col-6 col-md-3">
-        
-  <div class="align-middle hex-icon">
-    <img src="images/hexagon.svg" />
-    <i class="material-icons md-24">power</i>
-  </div>
-
-
-        <h5 class="mt-2">Interoperable access</h5>
-        <h6>Rather than relying on a single app, an interoperable API ensures many channels of access.</h6>
-      </div>
-    
-      <div class="col-6 col-md-3">
-        
-  <div class="align-middle hex-icon">
-    <img src="images/hexagon.svg" />
-    <i class="material-icons md-24">receipt</i>
-  </div>
-
-
-        <h5 class="mt-2">Data exchange receipts</h5>
-        <h6>Each personal interaction that is digitally recorded is able to be audited and edited by that person.</h6>
-      </div>
-    
-      <div class="col-6 col-md-3">
-        
-  <div class="align-middle hex-icon">
-    <img src="images/hexagon.svg" />
-    <i class="material-icons md-24">place</i>
-  </div>
-
-
-        <h5 class="mt-2">Zone-based notice</h5>
-        <h6>Alerts can be set based on geographic areas and a person’s familiarity with that place.</h6>
-      </div>
-    
-  </div>
-
+  <div class="row">
+    <div class="col-7">
+      <h4>Join us on journey that rejects the false dichotomy between privacy & convenience.</h4>
     </div>
   </div>
-  <div class="step" data-step="section-pai-choose" style="background-color: #F6F9FC;">
-    <div class="container" style="padding-top: 150px;padding-bottom: 150px;">
+  <div class="row mt-3">
+    <div class="col">
+      <div class="card card-darkblue d-flex scenario-card big-card" style="height: 420px;background-image:url(images/Vision_Chapter_Image.png);">
+        <div class="w-50">
+          <h6><span class="badge">1</span>How might we...</h6>
+          <h1>Rent a book from the library with ease and privacy?</h1>
+        </div>
+        <div class="btn">Start</div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    
+      <div class="col-6 mt-2">
+        <div class="card card-darkblue d-flex scenario-card" style="height:240px;background-image:url(images/Vision_Chapter_Image.png);">
+          <div class="w-50">
+            <h6><span class="badge">2</span>How might we...</h6>
+            <h3>understand how sensors work, and what they do for people?</h3>
+          </div>
+        </div>
+      </div>
+    
+      <div class="col-6 mt-2">
+        <div class="card card-darkblue d-flex scenario-card" style="height:240px;background-image:url(images/Vision_Chapter_Image.png);">
+          <div class="w-50">
+            <h6><span class="badge">3</span>How might we...</h6>
+            <h3>look up from our phones, and strengthen the social fabric?</h3>
+          </div>
+        </div>
+      </div>
+    
+      <div class="col-6 mt-2">
+        <div class="card card-darkblue d-flex scenario-card" style="height:240px;background-image:url(images/Vision_Chapter_Image.png);">
+          <div class="w-50">
+            <h6><span class="badge">4</span>How might we...</h6>
+            <h3>gain agency over technology, and only share what we choose?</h3>
+          </div>
+        </div>
+      </div>
+    
+      <div class="col-6 mt-2">
+        <div class="card card-darkblue d-flex scenario-card" style="height:240px;background-image:url(images/Vision_Chapter_Image.png);">
+          <div class="w-50">
+            <h6><span class="badge">5</span>How might we...</h6>
+            <h3>get help from the built environment, and leave it better than we found it?</h3>
+          </div>
+        </div>
+      </div>
+    
+      <div class="col-6 mt-2">
+        <div class="card card-darkblue d-flex scenario-card" style="height:240px;background-image:url(images/Vision_Chapter_Image.png);">
+          <div class="w-50">
+            <h6><span class="badge">6</span>How might we...</h6>
+            <h3>offer eyes on the street, with humans in the loop?</h3>
+          </div>
+        </div>
+      </div>
+    
+      <div class="col-6 mt-2">
+        <div class="card card-darkblue d-flex scenario-card" style="height:240px;background-image:url(images/Vision_Chapter_Image.png);">
+          <div class="w-50">
+            <h6><span class="badge">7</span>How might we...</h6>
+            <h3>offer time-bound data sharing with ongoing control of choices?</h3>
+          </div>
+        </div>
+      </div>
+    
+  </div>
+
+
+      </div>
+    
+      <div class="container mt-5 pt-5 pb-5">
         <div class="row">
   <div class="col-5">
-    <h1 class="display-4">Choose<br />your agent</h1>
-    <p>
-      The following scenarios propose a personal AI agent, offered to you by an organization of your choosing. 
-    </p>
-    <div>
-      <button type="button" class="btn btn-primary btn-lg"">Choose your agent</button>
-      <button type="button" class="btn btn-secondary btn-lg"">Skip to the prototype</button>
+    <h1>First, choose<br /> your agent</h1>
+    <p>The following scenarios propose a personal AI agent, offered to you by an organization of your choosing.</p>
+    <div class="mt-3">
+      
+        <button type="button" class="btn mr-1 btn-primary">Skip to the prototype</button>
+      
     </div>
   </div>
   <div class="col-7">
     <ul class="list-group ai-options">
-    <li class="list-group-item">
-      <div class="ai-option selected col">
-        <div class="radio float-left"><i class="material-icons md-48 align-middle">radio_button_checked</i></div>
-        <div class="avatar float-left"><i class="material-icons md-48 align-middle">location_city</i></div>
-        <div class="col">
-          <h4 class="title">City Dept.</h4>
-          <p class="">A department in your municipal government</p>
-        </div>
-      </li>
-      <li class="list-group-item">
-        <div class="ai-option  col">
-          <div class="radio float-left"><i class="material-icons md-48 align-middle">radio_button_unchecked</i></div>
-          <div class="avatar float-left"><i class="material-icons md-48 align-middle">local_library</i></div>
-          <div class="col">
-            <h4 class="title">Library Dept.</h4>
-            <p class="">A department in your municipal government</p>
+      
+        <li class="list-group-item">
+          <div class="ai-option selected col">
+            <div class="radio float-left"><i class="material-icons md-48 align-middle">radio_button_checked</i></div>
+            <div class="avatar float-left"><i class="material-icons md-48 align-middle">location_city</i></div>
+            <div class="col">
+              <h3>City Dept.</h3>
+              <p class="">A department in your municipal government</p>
+            </div>
           </div>
-        </div>
-      </li>
-      <li class="list-group-item">
-        <div class="ai-option  col">
-          <div class="radio float-left"><i class="material-icons md-48 align-middle">radio_button_unchecked</i></div>
-          <div class="avatar float-left"><i class="material-icons md-48 align-middle">account_balance</i></div>
-          <div class="col">
-            <h4 class="title">Bank Co.</h4>
-            <p class="">A department in your municipal government</p>
+        </li>
+      
+        <li class="list-group-item">
+          <div class="ai-option  col">
+            <div class="radio float-left"><i class="material-icons md-48 align-middle">radio_button_unchecked</i></div>
+            <div class="avatar float-left"><i class="material-icons md-48 align-middle">local_library</i></div>
+            <div class="col">
+              <h3>City Dept.</h3>
+              <p class="">A department in your municipal government</p>
+            </div>
           </div>
-        </div>
-      </li>
-      <li class="list-group-item">
-        <div class="ai-option  col">
-          <div class="radio float-left"><i class="material-icons md-48 align-middle">radio_button_unchecked</i></div>
-          <div class="avatar float-left"><i class="material-icons md-48 align-middle">local_phone</i></div>
-          <div class="col">
-            <h4 class="title">Phone Co.</h4>
-            <p class="">A department in your municipal government</p>
+        </li>
+      
+        <li class="list-group-item">
+          <div class="ai-option  col">
+            <div class="radio float-left"><i class="material-icons md-48 align-middle">radio_button_unchecked</i></div>
+            <div class="avatar float-left"><i class="material-icons md-48 align-middle">account_balance</i></div>
+            <div class="col">
+              <h3>City Dept.</h3>
+              <p class="">A department in your municipal government</p>
+            </div>
           </div>
-        </div>
-      </li>
-      <li class="list-group-item">
-        <div class="ai-option  col">
-          <div class="radio float-left"><i class="material-icons md-48 align-middle">radio_button_unchecked</i></div>
-          <div class="avatar float-left"><i class="material-icons md-48 align-middle">help</i></div>
-          <div class="col">
-            <h4 class="title">Other...</h4>
-            <p class="">Who would you choose to provide your personal AI?</p>
+        </li>
+      
+        <li class="list-group-item">
+          <div class="ai-option  col">
+            <div class="radio float-left"><i class="material-icons md-48 align-middle">radio_button_unchecked</i></div>
+            <div class="avatar float-left"><i class="material-icons md-48 align-middle">local_phone</i></div>
+            <div class="col">
+              <h3>City Dept.</h3>
+              <p class="">A department in your municipal government</p>
+            </div>
           </div>
-        </div>
-      </li>
+        </li>
+      
+        <li class="list-group-item">
+          <div class="ai-option  col">
+            <div class="radio float-left"><i class="material-icons md-48 align-middle">radio_button_unchecked</i></div>
+            <div class="avatar float-left"><i class="material-icons md-48 align-middle">help</i></div>
+            <div class="col">
+              <h3>Other...</h3>
+              <p class="">Who would you trust to help?</p>
+            </div>
+          </div>
+        </li>
+      
+      
     </ul>    
   </div>
 </div>
       </div>
     </div>
     
-    <!-- VISION INTRO -->
-    <div class="step" data-step="section-0">
-      <div class="sticky-section-header">
-        <div class="container">
-  <div class="row">
-    <div class="col-3 col-md-1" style="">
-      <div class="prehead mt-1">
-        Vision
-      </div>
-    </div>
-    <div class="col-9  col-sm-11" style="margin-top:2px;">
-      <h6 class="mt-1">
-        Designing places for responsible technology
-      </h6>
-    </div>
-  </div>
-</div>
-      </div>
-
-      <div class="container" style="margin-top:150px;">
-        
-  <div class="row">
-    <div class="col-12 col-md-10 offset-md-1 text-center">
-      <div class="prehead mb-4 mx-5">A Vision</div>
-      <h1 class="display-4">How might we design technology in places responsible</h1>
-      <p class="lead">
-        The following scenarios walk through how people might have more agency in digitally enabled environments.
-      </p>
-    </div>
-  </div>
-  
-  <div class="row">
-    <div class="col-12" style="margin-top: 100px;margin-bottom: 100px;">
-      <img src="images/StoryMap.png" width="100%" />
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col-6 col-md-2">
-      start
-    </div>
-    
-      <div class="col-6 col-md-3" style="height: 200px;">
-        
-  <img src="dtpr_icons/tech/air.svg" />
-
-
-        <h5 class="mt-1">Grab a book</h5>
-        <h6>Rather than relying on a single app, an interoperable API ensures many channels of access.</h6>
-      </div>
-    
-      <div class="col-6 col-md-3" style="height: 200px;">
-        
-  <img src="dtpr_icons/tech/air.svg" />
-
-
-        <h5 class="mt-1">A new look</h5>
-        <h6>Rather than relying on a single app, an interoperable API ensures many channels of access.</h6>
-      </div>
-    
-      <div class="col-6 col-md-3" style="height: 200px;">
-        
-  <img src="dtpr_icons/tech/air.svg" />
-
-
-        <h5 class="mt-1">Stop to listen</h5>
-        <h6>Rather than relying on a single app, an interoperable API ensures many channels of access.</h6>
-      </div>
-    
-      <div class="col-6 col-md-3" style="height: 200px;">
-        
-  <img src="dtpr_icons/tech/air.svg" />
-
-
-        <h5 class="mt-1">A table for two</h5>
-        <h6>Rather than relying on a single app, an interoperable API ensures many channels of access.</h6>
-      </div>
-    
-      <div class="col-6 col-md-3" style="height: 200px;">
-        
-  <img src="dtpr_icons/tech/air.svg" />
-
-
-        <h5 class="mt-1">Recycle, recall</h5>
-        <h6>Rather than relying on a single app, an interoperable API ensures many channels of access.</h6>
-      </div>
-    
-      <div class="col-6 col-md-3" style="height: 200px;">
-        
-  <img src="dtpr_icons/tech/air.svg" />
-
-
-        <h5 class="mt-1">Lost & Found</h5>
-        <h6>Rather than relying on a single app, an interoperable API ensures many channels of access.</h6>
-      </div>
-    
-      <div class="col-6 col-md-3" style="height: 200px;">
-        
-  <img src="dtpr_icons/tech/air.svg" />
-
-
-        <h5 class="mt-1">Head home together</h5>
-        <h6>Rather than relying on a single app, an interoperable API ensures many channels of access.</h6>
-      </div>
-    
-  </div>
-
-
-      </div>
-    </div>
-
-    
-
     <!-- SECTION 1 -->
+    
     <div class="step" data-step="section-1">
       <div class="sticky-section-header">
-        <div class="container">
+        <div class="container sticky-nav">
   <div class="row">
-    <div class="col-3 col-md-1" style="">
-      <div class="prehead mt-1">
-        Places<br />
-      </div>
+    <div class="col-10">
+      <h4 class="mb-0">
+        
+          
+  <div class="align-middle number-icon">
+    1
+  </div>
+
+
+        
+        <span class="pl-1">How might we move seamlessly through places we love, and seamfully in places new to us?</span>
+      </h4>
     </div>
-    <div class="col-9  col-sm-11" style="margin-top:2px;">
-      <h6 class="mt-1">
-        A standardised way to describe the systems, sensors, and technologies in a given area. 
-      </h6>
+    <div class="col-2 menu">
+      
+  <div class="align-middle circle-icon">
+    <i class="material-icons md-18">arrow_upward</i>
+  </div>
+
+
+      
+  <div class="align-middle circle-icon">
+    <i class="material-icons md-18">arrow_downward</i>
+  </div>
+
+
+      
+  <div class="align-middle circle-icon">
+    <i class="material-icons md-18">apps</i>
+  </div>
+
+
     </div>
   </div>
 </div>
       </div>
-      <div class="container">
-        
-  <div class="row" style="margin-top:150px;margin-bottom:150px;">
+      <div class="step-banner">
+        <div class="container">
+          <div class="row">
+  <div class="col">
+    <div class="card card-darkblue d-flex scenario-card big-card" style="background-image:url(images/Vision_Chapter_Image.png);">
+      <div class="w-50">
+        <h3><span class="badge">1</span>How might we...</h3>
+        <h1>move seamlessly through places we love, and seamfully in places new to us?</h1>
+      </div>
+    </div>
+  </div>
+</div>
+  <!-- <div class="row" style="margin-top:150px;margin-bottom:150px;">
     <div class="col-6 offset-3 col-md-3 offset-md-0">
       <img src="images/Seal_Place.png" width="100%" />
     </div>
     <div class="col-12 col-md-7 offset-md-1">
-      <h1 class="display-4 text-center text-md-left">Place Definitions</h1>
+      <h1 class="display-4 text-center text-md-left"></h1>
       <p class="lead text-center text-md-left">
         A standardised way to describe the systems, sensors, and technologies in a given area.
       </p>
@@ -424,8 +555,9 @@
         <h6>Alerts can be set based on geographic areas and a person’s familiarity with that place.</h6>
       </div>
     
-  </div>
+  </div> -->
 
+        </div>
       </div>
       <div>
         <div class="sticky-image" 
@@ -434,13 +566,13 @@
   
 >
   <div
-  style="text-align: center; width: 100%; height: 100vh; position: relative;"
+  style="text-align: center; width: 100%; height: 100vh; position: relative;background-image: url(images/Frame_Background.png);"
   class="d-flex align-items-center"
 >
-  <div class="align-middle container">
+  <div class="container align-middle step-image">
     <div class="row">
       
-      <div class="col-12 col-md-8"><img src="images/Frame_1.png" width="100%" /></div>
+      <div class="col-12 col-md-8"><img src="images/Frame_Subject.svg" width="100%" /></div>
     </div>
   </div>
 </div>
@@ -451,7 +583,7 @@
   
   <div class="d-none d-md-block col-md-8"></div>
   
-  <div class="col-3 col-md-1 text-center d-flex align-items-center flex-column">
+  <!-- <div class="col-3 col-md-1 text-center d-flex align-items-center flex-column">
     <div>
   <img src="dtpr_icons/purpose/water.svg" />
 
@@ -476,12 +608,14 @@
   </div>
 
 </div>
-  </div>
-  <div class="col-9 col-md-3">
-    <h5>Dock your bike</h5>
-    <h6>
-      Arriving at your destination, you dock your bike, and your session is ended. The trip is credited to your monthly membership.
-    </h6>
+  </div> -->
+  <div class="col-12 col-md-4">
+    <div class="card pb-2">
+      <h3>Dock your bike</h3>
+      <p>
+        Arriving at your destination, you dock your bike, and your session is ended. The trip is credited to your monthly membership.
+      </p>
+    </div>
   </div>
   
 </div>
@@ -489,83 +623,85 @@
   
   <div class="d-none d-md-block col-md-8"></div>
   
-  <div class="col-12 col-md-4">
-    <ul class="list-group mt-5 mb-5">
-      
-      <li
-        class="list-group-item d-flex align-items-center px-0 py-2 border-left-0 border-right-0"
-      >
-        <div class="mr-3">
-          
+  <div class="col-12 col-md-4 mt-2">
+    <div class="card card-lightblue py-2">
+      <ul class="list-group">
+        
+        <li
+          class="list-group-item d-flex align-items-center px-0 py-1 border-0" style="background:transparent;"
+        >
+          <div class="mr-3">
+            
   <img src="dtpr_icons/purpose/water.svg" />
 
 
-        </div>
-        <div>
-          <p class="my-0"><small>The purpose of this system is</small></p>
-          <h6 class="my-0">Mobility</h6>
-        </div>
-      </li>
-      
-      <li
-        class="list-group-item d-flex align-items-center px-0 py-2 border-left-0 border-right-0"
-      >
-        <div class="mr-3">
-          
+          </div>
+          <div>
+            <p class="my-0"><small>The purpose of this system is</small></p>
+            <h6 class="my-0">Mobility</h6>
+          </div>
+        </li>
+        
+        <li
+          class="list-group-item d-flex align-items-center px-0 py-1 border-0" style="background:transparent;"
+        >
+          <div class="mr-3">
+            
   <img src="dtpr_icons/tech/light.svg" />
 
 
-        </div>
-        <div>
-          <p class="my-0"><small>The service is provided by</small></p>
-          <h6 class="my-0">Bikeshare Co.</h6>
-        </div>
-      </li>
-      
-      <li
-        class="list-group-item d-flex align-items-center px-0 py-2 border-left-0 border-right-0"
-      >
-        <div class="mr-3">
-          
+          </div>
+          <div>
+            <p class="my-0"><small>The service is provided by</small></p>
+            <h6 class="my-0">Bikeshare Co.</h6>
+          </div>
+        </li>
+        
+        <li
+          class="list-group-item d-flex align-items-center px-0 py-1 border-0" style="background:transparent;"
+        >
+          <div class="mr-3">
+            
   <div class="align-middle hex-icon">
     <img src="images/hexagon.svg" />
     <i class="material-icons md-24">room_service</i>
   </div>
 
 
-        </div>
-        <div>
-          <p class="my-0"><small>The user’s symmetrical interface is </small></p>
-          <h6 class="my-0">Personal AI</h6>
-        </div>
-      </li>
-      
-      <li
-        class="list-group-item d-flex align-items-center px-0 py-2 border-left-0 border-right-0"
-      >
-        <div class="mr-3">
-          
+          </div>
+          <div>
+            <p class="my-0"><small>The user’s interface is </small></p>
+            <h6 class="my-0">Personal AI</h6>
+          </div>
+        </li>
+        
+        <li
+          class="list-group-item d-flex align-items-center px-0 py-1 border-0" style="background:transparent;"
+        >
+          <div class="mr-3">
+            
   <div class="align-middle hex-icon">
     <img src="images/hexagon.svg" />
     <i class="material-icons md-24">favorite</i>
   </div>
 
 
-        </div>
-        <div>
-          <p class="my-0"><small>The relationship with this system is</small></p>
-          <h6 class="my-0">Membership</h6>
-        </div>
-      </li>
-      
-    </ul>
+          </div>
+          <div>
+            <p class="my-0"><small>The relationship is</small></p>
+            <h6 class="my-0">Membership</h6>
+          </div>
+        </li>
+        
+      </ul>
+    </div>
   </div>
   
 </div>
 
 </div>
 
-<div class="container">
+<div class="container pb-4">
   <div class="row">
   
   <div class="col-8 d-none d-md-block"></div>
@@ -598,15 +734,15 @@
   
 >
   <div
-  style="text-align: center; width: 100%; height: 100vh; position: relative;"
+  style="text-align: center; width: 100%; height: 100vh; position: relative;background-image: url(images/Frame_Background.png);"
   class="d-flex align-items-center"
 >
-  <div class="align-middle container">
+  <div class="container align-middle step-image">
     <div class="row">
       
       <div class="col-4 d-none d-md-block"></div>
       
-      <div class="col-12 col-md-8"><img src="images/Frame_2.png" width="100%" /></div>
+      <div class="col-12 col-md-8"><img src="images/Frame_Subject.svg" width="100%" /></div>
     </div>
   </div>
 </div>
@@ -615,7 +751,7 @@
 <div class="container">
 <div class="row">
   
-  <div class="col-3 col-md-1 text-center d-flex align-items-center flex-column">
+  <!-- <div class="col-3 col-md-1 text-center d-flex align-items-center flex-column">
     <div>
   <img src="dtpr_icons/purpose/water.svg" />
 
@@ -640,12 +776,14 @@
   </div>
 
 </div>
-  </div>
-  <div class="col-9 col-md-3">
-    <h5>Enter the library</h5>
-    <h6>
-      As you enter the library, you are given a link to a chatbot and can ask any questions you have about this place.
-    </h6>
+  </div> -->
+  <div class="col-12 col-md-4">
+    <div class="card pb-2">
+      <h3>Enter the library</h3>
+      <p>
+        As you enter the library, you are given a link to a chatbot and can ask any questions you have about this place.
+      </p>
+    </div>
   </div>
   
   <div class="d-none d-md-block col-md-8"></div>
@@ -653,76 +791,78 @@
 </div>
 <div class="row">
   
-  <div class="col-12 col-md-4">
-    <ul class="list-group mt-5 mb-5">
-      
-      <li
-        class="list-group-item d-flex align-items-center px-0 py-2 border-left-0 border-right-0"
-      >
-        <div class="mr-3">
-          
+  <div class="col-12 col-md-4 mt-2">
+    <div class="card card-lightblue py-2">
+      <ul class="list-group">
+        
+        <li
+          class="list-group-item d-flex align-items-center px-0 py-1 border-0" style="background:transparent;"
+        >
+          <div class="mr-3">
+            
   <img src="dtpr_icons/purpose/water.svg" />
 
 
-        </div>
-        <div>
-          <p class="my-0"><small>The purpose of this system is</small></p>
-          <h6 class="my-0">Agency</h6>
-        </div>
-      </li>
-      
-      <li
-        class="list-group-item d-flex align-items-center px-0 py-2 border-left-0 border-right-0"
-      >
-        <div class="mr-3">
-          
+          </div>
+          <div>
+            <p class="my-0"><small>The purpose of this system is</small></p>
+            <h6 class="my-0">Agency</h6>
+          </div>
+        </li>
+        
+        <li
+          class="list-group-item d-flex align-items-center px-0 py-1 border-0" style="background:transparent;"
+        >
+          <div class="mr-3">
+            
   <img src="dtpr_icons/tech/light.svg" />
 
 
-        </div>
-        <div>
-          <p class="my-0"><small>The service is provided by</small></p>
-          <h6 class="my-0">Library Dept.</h6>
-        </div>
-      </li>
-      
-      <li
-        class="list-group-item d-flex align-items-center px-0 py-2 border-left-0 border-right-0"
-      >
-        <div class="mr-3">
-          
+          </div>
+          <div>
+            <p class="my-0"><small>The service is provided by</small></p>
+            <h6 class="my-0">Library Dept.</h6>
+          </div>
+        </li>
+        
+        <li
+          class="list-group-item d-flex align-items-center px-0 py-1 border-0" style="background:transparent;"
+        >
+          <div class="mr-3">
+            
   <div class="align-middle hex-icon">
     <img src="images/hexagon.svg" />
     <i class="material-icons md-24">room_service</i>
   </div>
 
 
-        </div>
-        <div>
-          <p class="my-0"><small>The user’s symmetrical interface is </small></p>
-          <h6 class="my-0">Place Chatbot</h6>
-        </div>
-      </li>
-      
-      <li
-        class="list-group-item d-flex align-items-center px-0 py-2 border-left-0 border-right-0"
-      >
-        <div class="mr-3">
-          
+          </div>
+          <div>
+            <p class="my-0"><small>The user’s interface is </small></p>
+            <h6 class="my-0">Place Chatbot</h6>
+          </div>
+        </li>
+        
+        <li
+          class="list-group-item d-flex align-items-center px-0 py-1 border-0" style="background:transparent;"
+        >
+          <div class="mr-3">
+            
   <div class="align-middle hex-icon">
     <img src="images/hexagon.svg" />
     <i class="material-icons md-24">favorite</i>
   </div>
 
 
-        </div>
-        <div>
-          <p class="my-0"><small>The relationship with this system is</small></p>
-          <h6 class="my-0">Membership</h6>
-        </div>
-      </li>
-      
-    </ul>
+          </div>
+          <div>
+            <p class="my-0"><small>The relationship is</small></p>
+            <h6 class="my-0">Membership</h6>
+          </div>
+        </li>
+        
+      </ul>
+    </div>
   </div>
   
   <div class="d-none d-md-block col-md-8"></div>
@@ -731,7 +871,7 @@
 
 </div>
 
-<div class="container">
+<div class="container pb-4">
   <div class="row">
   
 
@@ -766,13 +906,13 @@
   
 >
   <div
-  style="text-align: center; width: 100%; height: 100vh; position: relative;"
+  style="text-align: center; width: 100%; height: 100vh; position: relative;background-image: url(images/Frame_Background.png);"
   class="d-flex align-items-center"
 >
-  <div class="align-middle container">
+  <div class="container align-middle step-image">
     <div class="row">
       
-      <div class="col-12 col-md-8"><img src="images/Frame_1.png" width="100%" /></div>
+      <div class="col-12 col-md-8"><img src="images/Frame_Subject.svg" width="100%" /></div>
     </div>
   </div>
 </div>
@@ -783,7 +923,7 @@
   
   <div class="d-none d-md-block col-md-8"></div>
   
-  <div class="col-3 col-md-1 text-center d-flex align-items-center flex-column">
+  <!-- <div class="col-3 col-md-1 text-center d-flex align-items-center flex-column">
     <div>
   <img src="dtpr_icons/purpose/water.svg" />
 
@@ -808,12 +948,14 @@
   </div>
 
 </div>
-  </div>
-  <div class="col-9 col-md-3">
-    <h5>Grab a book</h5>
-    <h6>
-      You grab a book off the shelf and its added to your virtual cart. You can set these preferences with your personal AI.
-    </h6>
+  </div> -->
+  <div class="col-12 col-md-4">
+    <div class="card pb-2">
+      <h3>Grab a book</h3>
+      <p>
+        You grab a book off the shelf and its added to your virtual cart. You can set these preferences with your personal AI.
+      </p>
+    </div>
   </div>
   
 </div>
@@ -821,83 +963,85 @@
   
   <div class="d-none d-md-block col-md-8"></div>
   
-  <div class="col-12 col-md-4">
-    <ul class="list-group mt-5 mb-5">
-      
-      <li
-        class="list-group-item d-flex align-items-center px-0 py-2 border-left-0 border-right-0"
-      >
-        <div class="mr-3">
-          
+  <div class="col-12 col-md-4 mt-2">
+    <div class="card card-lightblue py-2">
+      <ul class="list-group">
+        
+        <li
+          class="list-group-item d-flex align-items-center px-0 py-1 border-0" style="background:transparent;"
+        >
+          <div class="mr-3">
+            
   <img src="dtpr_icons/purpose/water.svg" />
 
 
-        </div>
-        <div>
-          <p class="my-0"><small>The purpose of this system is</small></p>
-          <h6 class="my-0">Agency</h6>
-        </div>
-      </li>
-      
-      <li
-        class="list-group-item d-flex align-items-center px-0 py-2 border-left-0 border-right-0"
-      >
-        <div class="mr-3">
-          
+          </div>
+          <div>
+            <p class="my-0"><small>The purpose of this system is</small></p>
+            <h6 class="my-0">Agency</h6>
+          </div>
+        </li>
+        
+        <li
+          class="list-group-item d-flex align-items-center px-0 py-1 border-0" style="background:transparent;"
+        >
+          <div class="mr-3">
+            
   <img src="dtpr_icons/tech/light.svg" />
 
 
-        </div>
-        <div>
-          <p class="my-0"><small>The service is provided by</small></p>
-          <h6 class="my-0">Library Dept.</h6>
-        </div>
-      </li>
-      
-      <li
-        class="list-group-item d-flex align-items-center px-0 py-2 border-left-0 border-right-0"
-      >
-        <div class="mr-3">
-          
+          </div>
+          <div>
+            <p class="my-0"><small>The service is provided by</small></p>
+            <h6 class="my-0">Library Dept.</h6>
+          </div>
+        </li>
+        
+        <li
+          class="list-group-item d-flex align-items-center px-0 py-1 border-0" style="background:transparent;"
+        >
+          <div class="mr-3">
+            
   <div class="align-middle hex-icon">
     <img src="images/hexagon.svg" />
     <i class="material-icons md-24">room_service</i>
   </div>
 
 
-        </div>
-        <div>
-          <p class="my-0"><small>The user’s symmetrical interface is </small></p>
-          <h6 class="my-0">Place Chatbot</h6>
-        </div>
-      </li>
-      
-      <li
-        class="list-group-item d-flex align-items-center px-0 py-2 border-left-0 border-right-0"
-      >
-        <div class="mr-3">
-          
+          </div>
+          <div>
+            <p class="my-0"><small>The user’s interface is </small></p>
+            <h6 class="my-0">Place Chatbot</h6>
+          </div>
+        </li>
+        
+        <li
+          class="list-group-item d-flex align-items-center px-0 py-1 border-0" style="background:transparent;"
+        >
+          <div class="mr-3">
+            
   <div class="align-middle hex-icon">
     <img src="images/hexagon.svg" />
     <i class="material-icons md-24">favorite</i>
   </div>
 
 
-        </div>
-        <div>
-          <p class="my-0"><small>The relationship with this system is</small></p>
-          <h6 class="my-0">Membership</h6>
-        </div>
-      </li>
-      
-    </ul>
+          </div>
+          <div>
+            <p class="my-0"><small>The relationship is</small></p>
+            <h6 class="my-0">Membership</h6>
+          </div>
+        </li>
+        
+      </ul>
+    </div>
   </div>
   
 </div>
 
 </div>
 
-<div class="container">
+<div class="container pb-4">
   <div class="row">
   
   <div class="col-8 d-none d-md-block"></div>
@@ -930,15 +1074,15 @@
   
 >
   <div
-  style="text-align: center; width: 100%; height: 100vh; position: relative;"
+  style="text-align: center; width: 100%; height: 100vh; position: relative;background-image: url(images/Frame_Background.png);"
   class="d-flex align-items-center"
 >
-  <div class="align-middle container">
+  <div class="container align-middle step-image">
     <div class="row">
       
       <div class="col-4 d-none d-md-block"></div>
       
-      <div class="col-12 col-md-8"><img src="images/Frame_2.png" width="100%" /></div>
+      <div class="col-12 col-md-8"><img src="images/Frame_Subject.svg" width="100%" /></div>
     </div>
   </div>
 </div>
@@ -947,7 +1091,7 @@
 <div class="container">
 <div class="row">
   
-  <div class="col-3 col-md-1 text-center d-flex align-items-center flex-column">
+  <!-- <div class="col-3 col-md-1 text-center d-flex align-items-center flex-column">
     <div>
   <img src="dtpr_icons/purpose/water.svg" />
 
@@ -972,12 +1116,14 @@
   </div>
 
 </div>
-  </div>
-  <div class="col-9 col-md-3">
-    <h5>Head out to the street</h5>
-    <h6>
-      As you leave, the book is checked out with your library card. You can examine the transaction, but you simply continue to the street.
-    </h6>
+  </div> -->
+  <div class="col-12 col-md-4">
+    <div class="card pb-2">
+      <h3>Head out to the street</h3>
+      <p>
+        As you leave, the book is checked out with your library card. You can examine the transaction, but you simply continue to the street.
+      </p>
+    </div>
   </div>
   
   <div class="d-none d-md-block col-md-8"></div>
@@ -985,76 +1131,78 @@
 </div>
 <div class="row">
   
-  <div class="col-12 col-md-4">
-    <ul class="list-group mt-5 mb-5">
-      
-      <li
-        class="list-group-item d-flex align-items-center px-0 py-2 border-left-0 border-right-0"
-      >
-        <div class="mr-3">
-          
+  <div class="col-12 col-md-4 mt-2">
+    <div class="card card-lightblue py-2">
+      <ul class="list-group">
+        
+        <li
+          class="list-group-item d-flex align-items-center px-0 py-1 border-0" style="background:transparent;"
+        >
+          <div class="mr-3">
+            
   <img src="dtpr_icons/purpose/water.svg" />
 
 
-        </div>
-        <div>
-          <p class="my-0"><small>The purpose of this system is</small></p>
-          <h6 class="my-0">Borrowing</h6>
-        </div>
-      </li>
-      
-      <li
-        class="list-group-item d-flex align-items-center px-0 py-2 border-left-0 border-right-0"
-      >
-        <div class="mr-3">
-          
+          </div>
+          <div>
+            <p class="my-0"><small>The purpose of this system is</small></p>
+            <h6 class="my-0">Borrowing</h6>
+          </div>
+        </li>
+        
+        <li
+          class="list-group-item d-flex align-items-center px-0 py-1 border-0" style="background:transparent;"
+        >
+          <div class="mr-3">
+            
   <img src="dtpr_icons/tech/light.svg" />
 
 
-        </div>
-        <div>
-          <p class="my-0"><small>The service is provided by</small></p>
-          <h6 class="my-0">Library Dept.</h6>
-        </div>
-      </li>
-      
-      <li
-        class="list-group-item d-flex align-items-center px-0 py-2 border-left-0 border-right-0"
-      >
-        <div class="mr-3">
-          
+          </div>
+          <div>
+            <p class="my-0"><small>The service is provided by</small></p>
+            <h6 class="my-0">Library Dept.</h6>
+          </div>
+        </li>
+        
+        <li
+          class="list-group-item d-flex align-items-center px-0 py-1 border-0" style="background:transparent;"
+        >
+          <div class="mr-3">
+            
   <div class="align-middle hex-icon">
     <img src="images/hexagon.svg" />
     <i class="material-icons md-24">room_service</i>
   </div>
 
 
-        </div>
-        <div>
-          <p class="my-0"><small>The user’s symmetrical interface is </small></p>
-          <h6 class="my-0">Personal AI</h6>
-        </div>
-      </li>
-      
-      <li
-        class="list-group-item d-flex align-items-center px-0 py-2 border-left-0 border-right-0"
-      >
-        <div class="mr-3">
-          
+          </div>
+          <div>
+            <p class="my-0"><small>The user’s interface is </small></p>
+            <h6 class="my-0">Personal AI</h6>
+          </div>
+        </li>
+        
+        <li
+          class="list-group-item d-flex align-items-center px-0 py-1 border-0" style="background:transparent;"
+        >
+          <div class="mr-3">
+            
   <div class="align-middle hex-icon">
     <img src="images/hexagon.svg" />
     <i class="material-icons md-24">favorite</i>
   </div>
 
 
-        </div>
-        <div>
-          <p class="my-0"><small>The relationship with this system is</small></p>
-          <h6 class="my-0">Membership</h6>
-        </div>
-      </li>
-      
-    </ul>
+          </div>
+          <div>
+            <p class="my-0"><small>The relationship is</small></p>
+            <h6 class="my-0">Membership</h6>
+          </div>
+        </li>
+        
+      </ul>
+    </div>
   </div>
   
   <div class="d-none d-md-block col-md-8"></div>
@@ -1063,7 +1211,7 @@
 
 </div>
 
-<div class="container">
+<div class="container pb-4">
   <div class="row">
   
 
@@ -1095,31 +1243,65 @@
     <!-- / SECTION 1 -->
 
     <!-- SECTION 2 -->
-    <div class="step" data-step="section-1">
+    
+    <div class="step" data-step="section-2">
       <div class="sticky-section-header">
-        <div class="container">
+        <div class="container sticky-nav">
   <div class="row">
-    <div class="col-3 col-md-1" style="">
-      <div class="prehead mt-1">
-        Sensors
-      </div>
+    <div class="col-10">
+      <h4 class="mb-0">
+        
+          
+  <div class="align-middle number-icon">
+    2
+  </div>
+
+
+        
+        <span class="pl-1">How might we understand how sensors work, and what they do for people?</span>
+      </h4>
     </div>
-    <div class="col-9  col-sm-11" style="margin-top:2px;">
-      <h6 class="mt-1">
-        A standardised way to describe the systems, sensors, and technologies in a given area. 
-      </h6>
+    <div class="col-2 menu">
+      
+  <div class="align-middle circle-icon">
+    <i class="material-icons md-18">arrow_upward</i>
+  </div>
+
+
+      
+  <div class="align-middle circle-icon">
+    <i class="material-icons md-18">arrow_downward</i>
+  </div>
+
+
+      
+  <div class="align-middle circle-icon">
+    <i class="material-icons md-18">apps</i>
+  </div>
+
+
     </div>
   </div>
 </div>
       </div>
-      <div class="container">
-        
-  <div class="row" style="margin-top:150px;margin-bottom:150px;">
+      <div class="step-banner">
+        <div class="container">
+          <div class="row">
+  <div class="col">
+    <div class="card card-darkblue d-flex scenario-card big-card" style="background-image:url(images/Vision_Chapter_Image.png);">
+      <div class="w-50">
+        <h3><span class="badge">2</span>How might we...</h3>
+        <h1>understand how sensors work, and what they do for people?</h1>
+      </div>
+    </div>
+  </div>
+</div>
+  <!-- <div class="row" style="margin-top:150px;margin-bottom:150px;">
     <div class="col-6 offset-3 col-md-3 offset-md-0">
       <img src="images/Seal_Sensor.png" width="100%" />
     </div>
     <div class="col-12 col-md-7 offset-md-1">
-      <h1 class="display-4 text-center text-md-left">Sensor Definitions</h1>
+      <h1 class="display-4 text-center text-md-left"></h1>
       <p class="lead text-center text-md-left">
         A standardised way to describe sensors and convey what kind of processing they're performing.
       </p>
@@ -1185,8 +1367,9 @@
         <h6>Alerts can be set based on geographic areas and a person’s familiarity with that place.</h6>
       </div>
     
-  </div>
+  </div> -->
 
+        </div>
       </div>
       <div>
         <div class="sticky-image" 
@@ -1195,13 +1378,13 @@
   
 >
   <div
-  style="text-align: center; width: 100%; height: 100vh; position: relative;"
+  style="text-align: center; width: 100%; height: 100vh; position: relative;background-image: url(images/Frame_Background.png);"
   class="d-flex align-items-center"
 >
-  <div class="align-middle container">
+  <div class="container align-middle step-image">
     <div class="row">
       
-      <div class="col-12 col-md-8"><img src="images/Frame_1.png" width="100%" /></div>
+      <div class="col-12 col-md-8"><img src="images/Frame_Subject.svg" width="100%" /></div>
     </div>
   </div>
 </div>
@@ -1212,7 +1395,7 @@
   
   <div class="d-none d-md-block col-md-8"></div>
   
-  <div class="col-3 col-md-1 text-center d-flex align-items-center flex-column">
+  <!-- <div class="col-3 col-md-1 text-center d-flex align-items-center flex-column">
     <div>
   <img src="dtpr_icons/purpose/water.svg" />
 
@@ -1237,12 +1420,14 @@
   </div>
 
 </div>
-  </div>
-  <div class="col-9 col-md-3">
-    <h5>Enter the shop</h5>
-    <h6>
-      You enter a new local shop and are able to connect in the way you choose.
-    </h6>
+  </div> -->
+  <div class="col-12 col-md-4">
+    <div class="card pb-2">
+      <h3>Enter the shop</h3>
+      <p>
+        You enter a new local shop and are able to connect in the way you choose.
+      </p>
+    </div>
   </div>
   
 </div>
@@ -1250,83 +1435,85 @@
   
   <div class="d-none d-md-block col-md-8"></div>
   
-  <div class="col-12 col-md-4">
-    <ul class="list-group mt-5 mb-5">
-      
-      <li
-        class="list-group-item d-flex align-items-center px-0 py-2 border-left-0 border-right-0"
-      >
-        <div class="mr-3">
-          
+  <div class="col-12 col-md-4 mt-2">
+    <div class="card card-lightblue py-2">
+      <ul class="list-group">
+        
+        <li
+          class="list-group-item d-flex align-items-center px-0 py-1 border-0" style="background:transparent;"
+        >
+          <div class="mr-3">
+            
   <img src="dtpr_icons/purpose/water.svg" />
 
 
-        </div>
-        <div>
-          <p class="my-0"><small>The purpose of this system is</small></p>
-          <h6 class="my-0">Shopping</h6>
-        </div>
-      </li>
-      
-      <li
-        class="list-group-item d-flex align-items-center px-0 py-2 border-left-0 border-right-0"
-      >
-        <div class="mr-3">
-          
+          </div>
+          <div>
+            <p class="my-0"><small>The purpose of this system is</small></p>
+            <h6 class="my-0">Shopping</h6>
+          </div>
+        </li>
+        
+        <li
+          class="list-group-item d-flex align-items-center px-0 py-1 border-0" style="background:transparent;"
+        >
+          <div class="mr-3">
+            
   <img src="dtpr_icons/tech/light.svg" />
 
 
-        </div>
-        <div>
-          <p class="my-0"><small>The service is provided by</small></p>
-          <h6 class="my-0">Bikeshare Co.</h6>
-        </div>
-      </li>
-      
-      <li
-        class="list-group-item d-flex align-items-center px-0 py-2 border-left-0 border-right-0"
-      >
-        <div class="mr-3">
-          
+          </div>
+          <div>
+            <p class="my-0"><small>The service is provided by</small></p>
+            <h6 class="my-0">Bikeshare Co.</h6>
+          </div>
+        </li>
+        
+        <li
+          class="list-group-item d-flex align-items-center px-0 py-1 border-0" style="background:transparent;"
+        >
+          <div class="mr-3">
+            
   <div class="align-middle hex-icon">
     <img src="images/hexagon.svg" />
     <i class="material-icons md-24">room_service</i>
   </div>
 
 
-        </div>
-        <div>
-          <p class="my-0"><small>The user’s symmetrical interface is </small></p>
-          <h6 class="my-0">Sensor Chatbot</h6>
-        </div>
-      </li>
-      
-      <li
-        class="list-group-item d-flex align-items-center px-0 py-2 border-left-0 border-right-0"
-      >
-        <div class="mr-3">
-          
+          </div>
+          <div>
+            <p class="my-0"><small>The user’s interface is </small></p>
+            <h6 class="my-0">Sensor Chatbot</h6>
+          </div>
+        </li>
+        
+        <li
+          class="list-group-item d-flex align-items-center px-0 py-1 border-0" style="background:transparent;"
+        >
+          <div class="mr-3">
+            
   <div class="align-middle hex-icon">
     <img src="images/hexagon.svg" />
     <i class="material-icons md-24">favorite</i>
   </div>
 
 
-        </div>
-        <div>
-          <p class="my-0"><small>The relationship with this system is</small></p>
-          <h6 class="my-0">Temporary</h6>
-        </div>
-      </li>
-      
-    </ul>
+          </div>
+          <div>
+            <p class="my-0"><small>The relationship is</small></p>
+            <h6 class="my-0">Temporary</h6>
+          </div>
+        </li>
+        
+      </ul>
+    </div>
   </div>
   
 </div>
 
 </div>
 
-<div class="container">
+<div class="container pb-4">
   <div class="row">
   
   <div class="col-8 d-none d-md-block"></div>
@@ -1359,15 +1546,15 @@
   
 >
   <div
-  style="text-align: center; width: 100%; height: 100vh; position: relative;"
+  style="text-align: center; width: 100%; height: 100vh; position: relative;background-image: url(images/Frame_Background.png);"
   class="d-flex align-items-center"
 >
-  <div class="align-middle container">
+  <div class="container align-middle step-image">
     <div class="row">
       
       <div class="col-4 d-none d-md-block"></div>
       
-      <div class="col-12 col-md-8"><img src="images/Frame_2.png" width="100%" /></div>
+      <div class="col-12 col-md-8"><img src="images/Frame_Subject.svg" width="100%" /></div>
     </div>
   </div>
 </div>
@@ -1376,7 +1563,7 @@
 <div class="container">
 <div class="row">
   
-  <div class="col-3 col-md-1 text-center d-flex align-items-center flex-column">
+  <!-- <div class="col-3 col-md-1 text-center d-flex align-items-center flex-column">
     <div>
   <img src="dtpr_icons/purpose/water.svg" />
 
@@ -1401,12 +1588,14 @@
   </div>
 
 </div>
-  </div>
-  <div class="col-9 col-md-3">
-    <h5>Stand in front of mirror</h5>
-    <h6>
-      You stand in front of the mirror. You see an option to connect and try on clothes virtually.
-    </h6>
+  </div> -->
+  <div class="col-12 col-md-4">
+    <div class="card pb-2">
+      <h3>Stand in front of mirror</h3>
+      <p>
+        You stand in front of the mirror. You see an option to connect and try on clothes virtually.
+      </p>
+    </div>
   </div>
   
   <div class="d-none d-md-block col-md-8"></div>
@@ -1414,76 +1603,78 @@
 </div>
 <div class="row">
   
-  <div class="col-12 col-md-4">
-    <ul class="list-group mt-5 mb-5">
-      
-      <li
-        class="list-group-item d-flex align-items-center px-0 py-2 border-left-0 border-right-0"
-      >
-        <div class="mr-3">
-          
+  <div class="col-12 col-md-4 mt-2">
+    <div class="card card-lightblue py-2">
+      <ul class="list-group">
+        
+        <li
+          class="list-group-item d-flex align-items-center px-0 py-1 border-0" style="background:transparent;"
+        >
+          <div class="mr-3">
+            
   <img src="dtpr_icons/purpose/water.svg" />
 
 
-        </div>
-        <div>
-          <p class="my-0"><small>The purpose of this system is</small></p>
-          <h6 class="my-0">Interaction</h6>
-        </div>
-      </li>
-      
-      <li
-        class="list-group-item d-flex align-items-center px-0 py-2 border-left-0 border-right-0"
-      >
-        <div class="mr-3">
-          
+          </div>
+          <div>
+            <p class="my-0"><small>The purpose of this system is</small></p>
+            <h6 class="my-0">Interaction</h6>
+          </div>
+        </li>
+        
+        <li
+          class="list-group-item d-flex align-items-center px-0 py-1 border-0" style="background:transparent;"
+        >
+          <div class="mr-3">
+            
   <img src="dtpr_icons/tech/light.svg" />
 
 
-        </div>
-        <div>
-          <p class="my-0"><small>The service is provided by</small></p>
-          <h6 class="my-0">Library Dept.</h6>
-        </div>
-      </li>
-      
-      <li
-        class="list-group-item d-flex align-items-center px-0 py-2 border-left-0 border-right-0"
-      >
-        <div class="mr-3">
-          
+          </div>
+          <div>
+            <p class="my-0"><small>The service is provided by</small></p>
+            <h6 class="my-0">Library Dept.</h6>
+          </div>
+        </li>
+        
+        <li
+          class="list-group-item d-flex align-items-center px-0 py-1 border-0" style="background:transparent;"
+        >
+          <div class="mr-3">
+            
   <div class="align-middle hex-icon">
     <img src="images/hexagon.svg" />
     <i class="material-icons md-24">room_service</i>
   </div>
 
 
-        </div>
-        <div>
-          <p class="my-0"><small>The user’s symmetrical interface is </small></p>
-          <h6 class="my-0">Personal AI</h6>
-        </div>
-      </li>
-      
-      <li
-        class="list-group-item d-flex align-items-center px-0 py-2 border-left-0 border-right-0"
-      >
-        <div class="mr-3">
-          
+          </div>
+          <div>
+            <p class="my-0"><small>The user’s interface is </small></p>
+            <h6 class="my-0">Personal AI</h6>
+          </div>
+        </li>
+        
+        <li
+          class="list-group-item d-flex align-items-center px-0 py-1 border-0" style="background:transparent;"
+        >
+          <div class="mr-3">
+            
   <div class="align-middle hex-icon">
     <img src="images/hexagon.svg" />
     <i class="material-icons md-24">favorite</i>
   </div>
 
 
-        </div>
-        <div>
-          <p class="my-0"><small>The relationship with this system is</small></p>
-          <h6 class="my-0">Temporary</h6>
-        </div>
-      </li>
-      
-    </ul>
+          </div>
+          <div>
+            <p class="my-0"><small>The relationship is</small></p>
+            <h6 class="my-0">Temporary</h6>
+          </div>
+        </li>
+        
+      </ul>
+    </div>
   </div>
   
   <div class="d-none d-md-block col-md-8"></div>
@@ -1492,7 +1683,7 @@
 
 </div>
 
-<div class="container">
+<div class="container pb-4">
   <div class="row">
   
 
@@ -1527,13 +1718,13 @@
   
 >
   <div
-  style="text-align: center; width: 100%; height: 100vh; position: relative;"
+  style="text-align: center; width: 100%; height: 100vh; position: relative;background-image: url(images/Frame_Background.png);"
   class="d-flex align-items-center"
 >
-  <div class="align-middle container">
+  <div class="container align-middle step-image">
     <div class="row">
       
-      <div class="col-12 col-md-8"><img src="images/Frame_1.png" width="100%" /></div>
+      <div class="col-12 col-md-8"><img src="images/Frame_Subject.svg" width="100%" /></div>
     </div>
   </div>
 </div>
@@ -1544,7 +1735,7 @@
   
   <div class="d-none d-md-block col-md-8"></div>
   
-  <div class="col-3 col-md-1 text-center d-flex align-items-center flex-column">
+  <!-- <div class="col-3 col-md-1 text-center d-flex align-items-center flex-column">
     <div>
   <img src="dtpr_icons/purpose/water.svg" />
 
@@ -1569,12 +1760,14 @@
   </div>
 
 </div>
-  </div>
-  <div class="col-9 col-md-3">
-    <h5>Save for later</h5>
-    <h6>
-      After trying on some items, you decide to purchase one item, save a couple others to a wishlist, and delete your browsing history.
-    </h6>
+  </div> -->
+  <div class="col-12 col-md-4">
+    <div class="card pb-2">
+      <h3>Save for later</h3>
+      <p>
+        After trying on some items, you decide to purchase one item, save a couple others to a wishlist, and delete your browsing history.
+      </p>
+    </div>
   </div>
   
 </div>
@@ -1582,83 +1775,85 @@
   
   <div class="d-none d-md-block col-md-8"></div>
   
-  <div class="col-12 col-md-4">
-    <ul class="list-group mt-5 mb-5">
-      
-      <li
-        class="list-group-item d-flex align-items-center px-0 py-2 border-left-0 border-right-0"
-      >
-        <div class="mr-3">
-          
+  <div class="col-12 col-md-4 mt-2">
+    <div class="card card-lightblue py-2">
+      <ul class="list-group">
+        
+        <li
+          class="list-group-item d-flex align-items-center px-0 py-1 border-0" style="background:transparent;"
+        >
+          <div class="mr-3">
+            
   <img src="dtpr_icons/purpose/water.svg" />
 
 
-        </div>
-        <div>
-          <p class="my-0"><small>The purpose of this system is</small></p>
-          <h6 class="my-0">Agency</h6>
-        </div>
-      </li>
-      
-      <li
-        class="list-group-item d-flex align-items-center px-0 py-2 border-left-0 border-right-0"
-      >
-        <div class="mr-3">
-          
+          </div>
+          <div>
+            <p class="my-0"><small>The purpose of this system is</small></p>
+            <h6 class="my-0">Agency</h6>
+          </div>
+        </li>
+        
+        <li
+          class="list-group-item d-flex align-items-center px-0 py-1 border-0" style="background:transparent;"
+        >
+          <div class="mr-3">
+            
   <img src="dtpr_icons/tech/light.svg" />
 
 
-        </div>
-        <div>
-          <p class="my-0"><small>The service is provided by</small></p>
-          <h6 class="my-0">Library Dept.</h6>
-        </div>
-      </li>
-      
-      <li
-        class="list-group-item d-flex align-items-center px-0 py-2 border-left-0 border-right-0"
-      >
-        <div class="mr-3">
-          
+          </div>
+          <div>
+            <p class="my-0"><small>The service is provided by</small></p>
+            <h6 class="my-0">Library Dept.</h6>
+          </div>
+        </li>
+        
+        <li
+          class="list-group-item d-flex align-items-center px-0 py-1 border-0" style="background:transparent;"
+        >
+          <div class="mr-3">
+            
   <div class="align-middle hex-icon">
     <img src="images/hexagon.svg" />
     <i class="material-icons md-24">room_service</i>
   </div>
 
 
-        </div>
-        <div>
-          <p class="my-0"><small>The user’s symmetrical interface is </small></p>
-          <h6 class="my-0">Place Chatbot</h6>
-        </div>
-      </li>
-      
-      <li
-        class="list-group-item d-flex align-items-center px-0 py-2 border-left-0 border-right-0"
-      >
-        <div class="mr-3">
-          
+          </div>
+          <div>
+            <p class="my-0"><small>The user’s interface is </small></p>
+            <h6 class="my-0">Place Chatbot</h6>
+          </div>
+        </li>
+        
+        <li
+          class="list-group-item d-flex align-items-center px-0 py-1 border-0" style="background:transparent;"
+        >
+          <div class="mr-3">
+            
   <div class="align-middle hex-icon">
     <img src="images/hexagon.svg" />
     <i class="material-icons md-24">favorite</i>
   </div>
 
 
-        </div>
-        <div>
-          <p class="my-0"><small>The relationship with this system is</small></p>
-          <h6 class="my-0">Temporary</h6>
-        </div>
-      </li>
-      
-    </ul>
+          </div>
+          <div>
+            <p class="my-0"><small>The relationship is</small></p>
+            <h6 class="my-0">Temporary</h6>
+          </div>
+        </li>
+        
+      </ul>
+    </div>
   </div>
   
 </div>
 
 </div>
 
-<div class="container">
+<div class="container pb-4">
   <div class="row">
   
   <div class="col-8 d-none d-md-block"></div>
@@ -1691,15 +1886,15 @@
   
 >
   <div
-  style="text-align: center; width: 100%; height: 100vh; position: relative;"
+  style="text-align: center; width: 100%; height: 100vh; position: relative;background-image: url(images/Frame_Background.png);"
   class="d-flex align-items-center"
 >
-  <div class="align-middle container">
+  <div class="container align-middle step-image">
     <div class="row">
       
       <div class="col-4 d-none d-md-block"></div>
       
-      <div class="col-12 col-md-8"><img src="images/Frame_2.png" width="100%" /></div>
+      <div class="col-12 col-md-8"><img src="images/Frame_Subject.svg" width="100%" /></div>
     </div>
   </div>
 </div>
@@ -1708,7 +1903,7 @@
 <div class="container">
 <div class="row">
   
-  <div class="col-3 col-md-1 text-center d-flex align-items-center flex-column">
+  <!-- <div class="col-3 col-md-1 text-center d-flex align-items-center flex-column">
     <div>
   <img src="dtpr_icons/purpose/water.svg" />
 
@@ -1733,12 +1928,14 @@
   </div>
 
 </div>
-  </div>
-  <div class="col-9 col-md-3">
-    <h5>Upgrade account</h5>
-    <h6>
-      You bag your item, leave the store, and are given the option to create a connection with the local merchant, and change your payment method.
-    </h6>
+  </div> -->
+  <div class="col-12 col-md-4">
+    <div class="card pb-2">
+      <h3>Upgrade account</h3>
+      <p>
+        You bag your item, leave the store, and are given the option to create a connection with the local merchant, and change your payment method.
+      </p>
+    </div>
   </div>
   
   <div class="d-none d-md-block col-md-8"></div>
@@ -1746,76 +1943,78 @@
 </div>
 <div class="row">
   
-  <div class="col-12 col-md-4">
-    <ul class="list-group mt-5 mb-5">
-      
-      <li
-        class="list-group-item d-flex align-items-center px-0 py-2 border-left-0 border-right-0"
-      >
-        <div class="mr-3">
-          
+  <div class="col-12 col-md-4 mt-2">
+    <div class="card card-lightblue py-2">
+      <ul class="list-group">
+        
+        <li
+          class="list-group-item d-flex align-items-center px-0 py-1 border-0" style="background:transparent;"
+        >
+          <div class="mr-3">
+            
   <img src="dtpr_icons/purpose/water.svg" />
 
 
-        </div>
-        <div>
-          <p class="my-0"><small>The purpose of this system is</small></p>
-          <h6 class="my-0">Borrowing</h6>
-        </div>
-      </li>
-      
-      <li
-        class="list-group-item d-flex align-items-center px-0 py-2 border-left-0 border-right-0"
-      >
-        <div class="mr-3">
-          
+          </div>
+          <div>
+            <p class="my-0"><small>The purpose of this system is</small></p>
+            <h6 class="my-0">Borrowing</h6>
+          </div>
+        </li>
+        
+        <li
+          class="list-group-item d-flex align-items-center px-0 py-1 border-0" style="background:transparent;"
+        >
+          <div class="mr-3">
+            
   <img src="dtpr_icons/tech/light.svg" />
 
 
-        </div>
-        <div>
-          <p class="my-0"><small>The service is provided by</small></p>
-          <h6 class="my-0">Library Dept.</h6>
-        </div>
-      </li>
-      
-      <li
-        class="list-group-item d-flex align-items-center px-0 py-2 border-left-0 border-right-0"
-      >
-        <div class="mr-3">
-          
+          </div>
+          <div>
+            <p class="my-0"><small>The service is provided by</small></p>
+            <h6 class="my-0">Library Dept.</h6>
+          </div>
+        </li>
+        
+        <li
+          class="list-group-item d-flex align-items-center px-0 py-1 border-0" style="background:transparent;"
+        >
+          <div class="mr-3">
+            
   <div class="align-middle hex-icon">
     <img src="images/hexagon.svg" />
     <i class="material-icons md-24">room_service</i>
   </div>
 
 
-        </div>
-        <div>
-          <p class="my-0"><small>The user’s symmetrical interface is </small></p>
-          <h6 class="my-0">Personal AI</h6>
-        </div>
-      </li>
-      
-      <li
-        class="list-group-item d-flex align-items-center px-0 py-2 border-left-0 border-right-0"
-      >
-        <div class="mr-3">
-          
+          </div>
+          <div>
+            <p class="my-0"><small>The user’s interface is </small></p>
+            <h6 class="my-0">Personal AI</h6>
+          </div>
+        </li>
+        
+        <li
+          class="list-group-item d-flex align-items-center px-0 py-1 border-0" style="background:transparent;"
+        >
+          <div class="mr-3">
+            
   <div class="align-middle hex-icon">
     <img src="images/hexagon.svg" />
     <i class="material-icons md-24">favorite</i>
   </div>
 
 
-        </div>
-        <div>
-          <p class="my-0"><small>The relationship with this system is</small></p>
-          <h6 class="my-0">Membership</h6>
-        </div>
-      </li>
-      
-    </ul>
+          </div>
+          <div>
+            <p class="my-0"><small>The relationship is</small></p>
+            <h6 class="my-0">Membership</h6>
+          </div>
+        </li>
+        
+      </ul>
+    </div>
   </div>
   
   <div class="d-none d-md-block col-md-8"></div>
@@ -1824,7 +2023,7 @@
 
 </div>
 
-<div class="container">
+<div class="container pb-4">
   <div class="row">
   
 
@@ -1856,31 +2055,65 @@
     <!-- / SECTION 2 -->
 
     <!-- SECTION 3 -->
-    <div class="step" data-step="section-1">
+    
+    <div class="step" data-step="section-3">
       <div class="sticky-section-header">
-        <div class="container">
+        <div class="container sticky-nav">
   <div class="row">
-    <div class="col-3 col-md-1" style="">
-      <div class="prehead mt-1">
-        Wayfinding
-      </div>
+    <div class="col-10">
+      <h4 class="mb-0">
+        
+          
+  <div class="align-middle number-icon">
+    3
+  </div>
+
+
+        
+        <span class="pl-1">How might we look up from our phones, and strengthen the social fabric?</span>
+      </h4>
     </div>
-    <div class="col-9  col-sm-11" style="margin-top:2px;">
-      <h6 class="mt-1">
-        A standardised way to describe the systems, sensors, and technologies in a given area. 
-      </h6>
+    <div class="col-2 menu">
+      
+  <div class="align-middle circle-icon">
+    <i class="material-icons md-18">arrow_upward</i>
+  </div>
+
+
+      
+  <div class="align-middle circle-icon">
+    <i class="material-icons md-18">arrow_downward</i>
+  </div>
+
+
+      
+  <div class="align-middle circle-icon">
+    <i class="material-icons md-18">apps</i>
+  </div>
+
+
     </div>
   </div>
 </div>
       </div>
-      <div class="container">
-        
-  <div class="row" style="margin-top:150px;margin-bottom:150px;">
+      <div class="step-banner">
+        <div class="container">
+          <div class="row">
+  <div class="col">
+    <div class="card card-darkblue d-flex scenario-card big-card" style="background-image:url(images/Vision_Chapter_Image.png);">
+      <div class="w-50">
+        <h3><span class="badge">3</span>How might we...</h3>
+        <h1>look up from our phones, and strengthen the social fabric?</h1>
+      </div>
+    </div>
+  </div>
+</div>
+  <!-- <div class="row" style="margin-top:150px;margin-bottom:150px;">
     <div class="col-6 offset-3 col-md-3 offset-md-0">
       <img src="images/Seal_Sensor.png" width="100%" />
     </div>
     <div class="col-12 col-md-7 offset-md-1">
-      <h1 class="display-4 text-center text-md-left">Wayfinding<br /> Standards</h1>
+      <h1 class="display-4 text-center text-md-left"></h1>
       <p class="lead text-center text-md-left">
         A standardised way to query information about the places you're in, and the affordances there.
       </p>
@@ -1946,8 +2179,9 @@
         <h6>Alerts can be set based on geographic areas and a person’s familiarity with that place.</h6>
       </div>
     
-  </div>
+  </div> -->
 
+        </div>
       </div>
       <div>
         <div class="sticky-image" 
@@ -1956,13 +2190,13 @@
   
 >
   <div
-  style="text-align: center; width: 100%; height: 100vh; position: relative;"
+  style="text-align: center; width: 100%; height: 100vh; position: relative;background-image: url(images/Frame_Background.png);"
   class="d-flex align-items-center"
 >
-  <div class="align-middle container">
+  <div class="container align-middle step-image">
     <div class="row">
       
-      <div class="col-12 col-md-8"><img src="images/Frame_1.png" width="100%" /></div>
+      <div class="col-12 col-md-8"><img src="images/Frame_Subject.svg" width="100%" /></div>
     </div>
   </div>
 </div>
@@ -1973,7 +2207,7 @@
   
   <div class="d-none d-md-block col-md-8"></div>
   
-  <div class="col-3 col-md-1 text-center d-flex align-items-center flex-column">
+  <!-- <div class="col-3 col-md-1 text-center d-flex align-items-center flex-column">
     <div>
   <img src="dtpr_icons/purpose/water.svg" />
 
@@ -1998,12 +2232,14 @@
   </div>
 
 </div>
-  </div>
-  <div class="col-9 col-md-3">
-    <h5>Pass by busker</h5>
-    <h6>
-      You hear some music and follow it to the source. A busker is playing a nostalgic tune and you listen for a while.
-    </h6>
+  </div> -->
+  <div class="col-12 col-md-4">
+    <div class="card pb-2">
+      <h3>Pass by busker</h3>
+      <p>
+        You hear some music and follow it to the source. A busker is playing a nostalgic tune and you listen for a while.
+      </p>
+    </div>
   </div>
   
 </div>
@@ -2011,83 +2247,85 @@
   
   <div class="d-none d-md-block col-md-8"></div>
   
-  <div class="col-12 col-md-4">
-    <ul class="list-group mt-5 mb-5">
-      
-      <li
-        class="list-group-item d-flex align-items-center px-0 py-2 border-left-0 border-right-0"
-      >
-        <div class="mr-3">
-          
+  <div class="col-12 col-md-4 mt-2">
+    <div class="card card-lightblue py-2">
+      <ul class="list-group">
+        
+        <li
+          class="list-group-item d-flex align-items-center px-0 py-1 border-0" style="background:transparent;"
+        >
+          <div class="mr-3">
+            
   <img src="dtpr_icons/purpose/water.svg" />
 
 
-        </div>
-        <div>
-          <p class="my-0"><small>The purpose of this system is</small></p>
-          <h6 class="my-0">Shopping</h6>
-        </div>
-      </li>
-      
-      <li
-        class="list-group-item d-flex align-items-center px-0 py-2 border-left-0 border-right-0"
-      >
-        <div class="mr-3">
-          
+          </div>
+          <div>
+            <p class="my-0"><small>The purpose of this system is</small></p>
+            <h6 class="my-0">Shopping</h6>
+          </div>
+        </li>
+        
+        <li
+          class="list-group-item d-flex align-items-center px-0 py-1 border-0" style="background:transparent;"
+        >
+          <div class="mr-3">
+            
   <img src="dtpr_icons/tech/light.svg" />
 
 
-        </div>
-        <div>
-          <p class="my-0"><small>The service is provided by</small></p>
-          <h6 class="my-0">Bikeshare Co.</h6>
-        </div>
-      </li>
-      
-      <li
-        class="list-group-item d-flex align-items-center px-0 py-2 border-left-0 border-right-0"
-      >
-        <div class="mr-3">
-          
+          </div>
+          <div>
+            <p class="my-0"><small>The service is provided by</small></p>
+            <h6 class="my-0">Bikeshare Co.</h6>
+          </div>
+        </li>
+        
+        <li
+          class="list-group-item d-flex align-items-center px-0 py-1 border-0" style="background:transparent;"
+        >
+          <div class="mr-3">
+            
   <div class="align-middle hex-icon">
     <img src="images/hexagon.svg" />
     <i class="material-icons md-24">room_service</i>
   </div>
 
 
-        </div>
-        <div>
-          <p class="my-0"><small>The user’s symmetrical interface is </small></p>
-          <h6 class="my-0">Sensor Chatbot</h6>
-        </div>
-      </li>
-      
-      <li
-        class="list-group-item d-flex align-items-center px-0 py-2 border-left-0 border-right-0"
-      >
-        <div class="mr-3">
-          
+          </div>
+          <div>
+            <p class="my-0"><small>The user’s interface is </small></p>
+            <h6 class="my-0">Sensor Chatbot</h6>
+          </div>
+        </li>
+        
+        <li
+          class="list-group-item d-flex align-items-center px-0 py-1 border-0" style="background:transparent;"
+        >
+          <div class="mr-3">
+            
   <div class="align-middle hex-icon">
     <img src="images/hexagon.svg" />
     <i class="material-icons md-24">favorite</i>
   </div>
 
 
-        </div>
-        <div>
-          <p class="my-0"><small>The relationship with this system is</small></p>
-          <h6 class="my-0">Temporary</h6>
-        </div>
-      </li>
-      
-    </ul>
+          </div>
+          <div>
+            <p class="my-0"><small>The relationship is</small></p>
+            <h6 class="my-0">Temporary</h6>
+          </div>
+        </li>
+        
+      </ul>
+    </div>
   </div>
   
 </div>
 
 </div>
 
-<div class="container">
+<div class="container pb-4">
   <div class="row">
   
   <div class="col-8 d-none d-md-block"></div>
@@ -2120,15 +2358,15 @@
   
 >
   <div
-  style="text-align: center; width: 100%; height: 100vh; position: relative;"
+  style="text-align: center; width: 100%; height: 100vh; position: relative;background-image: url(images/Frame_Background.png);"
   class="d-flex align-items-center"
 >
-  <div class="align-middle container">
+  <div class="container align-middle step-image">
     <div class="row">
       
       <div class="col-4 d-none d-md-block"></div>
       
-      <div class="col-12 col-md-8"><img src="images/Frame_2.png" width="100%" /></div>
+      <div class="col-12 col-md-8"><img src="images/Frame_Subject.svg" width="100%" /></div>
     </div>
   </div>
 </div>
@@ -2137,7 +2375,7 @@
 <div class="container">
 <div class="row">
   
-  <div class="col-3 col-md-1 text-center d-flex align-items-center flex-column">
+  <!-- <div class="col-3 col-md-1 text-center d-flex align-items-center flex-column">
     <div>
   <img src="dtpr_icons/purpose/water.svg" />
 
@@ -2162,12 +2400,14 @@
   </div>
 
 </div>
-  </div>
-  <div class="col-9 col-md-3">
-    <h5>Find out more</h5>
-    <h6>
-      Summoning your assistant, you ask to learn more about this busker. You're able to see artist information, and even tip.
-    </h6>
+  </div> -->
+  <div class="col-12 col-md-4">
+    <div class="card pb-2">
+      <h3>Find out more</h3>
+      <p>
+        Summoning your assistant, you ask to learn more about this busker. You're able to see artist information, and even tip.
+      </p>
+    </div>
   </div>
   
   <div class="d-none d-md-block col-md-8"></div>
@@ -2175,76 +2415,78 @@
 </div>
 <div class="row">
   
-  <div class="col-12 col-md-4">
-    <ul class="list-group mt-5 mb-5">
-      
-      <li
-        class="list-group-item d-flex align-items-center px-0 py-2 border-left-0 border-right-0"
-      >
-        <div class="mr-3">
-          
+  <div class="col-12 col-md-4 mt-2">
+    <div class="card card-lightblue py-2">
+      <ul class="list-group">
+        
+        <li
+          class="list-group-item d-flex align-items-center px-0 py-1 border-0" style="background:transparent;"
+        >
+          <div class="mr-3">
+            
   <img src="dtpr_icons/purpose/water.svg" />
 
 
-        </div>
-        <div>
-          <p class="my-0"><small>The purpose of this system is</small></p>
-          <h6 class="my-0">Interaction</h6>
-        </div>
-      </li>
-      
-      <li
-        class="list-group-item d-flex align-items-center px-0 py-2 border-left-0 border-right-0"
-      >
-        <div class="mr-3">
-          
+          </div>
+          <div>
+            <p class="my-0"><small>The purpose of this system is</small></p>
+            <h6 class="my-0">Interaction</h6>
+          </div>
+        </li>
+        
+        <li
+          class="list-group-item d-flex align-items-center px-0 py-1 border-0" style="background:transparent;"
+        >
+          <div class="mr-3">
+            
   <img src="dtpr_icons/tech/light.svg" />
 
 
-        </div>
-        <div>
-          <p class="my-0"><small>The service is provided by</small></p>
-          <h6 class="my-0">Library Dept.</h6>
-        </div>
-      </li>
-      
-      <li
-        class="list-group-item d-flex align-items-center px-0 py-2 border-left-0 border-right-0"
-      >
-        <div class="mr-3">
-          
+          </div>
+          <div>
+            <p class="my-0"><small>The service is provided by</small></p>
+            <h6 class="my-0">Library Dept.</h6>
+          </div>
+        </li>
+        
+        <li
+          class="list-group-item d-flex align-items-center px-0 py-1 border-0" style="background:transparent;"
+        >
+          <div class="mr-3">
+            
   <div class="align-middle hex-icon">
     <img src="images/hexagon.svg" />
     <i class="material-icons md-24">room_service</i>
   </div>
 
 
-        </div>
-        <div>
-          <p class="my-0"><small>The user’s symmetrical interface is </small></p>
-          <h6 class="my-0">Personal AI</h6>
-        </div>
-      </li>
-      
-      <li
-        class="list-group-item d-flex align-items-center px-0 py-2 border-left-0 border-right-0"
-      >
-        <div class="mr-3">
-          
+          </div>
+          <div>
+            <p class="my-0"><small>The user’s interface is </small></p>
+            <h6 class="my-0">Personal AI</h6>
+          </div>
+        </li>
+        
+        <li
+          class="list-group-item d-flex align-items-center px-0 py-1 border-0" style="background:transparent;"
+        >
+          <div class="mr-3">
+            
   <div class="align-middle hex-icon">
     <img src="images/hexagon.svg" />
     <i class="material-icons md-24">favorite</i>
   </div>
 
 
-        </div>
-        <div>
-          <p class="my-0"><small>The relationship with this system is</small></p>
-          <h6 class="my-0">Temporary</h6>
-        </div>
-      </li>
-      
-    </ul>
+          </div>
+          <div>
+            <p class="my-0"><small>The relationship is</small></p>
+            <h6 class="my-0">Temporary</h6>
+          </div>
+        </li>
+        
+      </ul>
+    </div>
   </div>
   
   <div class="d-none d-md-block col-md-8"></div>
@@ -2253,7 +2495,7 @@
 
 </div>
 
-<div class="container">
+<div class="container pb-4">
   <div class="row">
   
 
@@ -2288,13 +2530,13 @@
   
 >
   <div
-  style="text-align: center; width: 100%; height: 100vh; position: relative;"
+  style="text-align: center; width: 100%; height: 100vh; position: relative;background-image: url(images/Frame_Background.png);"
   class="d-flex align-items-center"
 >
-  <div class="align-middle container">
+  <div class="container align-middle step-image">
     <div class="row">
       
-      <div class="col-12 col-md-8"><img src="images/Frame_1.png" width="100%" /></div>
+      <div class="col-12 col-md-8"><img src="images/Frame_Subject.svg" width="100%" /></div>
     </div>
   </div>
 </div>
@@ -2305,7 +2547,7 @@
   
   <div class="d-none d-md-block col-md-8"></div>
   
-  <div class="col-3 col-md-1 text-center d-flex align-items-center flex-column">
+  <!-- <div class="col-3 col-md-1 text-center d-flex align-items-center flex-column">
     <div>
   <img src="dtpr_icons/purpose/water.svg" />
 
@@ -2330,12 +2572,14 @@
   </div>
 
 </div>
-  </div>
-  <div class="col-9 col-md-3">
-    <h5>See wider place</h5>
-    <h6>
-      The busker is presented on a shared and real-time map of this place. You can see other facilities, businesses, and those who have given you permission.
-    </h6>
+  </div> -->
+  <div class="col-12 col-md-4">
+    <div class="card pb-2">
+      <h3>See wider place</h3>
+      <p>
+        The busker is presented on a shared and real-time map of this place. You can see other facilities, businesses, and those who have given you permission.
+      </p>
+    </div>
   </div>
   
 </div>
@@ -2343,83 +2587,85 @@
   
   <div class="d-none d-md-block col-md-8"></div>
   
-  <div class="col-12 col-md-4">
-    <ul class="list-group mt-5 mb-5">
-      
-      <li
-        class="list-group-item d-flex align-items-center px-0 py-2 border-left-0 border-right-0"
-      >
-        <div class="mr-3">
-          
+  <div class="col-12 col-md-4 mt-2">
+    <div class="card card-lightblue py-2">
+      <ul class="list-group">
+        
+        <li
+          class="list-group-item d-flex align-items-center px-0 py-1 border-0" style="background:transparent;"
+        >
+          <div class="mr-3">
+            
   <img src="dtpr_icons/purpose/water.svg" />
 
 
-        </div>
-        <div>
-          <p class="my-0"><small>The purpose of this system is</small></p>
-          <h6 class="my-0">Agency</h6>
-        </div>
-      </li>
-      
-      <li
-        class="list-group-item d-flex align-items-center px-0 py-2 border-left-0 border-right-0"
-      >
-        <div class="mr-3">
-          
+          </div>
+          <div>
+            <p class="my-0"><small>The purpose of this system is</small></p>
+            <h6 class="my-0">Agency</h6>
+          </div>
+        </li>
+        
+        <li
+          class="list-group-item d-flex align-items-center px-0 py-1 border-0" style="background:transparent;"
+        >
+          <div class="mr-3">
+            
   <img src="dtpr_icons/tech/light.svg" />
 
 
-        </div>
-        <div>
-          <p class="my-0"><small>The service is provided by</small></p>
-          <h6 class="my-0">Library Dept.</h6>
-        </div>
-      </li>
-      
-      <li
-        class="list-group-item d-flex align-items-center px-0 py-2 border-left-0 border-right-0"
-      >
-        <div class="mr-3">
-          
+          </div>
+          <div>
+            <p class="my-0"><small>The service is provided by</small></p>
+            <h6 class="my-0">Library Dept.</h6>
+          </div>
+        </li>
+        
+        <li
+          class="list-group-item d-flex align-items-center px-0 py-1 border-0" style="background:transparent;"
+        >
+          <div class="mr-3">
+            
   <div class="align-middle hex-icon">
     <img src="images/hexagon.svg" />
     <i class="material-icons md-24">room_service</i>
   </div>
 
 
-        </div>
-        <div>
-          <p class="my-0"><small>The user’s symmetrical interface is </small></p>
-          <h6 class="my-0">Place Chatbot</h6>
-        </div>
-      </li>
-      
-      <li
-        class="list-group-item d-flex align-items-center px-0 py-2 border-left-0 border-right-0"
-      >
-        <div class="mr-3">
-          
+          </div>
+          <div>
+            <p class="my-0"><small>The user’s interface is </small></p>
+            <h6 class="my-0">Place Chatbot</h6>
+          </div>
+        </li>
+        
+        <li
+          class="list-group-item d-flex align-items-center px-0 py-1 border-0" style="background:transparent;"
+        >
+          <div class="mr-3">
+            
   <div class="align-middle hex-icon">
     <img src="images/hexagon.svg" />
     <i class="material-icons md-24">favorite</i>
   </div>
 
 
-        </div>
-        <div>
-          <p class="my-0"><small>The relationship with this system is</small></p>
-          <h6 class="my-0">Temporary</h6>
-        </div>
-      </li>
-      
-    </ul>
+          </div>
+          <div>
+            <p class="my-0"><small>The relationship is</small></p>
+            <h6 class="my-0">Temporary</h6>
+          </div>
+        </li>
+        
+      </ul>
+    </div>
   </div>
   
 </div>
 
 </div>
 
-<div class="container">
+<div class="container pb-4">
   <div class="row">
   
   <div class="col-8 d-none d-md-block"></div>
@@ -2452,15 +2698,15 @@
   
 >
   <div
-  style="text-align: center; width: 100%; height: 100vh; position: relative;"
+  style="text-align: center; width: 100%; height: 100vh; position: relative;background-image: url(images/Frame_Background.png);"
   class="d-flex align-items-center"
 >
-  <div class="align-middle container">
+  <div class="container align-middle step-image">
     <div class="row">
       
       <div class="col-4 d-none d-md-block"></div>
       
-      <div class="col-12 col-md-8"><img src="images/Frame_2.png" width="100%" /></div>
+      <div class="col-12 col-md-8"><img src="images/Frame_Subject.svg" width="100%" /></div>
     </div>
   </div>
 </div>
@@ -2469,7 +2715,7 @@
 <div class="container">
 <div class="row">
   
-  <div class="col-3 col-md-1 text-center d-flex align-items-center flex-column">
+  <!-- <div class="col-3 col-md-1 text-center d-flex align-items-center flex-column">
     <div>
   <img src="dtpr_icons/purpose/water.svg" />
 
@@ -2494,12 +2740,14 @@
   </div>
 
 </div>
-  </div>
-  <div class="col-9 col-md-3">
-    <h5>Bumping into a friend</h5>
-    <h6>
-      You see your friend on the map, who you share your location with. You both decide to grab lunch together.
-    </h6>
+  </div> -->
+  <div class="col-12 col-md-4">
+    <div class="card pb-2">
+      <h3>Bumping into a friend</h3>
+      <p>
+        You see your friend on the map, who you share your location with. You both decide to grab lunch together.
+      </p>
+    </div>
   </div>
   
   <div class="d-none d-md-block col-md-8"></div>
@@ -2507,76 +2755,78 @@
 </div>
 <div class="row">
   
-  <div class="col-12 col-md-4">
-    <ul class="list-group mt-5 mb-5">
-      
-      <li
-        class="list-group-item d-flex align-items-center px-0 py-2 border-left-0 border-right-0"
-      >
-        <div class="mr-3">
-          
+  <div class="col-12 col-md-4 mt-2">
+    <div class="card card-lightblue py-2">
+      <ul class="list-group">
+        
+        <li
+          class="list-group-item d-flex align-items-center px-0 py-1 border-0" style="background:transparent;"
+        >
+          <div class="mr-3">
+            
   <img src="dtpr_icons/purpose/water.svg" />
 
 
-        </div>
-        <div>
-          <p class="my-0"><small>The purpose of this system is</small></p>
-          <h6 class="my-0">Borrowing</h6>
-        </div>
-      </li>
-      
-      <li
-        class="list-group-item d-flex align-items-center px-0 py-2 border-left-0 border-right-0"
-      >
-        <div class="mr-3">
-          
+          </div>
+          <div>
+            <p class="my-0"><small>The purpose of this system is</small></p>
+            <h6 class="my-0">Borrowing</h6>
+          </div>
+        </li>
+        
+        <li
+          class="list-group-item d-flex align-items-center px-0 py-1 border-0" style="background:transparent;"
+        >
+          <div class="mr-3">
+            
   <img src="dtpr_icons/tech/light.svg" />
 
 
-        </div>
-        <div>
-          <p class="my-0"><small>The service is provided by</small></p>
-          <h6 class="my-0">Library Dept.</h6>
-        </div>
-      </li>
-      
-      <li
-        class="list-group-item d-flex align-items-center px-0 py-2 border-left-0 border-right-0"
-      >
-        <div class="mr-3">
-          
+          </div>
+          <div>
+            <p class="my-0"><small>The service is provided by</small></p>
+            <h6 class="my-0">Library Dept.</h6>
+          </div>
+        </li>
+        
+        <li
+          class="list-group-item d-flex align-items-center px-0 py-1 border-0" style="background:transparent;"
+        >
+          <div class="mr-3">
+            
   <div class="align-middle hex-icon">
     <img src="images/hexagon.svg" />
     <i class="material-icons md-24">room_service</i>
   </div>
 
 
-        </div>
-        <div>
-          <p class="my-0"><small>The user’s symmetrical interface is </small></p>
-          <h6 class="my-0">Personal AI</h6>
-        </div>
-      </li>
-      
-      <li
-        class="list-group-item d-flex align-items-center px-0 py-2 border-left-0 border-right-0"
-      >
-        <div class="mr-3">
-          
+          </div>
+          <div>
+            <p class="my-0"><small>The user’s interface is </small></p>
+            <h6 class="my-0">Personal AI</h6>
+          </div>
+        </li>
+        
+        <li
+          class="list-group-item d-flex align-items-center px-0 py-1 border-0" style="background:transparent;"
+        >
+          <div class="mr-3">
+            
   <div class="align-middle hex-icon">
     <img src="images/hexagon.svg" />
     <i class="material-icons md-24">favorite</i>
   </div>
 
 
-        </div>
-        <div>
-          <p class="my-0"><small>The relationship with this system is</small></p>
-          <h6 class="my-0">Membership</h6>
-        </div>
-      </li>
-      
-    </ul>
+          </div>
+          <div>
+            <p class="my-0"><small>The relationship is</small></p>
+            <h6 class="my-0">Membership</h6>
+          </div>
+        </li>
+        
+      </ul>
+    </div>
   </div>
   
   <div class="d-none d-md-block col-md-8"></div>
@@ -2585,7 +2835,7 @@
 
 </div>
 
-<div class="container">
+<div class="container pb-4">
   <div class="row">
   
 
@@ -2617,31 +2867,65 @@
     <!-- / SECTION 3 -->
 
     <!-- SECTION 4 -->
-    <div class="step" data-step="section-1">
+    
+    <div class="step" data-step="section-4">
       <div class="sticky-section-header">
-        <div class="container">
+        <div class="container sticky-nav">
   <div class="row">
-    <div class="col-3 col-md-1" style="">
-      <div class="prehead mt-1">
-        Assets
-      </div>
+    <div class="col-10">
+      <h4 class="mb-0">
+        
+          
+  <div class="align-middle number-icon">
+    4
+  </div>
+
+
+        
+        <span class="pl-1">How might we gain agency over technology, and only share what we choose?</span>
+      </h4>
     </div>
-    <div class="col-9  col-sm-11" style="margin-top:2px;">
-      <h6 class="mt-1">
-        An interoperable way to book, request, and control assets in a shared space. 
-      </h6>
+    <div class="col-2 menu">
+      
+  <div class="align-middle circle-icon">
+    <i class="material-icons md-18">arrow_upward</i>
+  </div>
+
+
+      
+  <div class="align-middle circle-icon">
+    <i class="material-icons md-18">arrow_downward</i>
+  </div>
+
+
+      
+  <div class="align-middle circle-icon">
+    <i class="material-icons md-18">apps</i>
+  </div>
+
+
     </div>
   </div>
 </div>
       </div>
-      <div class="container">
-        
-  <div class="row" style="margin-top:150px;margin-bottom:150px;">
+      <div class="step-banner">
+        <div class="container">
+          <div class="row">
+  <div class="col">
+    <div class="card card-darkblue d-flex scenario-card big-card" style="background-image:url(images/Vision_Chapter_Image.png);">
+      <div class="w-50">
+        <h3><span class="badge">4</span>How might we...</h3>
+        <h1>gain agency over technology, and only share what we choose?</h1>
+      </div>
+    </div>
+  </div>
+</div>
+  <!-- <div class="row" style="margin-top:150px;margin-bottom:150px;">
     <div class="col-6 offset-3 col-md-3 offset-md-0">
       <img src="images/Seal_Place.png" width="100%" />
     </div>
     <div class="col-12 col-md-7 offset-md-1">
-      <h1 class="display-4 text-center text-md-left">Agency<br />over assets</h1>
+      <h1 class="display-4 text-center text-md-left"></h1>
       <p class="lead text-center text-md-left">
         An interoperable way to book, request, and control assets in a shared space.
       </p>
@@ -2707,8 +2991,9 @@
         <h6>Alerts can be set based on geographic areas and a person’s familiarity with that place.</h6>
       </div>
     
-  </div>
+  </div> -->
 
+        </div>
       </div>
       <div>
         <div class="sticky-image" 
@@ -2717,13 +3002,13 @@
   
 >
   <div
-  style="text-align: center; width: 100%; height: 100vh; position: relative;"
+  style="text-align: center; width: 100%; height: 100vh; position: relative;background-image: url(images/Frame_Background.png);"
   class="d-flex align-items-center"
 >
-  <div class="align-middle container">
+  <div class="container align-middle step-image">
     <div class="row">
       
-      <div class="col-12 col-md-8"><img src="images/Frame_1.png" width="100%" /></div>
+      <div class="col-12 col-md-8"><img src="images/Frame_Subject.svg" width="100%" /></div>
     </div>
   </div>
 </div>
@@ -2734,7 +3019,7 @@
   
   <div class="d-none d-md-block col-md-8"></div>
   
-  <div class="col-3 col-md-1 text-center d-flex align-items-center flex-column">
+  <!-- <div class="col-3 col-md-1 text-center d-flex align-items-center flex-column">
     <div>
   <img src="dtpr_icons/purpose/water.svg" />
 
@@ -2759,12 +3044,14 @@
   </div>
 
 </div>
-  </div>
-  <div class="col-9 col-md-3">
-    <h5>Order ahead</h5>
-    <h6>
-      You select a table and order your meal. You bundle your order with a friend and decide to meet there.
-    </h6>
+  </div> -->
+  <div class="col-12 col-md-4">
+    <div class="card pb-2">
+      <h3>Order ahead</h3>
+      <p>
+        You select a table and order your meal. You bundle your order with a friend and decide to meet there.
+      </p>
+    </div>
   </div>
   
 </div>
@@ -2772,83 +3059,85 @@
   
   <div class="d-none d-md-block col-md-8"></div>
   
-  <div class="col-12 col-md-4">
-    <ul class="list-group mt-5 mb-5">
-      
-      <li
-        class="list-group-item d-flex align-items-center px-0 py-2 border-left-0 border-right-0"
-      >
-        <div class="mr-3">
-          
+  <div class="col-12 col-md-4 mt-2">
+    <div class="card card-lightblue py-2">
+      <ul class="list-group">
+        
+        <li
+          class="list-group-item d-flex align-items-center px-0 py-1 border-0" style="background:transparent;"
+        >
+          <div class="mr-3">
+            
   <img src="dtpr_icons/purpose/water.svg" />
 
 
-        </div>
-        <div>
-          <p class="my-0"><small>The purpose of this system is</small></p>
-          <h6 class="my-0">Shopping</h6>
-        </div>
-      </li>
-      
-      <li
-        class="list-group-item d-flex align-items-center px-0 py-2 border-left-0 border-right-0"
-      >
-        <div class="mr-3">
-          
+          </div>
+          <div>
+            <p class="my-0"><small>The purpose of this system is</small></p>
+            <h6 class="my-0">Shopping</h6>
+          </div>
+        </li>
+        
+        <li
+          class="list-group-item d-flex align-items-center px-0 py-1 border-0" style="background:transparent;"
+        >
+          <div class="mr-3">
+            
   <img src="dtpr_icons/tech/light.svg" />
 
 
-        </div>
-        <div>
-          <p class="my-0"><small>The service is provided by</small></p>
-          <h6 class="my-0">Bikeshare Co.</h6>
-        </div>
-      </li>
-      
-      <li
-        class="list-group-item d-flex align-items-center px-0 py-2 border-left-0 border-right-0"
-      >
-        <div class="mr-3">
-          
+          </div>
+          <div>
+            <p class="my-0"><small>The service is provided by</small></p>
+            <h6 class="my-0">Bikeshare Co.</h6>
+          </div>
+        </li>
+        
+        <li
+          class="list-group-item d-flex align-items-center px-0 py-1 border-0" style="background:transparent;"
+        >
+          <div class="mr-3">
+            
   <div class="align-middle hex-icon">
     <img src="images/hexagon.svg" />
     <i class="material-icons md-24">room_service</i>
   </div>
 
 
-        </div>
-        <div>
-          <p class="my-0"><small>The user’s symmetrical interface is </small></p>
-          <h6 class="my-0">Sensor Chatbot</h6>
-        </div>
-      </li>
-      
-      <li
-        class="list-group-item d-flex align-items-center px-0 py-2 border-left-0 border-right-0"
-      >
-        <div class="mr-3">
-          
+          </div>
+          <div>
+            <p class="my-0"><small>The user’s interface is </small></p>
+            <h6 class="my-0">Sensor Chatbot</h6>
+          </div>
+        </li>
+        
+        <li
+          class="list-group-item d-flex align-items-center px-0 py-1 border-0" style="background:transparent;"
+        >
+          <div class="mr-3">
+            
   <div class="align-middle hex-icon">
     <img src="images/hexagon.svg" />
     <i class="material-icons md-24">favorite</i>
   </div>
 
 
-        </div>
-        <div>
-          <p class="my-0"><small>The relationship with this system is</small></p>
-          <h6 class="my-0">Temporary</h6>
-        </div>
-      </li>
-      
-    </ul>
+          </div>
+          <div>
+            <p class="my-0"><small>The relationship is</small></p>
+            <h6 class="my-0">Temporary</h6>
+          </div>
+        </li>
+        
+      </ul>
+    </div>
   </div>
   
 </div>
 
 </div>
 
-<div class="container">
+<div class="container pb-4">
   <div class="row">
   
   <div class="col-8 d-none d-md-block"></div>
@@ -2881,15 +3170,15 @@
   
 >
   <div
-  style="text-align: center; width: 100%; height: 100vh; position: relative;"
+  style="text-align: center; width: 100%; height: 100vh; position: relative;background-image: url(images/Frame_Background.png);"
   class="d-flex align-items-center"
 >
-  <div class="align-middle container">
+  <div class="container align-middle step-image">
     <div class="row">
       
       <div class="col-4 d-none d-md-block"></div>
       
-      <div class="col-12 col-md-8"><img src="images/Frame_2.png" width="100%" /></div>
+      <div class="col-12 col-md-8"><img src="images/Frame_Subject.svg" width="100%" /></div>
     </div>
   </div>
 </div>
@@ -2898,7 +3187,7 @@
 <div class="container">
 <div class="row">
   
-  <div class="col-3 col-md-1 text-center d-flex align-items-center flex-column">
+  <!-- <div class="col-3 col-md-1 text-center d-flex align-items-center flex-column">
     <div>
   <img src="dtpr_icons/purpose/water.svg" />
 
@@ -2923,12 +3212,14 @@
   </div>
 
 </div>
-  </div>
-  <div class="col-9 col-md-3">
-    <h5>This way to your table</h5>
-    <h6>
-      You get directions to your table and begin your stroll.
-    </h6>
+  </div> -->
+  <div class="col-12 col-md-4">
+    <div class="card pb-2">
+      <h3>This way to your table</h3>
+      <p>
+        You get directions to your table and begin your stroll.
+      </p>
+    </div>
   </div>
   
   <div class="d-none d-md-block col-md-8"></div>
@@ -2936,76 +3227,78 @@
 </div>
 <div class="row">
   
-  <div class="col-12 col-md-4">
-    <ul class="list-group mt-5 mb-5">
-      
-      <li
-        class="list-group-item d-flex align-items-center px-0 py-2 border-left-0 border-right-0"
-      >
-        <div class="mr-3">
-          
+  <div class="col-12 col-md-4 mt-2">
+    <div class="card card-lightblue py-2">
+      <ul class="list-group">
+        
+        <li
+          class="list-group-item d-flex align-items-center px-0 py-1 border-0" style="background:transparent;"
+        >
+          <div class="mr-3">
+            
   <img src="dtpr_icons/purpose/water.svg" />
 
 
-        </div>
-        <div>
-          <p class="my-0"><small>The purpose of this system is</small></p>
-          <h6 class="my-0">Interaction</h6>
-        </div>
-      </li>
-      
-      <li
-        class="list-group-item d-flex align-items-center px-0 py-2 border-left-0 border-right-0"
-      >
-        <div class="mr-3">
-          
+          </div>
+          <div>
+            <p class="my-0"><small>The purpose of this system is</small></p>
+            <h6 class="my-0">Interaction</h6>
+          </div>
+        </li>
+        
+        <li
+          class="list-group-item d-flex align-items-center px-0 py-1 border-0" style="background:transparent;"
+        >
+          <div class="mr-3">
+            
   <img src="dtpr_icons/tech/light.svg" />
 
 
-        </div>
-        <div>
-          <p class="my-0"><small>The service is provided by</small></p>
-          <h6 class="my-0">Library Dept.</h6>
-        </div>
-      </li>
-      
-      <li
-        class="list-group-item d-flex align-items-center px-0 py-2 border-left-0 border-right-0"
-      >
-        <div class="mr-3">
-          
+          </div>
+          <div>
+            <p class="my-0"><small>The service is provided by</small></p>
+            <h6 class="my-0">Library Dept.</h6>
+          </div>
+        </li>
+        
+        <li
+          class="list-group-item d-flex align-items-center px-0 py-1 border-0" style="background:transparent;"
+        >
+          <div class="mr-3">
+            
   <div class="align-middle hex-icon">
     <img src="images/hexagon.svg" />
     <i class="material-icons md-24">room_service</i>
   </div>
 
 
-        </div>
-        <div>
-          <p class="my-0"><small>The user’s symmetrical interface is </small></p>
-          <h6 class="my-0">Personal AI</h6>
-        </div>
-      </li>
-      
-      <li
-        class="list-group-item d-flex align-items-center px-0 py-2 border-left-0 border-right-0"
-      >
-        <div class="mr-3">
-          
+          </div>
+          <div>
+            <p class="my-0"><small>The user’s interface is </small></p>
+            <h6 class="my-0">Personal AI</h6>
+          </div>
+        </li>
+        
+        <li
+          class="list-group-item d-flex align-items-center px-0 py-1 border-0" style="background:transparent;"
+        >
+          <div class="mr-3">
+            
   <div class="align-middle hex-icon">
     <img src="images/hexagon.svg" />
     <i class="material-icons md-24">favorite</i>
   </div>
 
 
-        </div>
-        <div>
-          <p class="my-0"><small>The relationship with this system is</small></p>
-          <h6 class="my-0">Temporary</h6>
-        </div>
-      </li>
-      
-    </ul>
+          </div>
+          <div>
+            <p class="my-0"><small>The relationship is</small></p>
+            <h6 class="my-0">Temporary</h6>
+          </div>
+        </li>
+        
+      </ul>
+    </div>
   </div>
   
   <div class="d-none d-md-block col-md-8"></div>
@@ -3014,7 +3307,7 @@
 
 </div>
 
-<div class="container">
+<div class="container pb-4">
   <div class="row">
   
 
@@ -3050,13 +3343,13 @@
   
 >
   <div
-  style="text-align: center; width: 100%; height: 100vh; position: relative;"
+  style="text-align: center; width: 100%; height: 100vh; position: relative;background-image: url(images/Frame_Background.png);"
   class="d-flex align-items-center"
 >
-  <div class="align-middle container">
+  <div class="container align-middle step-image">
     <div class="row">
       
-      <div class="col-12 col-md-8"><img src="images/Frame_1.png" width="100%" /></div>
+      <div class="col-12 col-md-8"><img src="images/Frame_Subject.svg" width="100%" /></div>
     </div>
   </div>
 </div>
@@ -3067,7 +3360,7 @@
   
   <div class="d-none d-md-block col-md-8"></div>
   
-  <div class="col-3 col-md-1 text-center d-flex align-items-center flex-column">
+  <!-- <div class="col-3 col-md-1 text-center d-flex align-items-center flex-column">
     <div>
   <img src="dtpr_icons/purpose/water.svg" />
 
@@ -3092,12 +3385,14 @@
   </div>
 
 </div>
-  </div>
-  <div class="col-9 col-md-3">
-    <h5>See what it sees</h5>
-    <h6>
-      On your way, out of curiousity, you check the live seating status of the seating area.
-    </h6>
+  </div> -->
+  <div class="col-12 col-md-4">
+    <div class="card pb-2">
+      <h3>See what it sees</h3>
+      <p>
+        On your way, out of curiousity, you check the live seating status of the seating area.
+      </p>
+    </div>
   </div>
   
 </div>
@@ -3105,83 +3400,85 @@
   
   <div class="d-none d-md-block col-md-8"></div>
   
-  <div class="col-12 col-md-4">
-    <ul class="list-group mt-5 mb-5">
-      
-      <li
-        class="list-group-item d-flex align-items-center px-0 py-2 border-left-0 border-right-0"
-      >
-        <div class="mr-3">
-          
+  <div class="col-12 col-md-4 mt-2">
+    <div class="card card-lightblue py-2">
+      <ul class="list-group">
+        
+        <li
+          class="list-group-item d-flex align-items-center px-0 py-1 border-0" style="background:transparent;"
+        >
+          <div class="mr-3">
+            
   <img src="dtpr_icons/purpose/water.svg" />
 
 
-        </div>
-        <div>
-          <p class="my-0"><small>The purpose of this system is</small></p>
-          <h6 class="my-0">Agency</h6>
-        </div>
-      </li>
-      
-      <li
-        class="list-group-item d-flex align-items-center px-0 py-2 border-left-0 border-right-0"
-      >
-        <div class="mr-3">
-          
+          </div>
+          <div>
+            <p class="my-0"><small>The purpose of this system is</small></p>
+            <h6 class="my-0">Agency</h6>
+          </div>
+        </li>
+        
+        <li
+          class="list-group-item d-flex align-items-center px-0 py-1 border-0" style="background:transparent;"
+        >
+          <div class="mr-3">
+            
   <img src="dtpr_icons/tech/light.svg" />
 
 
-        </div>
-        <div>
-          <p class="my-0"><small>The service is provided by</small></p>
-          <h6 class="my-0">Library Dept.</h6>
-        </div>
-      </li>
-      
-      <li
-        class="list-group-item d-flex align-items-center px-0 py-2 border-left-0 border-right-0"
-      >
-        <div class="mr-3">
-          
+          </div>
+          <div>
+            <p class="my-0"><small>The service is provided by</small></p>
+            <h6 class="my-0">Library Dept.</h6>
+          </div>
+        </li>
+        
+        <li
+          class="list-group-item d-flex align-items-center px-0 py-1 border-0" style="background:transparent;"
+        >
+          <div class="mr-3">
+            
   <div class="align-middle hex-icon">
     <img src="images/hexagon.svg" />
     <i class="material-icons md-24">room_service</i>
   </div>
 
 
-        </div>
-        <div>
-          <p class="my-0"><small>The user’s symmetrical interface is </small></p>
-          <h6 class="my-0">Place Chatbot</h6>
-        </div>
-      </li>
-      
-      <li
-        class="list-group-item d-flex align-items-center px-0 py-2 border-left-0 border-right-0"
-      >
-        <div class="mr-3">
-          
+          </div>
+          <div>
+            <p class="my-0"><small>The user’s interface is </small></p>
+            <h6 class="my-0">Place Chatbot</h6>
+          </div>
+        </li>
+        
+        <li
+          class="list-group-item d-flex align-items-center px-0 py-1 border-0" style="background:transparent;"
+        >
+          <div class="mr-3">
+            
   <div class="align-middle hex-icon">
     <img src="images/hexagon.svg" />
     <i class="material-icons md-24">favorite</i>
   </div>
 
 
-        </div>
-        <div>
-          <p class="my-0"><small>The relationship with this system is</small></p>
-          <h6 class="my-0">Temporary</h6>
-        </div>
-      </li>
-      
-    </ul>
+          </div>
+          <div>
+            <p class="my-0"><small>The relationship is</small></p>
+            <h6 class="my-0">Temporary</h6>
+          </div>
+        </li>
+        
+      </ul>
+    </div>
   </div>
   
 </div>
 
 </div>
 
-<div class="container">
+<div class="container pb-4">
   <div class="row">
   
   <div class="col-8 d-none d-md-block"></div>
@@ -3214,15 +3511,15 @@
   
 >
   <div
-  style="text-align: center; width: 100%; height: 100vh; position: relative;"
+  style="text-align: center; width: 100%; height: 100vh; position: relative;background-image: url(images/Frame_Background.png);"
   class="d-flex align-items-center"
 >
-  <div class="align-middle container">
+  <div class="container align-middle step-image">
     <div class="row">
       
       <div class="col-4 d-none d-md-block"></div>
       
-      <div class="col-12 col-md-8"><img src="images/Frame_2.png" width="100%" /></div>
+      <div class="col-12 col-md-8"><img src="images/Frame_Subject.svg" width="100%" /></div>
     </div>
   </div>
 </div>
@@ -3231,7 +3528,7 @@
 <div class="container">
 <div class="row">
   
-  <div class="col-3 col-md-1 text-center d-flex align-items-center flex-column">
+  <!-- <div class="col-3 col-md-1 text-center d-flex align-items-center flex-column">
     <div>
   <img src="dtpr_icons/purpose/water.svg" />
 
@@ -3256,12 +3553,14 @@
   </div>
 
 </div>
-  </div>
-  <div class="col-9 col-md-3">
-    <h5>Food is ready</h5>
-    <h6>
-      After catching up with your friend, the food arrives. You have a quick chat with the server, thank them, and chow down.
-    </h6>
+  </div> -->
+  <div class="col-12 col-md-4">
+    <div class="card pb-2">
+      <h3>Food is ready</h3>
+      <p>
+        After catching up with your friend, the food arrives. You have a quick chat with the server, thank them, and chow down.
+      </p>
+    </div>
   </div>
   
   <div class="d-none d-md-block col-md-8"></div>
@@ -3269,76 +3568,78 @@
 </div>
 <div class="row">
   
-  <div class="col-12 col-md-4">
-    <ul class="list-group mt-5 mb-5">
-      
-      <li
-        class="list-group-item d-flex align-items-center px-0 py-2 border-left-0 border-right-0"
-      >
-        <div class="mr-3">
-          
+  <div class="col-12 col-md-4 mt-2">
+    <div class="card card-lightblue py-2">
+      <ul class="list-group">
+        
+        <li
+          class="list-group-item d-flex align-items-center px-0 py-1 border-0" style="background:transparent;"
+        >
+          <div class="mr-3">
+            
   <img src="dtpr_icons/purpose/water.svg" />
 
 
-        </div>
-        <div>
-          <p class="my-0"><small>The purpose of this system is</small></p>
-          <h6 class="my-0">Borrowing</h6>
-        </div>
-      </li>
-      
-      <li
-        class="list-group-item d-flex align-items-center px-0 py-2 border-left-0 border-right-0"
-      >
-        <div class="mr-3">
-          
+          </div>
+          <div>
+            <p class="my-0"><small>The purpose of this system is</small></p>
+            <h6 class="my-0">Borrowing</h6>
+          </div>
+        </li>
+        
+        <li
+          class="list-group-item d-flex align-items-center px-0 py-1 border-0" style="background:transparent;"
+        >
+          <div class="mr-3">
+            
   <img src="dtpr_icons/tech/light.svg" />
 
 
-        </div>
-        <div>
-          <p class="my-0"><small>The service is provided by</small></p>
-          <h6 class="my-0">Library Dept.</h6>
-        </div>
-      </li>
-      
-      <li
-        class="list-group-item d-flex align-items-center px-0 py-2 border-left-0 border-right-0"
-      >
-        <div class="mr-3">
-          
+          </div>
+          <div>
+            <p class="my-0"><small>The service is provided by</small></p>
+            <h6 class="my-0">Library Dept.</h6>
+          </div>
+        </li>
+        
+        <li
+          class="list-group-item d-flex align-items-center px-0 py-1 border-0" style="background:transparent;"
+        >
+          <div class="mr-3">
+            
   <div class="align-middle hex-icon">
     <img src="images/hexagon.svg" />
     <i class="material-icons md-24">room_service</i>
   </div>
 
 
-        </div>
-        <div>
-          <p class="my-0"><small>The user’s symmetrical interface is </small></p>
-          <h6 class="my-0">Personal AI</h6>
-        </div>
-      </li>
-      
-      <li
-        class="list-group-item d-flex align-items-center px-0 py-2 border-left-0 border-right-0"
-      >
-        <div class="mr-3">
-          
+          </div>
+          <div>
+            <p class="my-0"><small>The user’s interface is </small></p>
+            <h6 class="my-0">Personal AI</h6>
+          </div>
+        </li>
+        
+        <li
+          class="list-group-item d-flex align-items-center px-0 py-1 border-0" style="background:transparent;"
+        >
+          <div class="mr-3">
+            
   <div class="align-middle hex-icon">
     <img src="images/hexagon.svg" />
     <i class="material-icons md-24">favorite</i>
   </div>
 
 
-        </div>
-        <div>
-          <p class="my-0"><small>The relationship with this system is</small></p>
-          <h6 class="my-0">Membership</h6>
-        </div>
-      </li>
-      
-    </ul>
+          </div>
+          <div>
+            <p class="my-0"><small>The relationship is</small></p>
+            <h6 class="my-0">Membership</h6>
+          </div>
+        </li>
+        
+      </ul>
+    </div>
   </div>
   
   <div class="d-none d-md-block col-md-8"></div>
@@ -3347,7 +3648,7 @@
 
 </div>
 
-<div class="container">
+<div class="container pb-4">
   <div class="row">
   
 
@@ -3379,31 +3680,65 @@
     <!-- / SECTION 4 -->
 
     <!-- SECTION 5 -->
-    <div class="step" data-step="section-1">
+    
+    <div class="step" data-step="section-5">
       <div class="sticky-section-header">
-        <div class="container">
+        <div class="container sticky-nav">
   <div class="row">
-    <div class="col-3 col-md-1" style="">
-      <div class="prehead mt-1">
-        Systems
-      </div>
+    <div class="col-10">
+      <h4 class="mb-0">
+        
+          
+  <div class="align-middle number-icon">
+    5
+  </div>
+
+
+        
+        <span class="pl-1">How might we get help from the built environment, and leave it better than we found it?</span>
+      </h4>
     </div>
-    <div class="col-9  col-sm-11" style="margin-top:2px;">
-      <h6 class="mt-1">
-        A standard way to describe systems within places, and what sensors, processing, and purposes they serve. 
-      </h6>
+    <div class="col-2 menu">
+      
+  <div class="align-middle circle-icon">
+    <i class="material-icons md-18">arrow_upward</i>
+  </div>
+
+
+      
+  <div class="align-middle circle-icon">
+    <i class="material-icons md-18">arrow_downward</i>
+  </div>
+
+
+      
+  <div class="align-middle circle-icon">
+    <i class="material-icons md-18">apps</i>
+  </div>
+
+
     </div>
   </div>
 </div>
       </div>
-      <div class="container">
-        
-  <div class="row" style="margin-top:150px;margin-bottom:150px;">
+      <div class="step-banner">
+        <div class="container">
+          <div class="row">
+  <div class="col">
+    <div class="card card-darkblue d-flex scenario-card big-card" style="background-image:url(images/Vision_Chapter_Image.png);">
+      <div class="w-50">
+        <h3><span class="badge">5</span>How might we...</h3>
+        <h1>get help from the built environment, and leave it better than we found it?</h1>
+      </div>
+    </div>
+  </div>
+</div>
+  <!-- <div class="row" style="margin-top:150px;margin-bottom:150px;">
     <div class="col-6 offset-3 col-md-3 offset-md-0">
       <img src="images/Seal_System.png" width="100%" />
     </div>
     <div class="col-12 col-md-7 offset-md-1">
-      <h1 class="display-4 text-center text-md-left">System<br />Definitions</h1>
+      <h1 class="display-4 text-center text-md-left"></h1>
       <p class="lead text-center text-md-left">
         A standard way to describe systems within places, and what sensors, processing, and purposes they serve.
       </p>
@@ -3469,8 +3804,9 @@
         <h6>Alerts can be set based on geographic areas and a person’s familiarity with that place.</h6>
       </div>
     
-  </div>
+  </div> -->
 
+        </div>
       </div>
       <div>
         <div class="sticky-image" 
@@ -3479,13 +3815,13 @@
   
 >
   <div
-  style="text-align: center; width: 100%; height: 100vh; position: relative;"
+  style="text-align: center; width: 100%; height: 100vh; position: relative;background-image: url(images/Frame_Background.png);"
   class="d-flex align-items-center"
 >
-  <div class="align-middle container">
+  <div class="container align-middle step-image">
     <div class="row">
       
-      <div class="col-12 col-md-8"><img src="images/Frame_1.png" width="100%" /></div>
+      <div class="col-12 col-md-8"><img src="images/Frame_Subject.svg" width="100%" /></div>
     </div>
   </div>
 </div>
@@ -3496,7 +3832,7 @@
   
   <div class="d-none d-md-block col-md-8"></div>
   
-  <div class="col-3 col-md-1 text-center d-flex align-items-center flex-column">
+  <!-- <div class="col-3 col-md-1 text-center d-flex align-items-center flex-column">
     <div>
   <img src="dtpr_icons/purpose/water.svg" />
 
@@ -3521,12 +3857,14 @@
   </div>
 
 </div>
-  </div>
-  <div class="col-9 col-md-3">
-    <h5>Recycle</h5>
-    <h6>
-      You get guidance from the waste bin. You put the compost in the right bin, and place reusables in a tray.
-    </h6>
+  </div> -->
+  <div class="col-12 col-md-4">
+    <div class="card pb-2">
+      <h3>Recycle</h3>
+      <p>
+        You get guidance from the waste bin. You put the compost in the right bin, and place reusables in a tray.
+      </p>
+    </div>
   </div>
   
 </div>
@@ -3534,83 +3872,85 @@
   
   <div class="d-none d-md-block col-md-8"></div>
   
-  <div class="col-12 col-md-4">
-    <ul class="list-group mt-5 mb-5">
-      
-      <li
-        class="list-group-item d-flex align-items-center px-0 py-2 border-left-0 border-right-0"
-      >
-        <div class="mr-3">
-          
+  <div class="col-12 col-md-4 mt-2">
+    <div class="card card-lightblue py-2">
+      <ul class="list-group">
+        
+        <li
+          class="list-group-item d-flex align-items-center px-0 py-1 border-0" style="background:transparent;"
+        >
+          <div class="mr-3">
+            
   <img src="dtpr_icons/purpose/water.svg" />
 
 
-        </div>
-        <div>
-          <p class="my-0"><small>The purpose of this system is</small></p>
-          <h6 class="my-0">Shopping</h6>
-        </div>
-      </li>
-      
-      <li
-        class="list-group-item d-flex align-items-center px-0 py-2 border-left-0 border-right-0"
-      >
-        <div class="mr-3">
-          
+          </div>
+          <div>
+            <p class="my-0"><small>The purpose of this system is</small></p>
+            <h6 class="my-0">Shopping</h6>
+          </div>
+        </li>
+        
+        <li
+          class="list-group-item d-flex align-items-center px-0 py-1 border-0" style="background:transparent;"
+        >
+          <div class="mr-3">
+            
   <img src="dtpr_icons/tech/light.svg" />
 
 
-        </div>
-        <div>
-          <p class="my-0"><small>The service is provided by</small></p>
-          <h6 class="my-0">Bikeshare Co.</h6>
-        </div>
-      </li>
-      
-      <li
-        class="list-group-item d-flex align-items-center px-0 py-2 border-left-0 border-right-0"
-      >
-        <div class="mr-3">
-          
+          </div>
+          <div>
+            <p class="my-0"><small>The service is provided by</small></p>
+            <h6 class="my-0">Bikeshare Co.</h6>
+          </div>
+        </li>
+        
+        <li
+          class="list-group-item d-flex align-items-center px-0 py-1 border-0" style="background:transparent;"
+        >
+          <div class="mr-3">
+            
   <div class="align-middle hex-icon">
     <img src="images/hexagon.svg" />
     <i class="material-icons md-24">room_service</i>
   </div>
 
 
-        </div>
-        <div>
-          <p class="my-0"><small>The user’s symmetrical interface is </small></p>
-          <h6 class="my-0">Sensor Chatbot</h6>
-        </div>
-      </li>
-      
-      <li
-        class="list-group-item d-flex align-items-center px-0 py-2 border-left-0 border-right-0"
-      >
-        <div class="mr-3">
-          
+          </div>
+          <div>
+            <p class="my-0"><small>The user’s interface is </small></p>
+            <h6 class="my-0">Sensor Chatbot</h6>
+          </div>
+        </li>
+        
+        <li
+          class="list-group-item d-flex align-items-center px-0 py-1 border-0" style="background:transparent;"
+        >
+          <div class="mr-3">
+            
   <div class="align-middle hex-icon">
     <img src="images/hexagon.svg" />
     <i class="material-icons md-24">favorite</i>
   </div>
 
 
-        </div>
-        <div>
-          <p class="my-0"><small>The relationship with this system is</small></p>
-          <h6 class="my-0">Temporary</h6>
-        </div>
-      </li>
-      
-    </ul>
+          </div>
+          <div>
+            <p class="my-0"><small>The relationship is</small></p>
+            <h6 class="my-0">Temporary</h6>
+          </div>
+        </li>
+        
+      </ul>
+    </div>
   </div>
   
 </div>
 
 </div>
 
-<div class="container">
+<div class="container pb-4">
   <div class="row">
   
   <div class="col-8 d-none d-md-block"></div>
@@ -3643,15 +3983,15 @@
   
 >
   <div
-  style="text-align: center; width: 100%; height: 100vh; position: relative;"
+  style="text-align: center; width: 100%; height: 100vh; position: relative;background-image: url(images/Frame_Background.png);"
   class="d-flex align-items-center"
 >
-  <div class="align-middle container">
+  <div class="container align-middle step-image">
     <div class="row">
       
       <div class="col-4 d-none d-md-block"></div>
       
-      <div class="col-12 col-md-8"><img src="images/Frame_2.png" width="100%" /></div>
+      <div class="col-12 col-md-8"><img src="images/Frame_Subject.svg" width="100%" /></div>
     </div>
   </div>
 </div>
@@ -3660,7 +4000,7 @@
 <div class="container">
 <div class="row">
   
-  <div class="col-3 col-md-1 text-center d-flex align-items-center flex-column">
+  <!-- <div class="col-3 col-md-1 text-center d-flex align-items-center flex-column">
     <div>
   <img src="dtpr_icons/purpose/water.svg" />
 
@@ -3685,12 +4025,14 @@
   </div>
 
 </div>
-  </div>
-  <div class="col-9 col-md-3">
-    <h5>Claim your points</h5>
-    <h6>
-      If you'd like to participate in the sustainability points program, you can connect anonymously.
-    </h6>
+  </div> -->
+  <div class="col-12 col-md-4">
+    <div class="card pb-2">
+      <h3>Claim your points</h3>
+      <p>
+        If you'd like to participate in the sustainability points program, you can connect anonymously.
+      </p>
+    </div>
   </div>
   
   <div class="d-none d-md-block col-md-8"></div>
@@ -3698,76 +4040,78 @@
 </div>
 <div class="row">
   
-  <div class="col-12 col-md-4">
-    <ul class="list-group mt-5 mb-5">
-      
-      <li
-        class="list-group-item d-flex align-items-center px-0 py-2 border-left-0 border-right-0"
-      >
-        <div class="mr-3">
-          
+  <div class="col-12 col-md-4 mt-2">
+    <div class="card card-lightblue py-2">
+      <ul class="list-group">
+        
+        <li
+          class="list-group-item d-flex align-items-center px-0 py-1 border-0" style="background:transparent;"
+        >
+          <div class="mr-3">
+            
   <img src="dtpr_icons/purpose/water.svg" />
 
 
-        </div>
-        <div>
-          <p class="my-0"><small>The purpose of this system is</small></p>
-          <h6 class="my-0">Interaction</h6>
-        </div>
-      </li>
-      
-      <li
-        class="list-group-item d-flex align-items-center px-0 py-2 border-left-0 border-right-0"
-      >
-        <div class="mr-3">
-          
+          </div>
+          <div>
+            <p class="my-0"><small>The purpose of this system is</small></p>
+            <h6 class="my-0">Interaction</h6>
+          </div>
+        </li>
+        
+        <li
+          class="list-group-item d-flex align-items-center px-0 py-1 border-0" style="background:transparent;"
+        >
+          <div class="mr-3">
+            
   <img src="dtpr_icons/tech/light.svg" />
 
 
-        </div>
-        <div>
-          <p class="my-0"><small>The service is provided by</small></p>
-          <h6 class="my-0">Library Dept.</h6>
-        </div>
-      </li>
-      
-      <li
-        class="list-group-item d-flex align-items-center px-0 py-2 border-left-0 border-right-0"
-      >
-        <div class="mr-3">
-          
+          </div>
+          <div>
+            <p class="my-0"><small>The service is provided by</small></p>
+            <h6 class="my-0">Library Dept.</h6>
+          </div>
+        </li>
+        
+        <li
+          class="list-group-item d-flex align-items-center px-0 py-1 border-0" style="background:transparent;"
+        >
+          <div class="mr-3">
+            
   <div class="align-middle hex-icon">
     <img src="images/hexagon.svg" />
     <i class="material-icons md-24">room_service</i>
   </div>
 
 
-        </div>
-        <div>
-          <p class="my-0"><small>The user’s symmetrical interface is </small></p>
-          <h6 class="my-0">Personal AI</h6>
-        </div>
-      </li>
-      
-      <li
-        class="list-group-item d-flex align-items-center px-0 py-2 border-left-0 border-right-0"
-      >
-        <div class="mr-3">
-          
+          </div>
+          <div>
+            <p class="my-0"><small>The user’s interface is </small></p>
+            <h6 class="my-0">Personal AI</h6>
+          </div>
+        </li>
+        
+        <li
+          class="list-group-item d-flex align-items-center px-0 py-1 border-0" style="background:transparent;"
+        >
+          <div class="mr-3">
+            
   <div class="align-middle hex-icon">
     <img src="images/hexagon.svg" />
     <i class="material-icons md-24">favorite</i>
   </div>
 
 
-        </div>
-        <div>
-          <p class="my-0"><small>The relationship with this system is</small></p>
-          <h6 class="my-0">Temporary</h6>
-        </div>
-      </li>
-      
-    </ul>
+          </div>
+          <div>
+            <p class="my-0"><small>The relationship is</small></p>
+            <h6 class="my-0">Temporary</h6>
+          </div>
+        </li>
+        
+      </ul>
+    </div>
   </div>
   
   <div class="d-none d-md-block col-md-8"></div>
@@ -3776,7 +4120,7 @@
 
 </div>
 
-<div class="container">
+<div class="container pb-4">
   <div class="row">
   
 
@@ -3812,13 +4156,13 @@
   
 >
   <div
-  style="text-align: center; width: 100%; height: 100vh; position: relative;"
+  style="text-align: center; width: 100%; height: 100vh; position: relative;background-image: url(images/Frame_Background.png);"
   class="d-flex align-items-center"
 >
-  <div class="align-middle container">
+  <div class="container align-middle step-image">
     <div class="row">
       
-      <div class="col-12 col-md-8"><img src="images/Frame_1.png" width="100%" /></div>
+      <div class="col-12 col-md-8"><img src="images/Frame_Subject.svg" width="100%" /></div>
     </div>
   </div>
 </div>
@@ -3829,7 +4173,7 @@
   
   <div class="d-none d-md-block col-md-8"></div>
   
-  <div class="col-3 col-md-1 text-center d-flex align-items-center flex-column">
+  <!-- <div class="col-3 col-md-1 text-center d-flex align-items-center flex-column">
     <div>
   <img src="dtpr_icons/purpose/water.svg" />
 
@@ -3854,12 +4198,14 @@
   </div>
 
 </div>
-  </div>
-  <div class="col-9 col-md-3">
-    <h5>Learn about the system</h5>
-    <h6>
-      You can learn more about all the systems in this place or save it for later reading.
-    </h6>
+  </div> -->
+  <div class="col-12 col-md-4">
+    <div class="card pb-2">
+      <h3>Learn about the system</h3>
+      <p>
+        You can learn more about all the systems in this place or save it for later reading.
+      </p>
+    </div>
   </div>
   
 </div>
@@ -3867,83 +4213,85 @@
   
   <div class="d-none d-md-block col-md-8"></div>
   
-  <div class="col-12 col-md-4">
-    <ul class="list-group mt-5 mb-5">
-      
-      <li
-        class="list-group-item d-flex align-items-center px-0 py-2 border-left-0 border-right-0"
-      >
-        <div class="mr-3">
-          
+  <div class="col-12 col-md-4 mt-2">
+    <div class="card card-lightblue py-2">
+      <ul class="list-group">
+        
+        <li
+          class="list-group-item d-flex align-items-center px-0 py-1 border-0" style="background:transparent;"
+        >
+          <div class="mr-3">
+            
   <img src="dtpr_icons/purpose/water.svg" />
 
 
-        </div>
-        <div>
-          <p class="my-0"><small>The purpose of this system is</small></p>
-          <h6 class="my-0">Agency</h6>
-        </div>
-      </li>
-      
-      <li
-        class="list-group-item d-flex align-items-center px-0 py-2 border-left-0 border-right-0"
-      >
-        <div class="mr-3">
-          
+          </div>
+          <div>
+            <p class="my-0"><small>The purpose of this system is</small></p>
+            <h6 class="my-0">Agency</h6>
+          </div>
+        </li>
+        
+        <li
+          class="list-group-item d-flex align-items-center px-0 py-1 border-0" style="background:transparent;"
+        >
+          <div class="mr-3">
+            
   <img src="dtpr_icons/tech/light.svg" />
 
 
-        </div>
-        <div>
-          <p class="my-0"><small>The service is provided by</small></p>
-          <h6 class="my-0">Library Dept.</h6>
-        </div>
-      </li>
-      
-      <li
-        class="list-group-item d-flex align-items-center px-0 py-2 border-left-0 border-right-0"
-      >
-        <div class="mr-3">
-          
+          </div>
+          <div>
+            <p class="my-0"><small>The service is provided by</small></p>
+            <h6 class="my-0">Library Dept.</h6>
+          </div>
+        </li>
+        
+        <li
+          class="list-group-item d-flex align-items-center px-0 py-1 border-0" style="background:transparent;"
+        >
+          <div class="mr-3">
+            
   <div class="align-middle hex-icon">
     <img src="images/hexagon.svg" />
     <i class="material-icons md-24">room_service</i>
   </div>
 
 
-        </div>
-        <div>
-          <p class="my-0"><small>The user’s symmetrical interface is </small></p>
-          <h6 class="my-0">Place Chatbot</h6>
-        </div>
-      </li>
-      
-      <li
-        class="list-group-item d-flex align-items-center px-0 py-2 border-left-0 border-right-0"
-      >
-        <div class="mr-3">
-          
+          </div>
+          <div>
+            <p class="my-0"><small>The user’s interface is </small></p>
+            <h6 class="my-0">Place Chatbot</h6>
+          </div>
+        </li>
+        
+        <li
+          class="list-group-item d-flex align-items-center px-0 py-1 border-0" style="background:transparent;"
+        >
+          <div class="mr-3">
+            
   <div class="align-middle hex-icon">
     <img src="images/hexagon.svg" />
     <i class="material-icons md-24">favorite</i>
   </div>
 
 
-        </div>
-        <div>
-          <p class="my-0"><small>The relationship with this system is</small></p>
-          <h6 class="my-0">Temporary</h6>
-        </div>
-      </li>
-      
-    </ul>
+          </div>
+          <div>
+            <p class="my-0"><small>The relationship is</small></p>
+            <h6 class="my-0">Temporary</h6>
+          </div>
+        </li>
+        
+      </ul>
+    </div>
   </div>
   
 </div>
 
 </div>
 
-<div class="container">
+<div class="container pb-4">
   <div class="row">
   
   <div class="col-8 d-none d-md-block"></div>
@@ -3976,15 +4324,15 @@
   
 >
   <div
-  style="text-align: center; width: 100%; height: 100vh; position: relative;"
+  style="text-align: center; width: 100%; height: 100vh; position: relative;background-image: url(images/Frame_Background.png);"
   class="d-flex align-items-center"
 >
-  <div class="align-middle container">
+  <div class="container align-middle step-image">
     <div class="row">
       
       <div class="col-4 d-none d-md-block"></div>
       
-      <div class="col-12 col-md-8"><img src="images/Frame_2.png" width="100%" /></div>
+      <div class="col-12 col-md-8"><img src="images/Frame_Subject.svg" width="100%" /></div>
     </div>
   </div>
 </div>
@@ -3993,7 +4341,7 @@
 <div class="container">
 <div class="row">
   
-  <div class="col-3 col-md-1 text-center d-flex align-items-center flex-column">
+  <!-- <div class="col-3 col-md-1 text-center d-flex align-items-center flex-column">
     <div>
   <img src="dtpr_icons/purpose/water.svg" />
 
@@ -4018,12 +4366,14 @@
   </div>
 
 </div>
-  </div>
-  <div class="col-9 col-md-3">
-    <h5>Occupancy sensor</h5>
-    <h6>
-      You want to learn more about the occupancy sensor, you are able to ask questions about how it works, and why its important.
-    </h6>
+  </div> -->
+  <div class="col-12 col-md-4">
+    <div class="card pb-2">
+      <h3>Occupancy sensor</h3>
+      <p>
+        You want to learn more about the occupancy sensor, you are able to ask questions about how it works, and why its important.
+      </p>
+    </div>
   </div>
   
   <div class="d-none d-md-block col-md-8"></div>
@@ -4031,76 +4381,78 @@
 </div>
 <div class="row">
   
-  <div class="col-12 col-md-4">
-    <ul class="list-group mt-5 mb-5">
-      
-      <li
-        class="list-group-item d-flex align-items-center px-0 py-2 border-left-0 border-right-0"
-      >
-        <div class="mr-3">
-          
+  <div class="col-12 col-md-4 mt-2">
+    <div class="card card-lightblue py-2">
+      <ul class="list-group">
+        
+        <li
+          class="list-group-item d-flex align-items-center px-0 py-1 border-0" style="background:transparent;"
+        >
+          <div class="mr-3">
+            
   <img src="dtpr_icons/purpose/water.svg" />
 
 
-        </div>
-        <div>
-          <p class="my-0"><small>The purpose of this system is</small></p>
-          <h6 class="my-0">Borrowing</h6>
-        </div>
-      </li>
-      
-      <li
-        class="list-group-item d-flex align-items-center px-0 py-2 border-left-0 border-right-0"
-      >
-        <div class="mr-3">
-          
+          </div>
+          <div>
+            <p class="my-0"><small>The purpose of this system is</small></p>
+            <h6 class="my-0">Borrowing</h6>
+          </div>
+        </li>
+        
+        <li
+          class="list-group-item d-flex align-items-center px-0 py-1 border-0" style="background:transparent;"
+        >
+          <div class="mr-3">
+            
   <img src="dtpr_icons/tech/light.svg" />
 
 
-        </div>
-        <div>
-          <p class="my-0"><small>The service is provided by</small></p>
-          <h6 class="my-0">Library Dept.</h6>
-        </div>
-      </li>
-      
-      <li
-        class="list-group-item d-flex align-items-center px-0 py-2 border-left-0 border-right-0"
-      >
-        <div class="mr-3">
-          
+          </div>
+          <div>
+            <p class="my-0"><small>The service is provided by</small></p>
+            <h6 class="my-0">Library Dept.</h6>
+          </div>
+        </li>
+        
+        <li
+          class="list-group-item d-flex align-items-center px-0 py-1 border-0" style="background:transparent;"
+        >
+          <div class="mr-3">
+            
   <div class="align-middle hex-icon">
     <img src="images/hexagon.svg" />
     <i class="material-icons md-24">room_service</i>
   </div>
 
 
-        </div>
-        <div>
-          <p class="my-0"><small>The user’s symmetrical interface is </small></p>
-          <h6 class="my-0">Personal AI</h6>
-        </div>
-      </li>
-      
-      <li
-        class="list-group-item d-flex align-items-center px-0 py-2 border-left-0 border-right-0"
-      >
-        <div class="mr-3">
-          
+          </div>
+          <div>
+            <p class="my-0"><small>The user’s interface is </small></p>
+            <h6 class="my-0">Personal AI</h6>
+          </div>
+        </li>
+        
+        <li
+          class="list-group-item d-flex align-items-center px-0 py-1 border-0" style="background:transparent;"
+        >
+          <div class="mr-3">
+            
   <div class="align-middle hex-icon">
     <img src="images/hexagon.svg" />
     <i class="material-icons md-24">favorite</i>
   </div>
 
 
-        </div>
-        <div>
-          <p class="my-0"><small>The relationship with this system is</small></p>
-          <h6 class="my-0">Membership</h6>
-        </div>
-      </li>
-      
-    </ul>
+          </div>
+          <div>
+            <p class="my-0"><small>The relationship is</small></p>
+            <h6 class="my-0">Membership</h6>
+          </div>
+        </li>
+        
+      </ul>
+    </div>
   </div>
   
   <div class="d-none d-md-block col-md-8"></div>
@@ -4109,7 +4461,7 @@
 
 </div>
 
-<div class="container">
+<div class="container pb-4">
   <div class="row">
   
 
@@ -4141,31 +4493,65 @@
     <!-- / SECTION 5 -->
 
     <!-- SECTION 6 -->
+    
     <div class="step" data-step="section-1">
       <div class="sticky-section-header">
-        <div class="container">
+        <div class="container sticky-nav">
   <div class="row">
-    <div class="col-3 col-md-1" style="">
-      <div class="prehead mt-1">
-        Encryption
-      </div>
+    <div class="col-10">
+      <h4 class="mb-0">
+        
+          
+  <div class="align-middle number-icon">
+    6
+  </div>
+
+
+        
+        <span class="pl-1">How might we offer eyes on the street, with humans in the loop?</span>
+      </h4>
     </div>
-    <div class="col-9  col-sm-11" style="margin-top:2px;">
-      <h6 class="mt-1">
-        New methods in preserving privacy while maintaining a way to comply with security operations.
-      </h6>
+    <div class="col-2 menu">
+      
+  <div class="align-middle circle-icon">
+    <i class="material-icons md-18">arrow_upward</i>
+  </div>
+
+
+      
+  <div class="align-middle circle-icon">
+    <i class="material-icons md-18">arrow_downward</i>
+  </div>
+
+
+      
+  <div class="align-middle circle-icon">
+    <i class="material-icons md-18">apps</i>
+  </div>
+
+
     </div>
   </div>
 </div>
       </div>
-      <div class="container">
-        
-  <div class="row" style="margin-top:150px;margin-bottom:150px;">
+      <div class="step-banner">
+        <div class="container">
+          <div class="row">
+  <div class="col">
+    <div class="card card-darkblue d-flex scenario-card big-card" style="background-image:url(images/Vision_Chapter_Image.png);">
+      <div class="w-50">
+        <h3><span class="badge">6</span>How might we...</h3>
+        <h1>offer eyes on the street, with humans in the loop?</h1>
+      </div>
+    </div>
+  </div>
+</div>
+  <!-- <div class="row" style="margin-top:150px;margin-bottom:150px;">
     <div class="col-6 offset-3 col-md-3 offset-md-0">
       <img src="images/Seal_Sensor.png" width="100%" />
     </div>
     <div class="col-12 col-md-7 offset-md-1">
-      <h1 class="display-4 text-center text-md-left">Encryption<br />Techniques</h1>
+      <h1 class="display-4 text-center text-md-left"></h1>
       <p class="lead text-center text-md-left">
         New methods in preserving privacy while maintaining a way to comply with security operations.
       </p>
@@ -4231,8 +4617,9 @@
         <h6>Alerts can be set based on geographic areas and a person’s familiarity with that place.</h6>
       </div>
     
-  </div>
+  </div> -->
 
+        </div>
       </div>
       <div>
         <div class="sticky-image" 
@@ -4241,13 +4628,13 @@
   
 >
   <div
-  style="text-align: center; width: 100%; height: 100vh; position: relative;"
+  style="text-align: center; width: 100%; height: 100vh; position: relative;background-image: url(images/Frame_Background.png);"
   class="d-flex align-items-center"
 >
-  <div class="align-middle container">
+  <div class="container align-middle step-image">
     <div class="row">
       
-      <div class="col-12 col-md-8"><img src="images/Frame_1.png" width="100%" /></div>
+      <div class="col-12 col-md-8"><img src="images/Frame_Subject.svg" width="100%" /></div>
     </div>
   </div>
 </div>
@@ -4258,7 +4645,7 @@
   
   <div class="d-none d-md-block col-md-8"></div>
   
-  <div class="col-3 col-md-1 text-center d-flex align-items-center flex-column">
+  <!-- <div class="col-3 col-md-1 text-center d-flex align-items-center flex-column">
     <div>
   <img src="dtpr_icons/purpose/water.svg" />
 
@@ -4283,12 +4670,14 @@
   </div>
 
 </div>
-  </div>
-  <div class="col-9 col-md-3">
-    <h5>You've lost your bag</h5>
-    <h6>
-      You quickly head to a wall assistant and gesture to contact security.
-    </h6>
+  </div> -->
+  <div class="col-12 col-md-4">
+    <div class="card pb-2">
+      <h3>You've lost your bag</h3>
+      <p>
+        You quickly head to a wall assistant and gesture to contact security.
+      </p>
+    </div>
   </div>
   
 </div>
@@ -4296,83 +4685,85 @@
   
   <div class="d-none d-md-block col-md-8"></div>
   
-  <div class="col-12 col-md-4">
-    <ul class="list-group mt-5 mb-5">
-      
-      <li
-        class="list-group-item d-flex align-items-center px-0 py-2 border-left-0 border-right-0"
-      >
-        <div class="mr-3">
-          
+  <div class="col-12 col-md-4 mt-2">
+    <div class="card card-lightblue py-2">
+      <ul class="list-group">
+        
+        <li
+          class="list-group-item d-flex align-items-center px-0 py-1 border-0" style="background:transparent;"
+        >
+          <div class="mr-3">
+            
   <img src="dtpr_icons/purpose/water.svg" />
 
 
-        </div>
-        <div>
-          <p class="my-0"><small>The purpose of this system is</small></p>
-          <h6 class="my-0">Shopping</h6>
-        </div>
-      </li>
-      
-      <li
-        class="list-group-item d-flex align-items-center px-0 py-2 border-left-0 border-right-0"
-      >
-        <div class="mr-3">
-          
+          </div>
+          <div>
+            <p class="my-0"><small>The purpose of this system is</small></p>
+            <h6 class="my-0">Shopping</h6>
+          </div>
+        </li>
+        
+        <li
+          class="list-group-item d-flex align-items-center px-0 py-1 border-0" style="background:transparent;"
+        >
+          <div class="mr-3">
+            
   <img src="dtpr_icons/tech/light.svg" />
 
 
-        </div>
-        <div>
-          <p class="my-0"><small>The service is provided by</small></p>
-          <h6 class="my-0">Bikeshare Co.</h6>
-        </div>
-      </li>
-      
-      <li
-        class="list-group-item d-flex align-items-center px-0 py-2 border-left-0 border-right-0"
-      >
-        <div class="mr-3">
-          
+          </div>
+          <div>
+            <p class="my-0"><small>The service is provided by</small></p>
+            <h6 class="my-0">Bikeshare Co.</h6>
+          </div>
+        </li>
+        
+        <li
+          class="list-group-item d-flex align-items-center px-0 py-1 border-0" style="background:transparent;"
+        >
+          <div class="mr-3">
+            
   <div class="align-middle hex-icon">
     <img src="images/hexagon.svg" />
     <i class="material-icons md-24">room_service</i>
   </div>
 
 
-        </div>
-        <div>
-          <p class="my-0"><small>The user’s symmetrical interface is </small></p>
-          <h6 class="my-0">Sensor Chatbot</h6>
-        </div>
-      </li>
-      
-      <li
-        class="list-group-item d-flex align-items-center px-0 py-2 border-left-0 border-right-0"
-      >
-        <div class="mr-3">
-          
+          </div>
+          <div>
+            <p class="my-0"><small>The user’s interface is </small></p>
+            <h6 class="my-0">Sensor Chatbot</h6>
+          </div>
+        </li>
+        
+        <li
+          class="list-group-item d-flex align-items-center px-0 py-1 border-0" style="background:transparent;"
+        >
+          <div class="mr-3">
+            
   <div class="align-middle hex-icon">
     <img src="images/hexagon.svg" />
     <i class="material-icons md-24">favorite</i>
   </div>
 
 
-        </div>
-        <div>
-          <p class="my-0"><small>The relationship with this system is</small></p>
-          <h6 class="my-0">Temporary</h6>
-        </div>
-      </li>
-      
-    </ul>
+          </div>
+          <div>
+            <p class="my-0"><small>The relationship is</small></p>
+            <h6 class="my-0">Temporary</h6>
+          </div>
+        </li>
+        
+      </ul>
+    </div>
   </div>
   
 </div>
 
 </div>
 
-<div class="container">
+<div class="container pb-4">
   <div class="row">
   
   <div class="col-8 d-none d-md-block"></div>
@@ -4405,15 +4796,15 @@
   
 >
   <div
-  style="text-align: center; width: 100%; height: 100vh; position: relative;"
+  style="text-align: center; width: 100%; height: 100vh; position: relative;background-image: url(images/Frame_Background.png);"
   class="d-flex align-items-center"
 >
-  <div class="align-middle container">
+  <div class="container align-middle step-image">
     <div class="row">
       
       <div class="col-4 d-none d-md-block"></div>
       
-      <div class="col-12 col-md-8"><img src="images/Frame_2.png" width="100%" /></div>
+      <div class="col-12 col-md-8"><img src="images/Frame_Subject.svg" width="100%" /></div>
     </div>
   </div>
 </div>
@@ -4422,7 +4813,7 @@
 <div class="container">
 <div class="row">
   
-  <div class="col-3 col-md-1 text-center d-flex align-items-center flex-column">
+  <!-- <div class="col-3 col-md-1 text-center d-flex align-items-center flex-column">
     <div>
   <img src="dtpr_icons/purpose/water.svg" />
 
@@ -4447,12 +4838,14 @@
   </div>
 
 </div>
-  </div>
-  <div class="col-9 col-md-3">
-    <h5>Decrypt when required</h5>
-    <h6>
-      The security agent understands, and offers to decrypt based on 2 factor authentication.
-    </h6>
+  </div> -->
+  <div class="col-12 col-md-4">
+    <div class="card pb-2">
+      <h3>Decrypt when required</h3>
+      <p>
+        The security agent understands, and offers to decrypt based on 2 factor authentication.
+      </p>
+    </div>
   </div>
   
   <div class="d-none d-md-block col-md-8"></div>
@@ -4460,76 +4853,78 @@
 </div>
 <div class="row">
   
-  <div class="col-12 col-md-4">
-    <ul class="list-group mt-5 mb-5">
-      
-      <li
-        class="list-group-item d-flex align-items-center px-0 py-2 border-left-0 border-right-0"
-      >
-        <div class="mr-3">
-          
+  <div class="col-12 col-md-4 mt-2">
+    <div class="card card-lightblue py-2">
+      <ul class="list-group">
+        
+        <li
+          class="list-group-item d-flex align-items-center px-0 py-1 border-0" style="background:transparent;"
+        >
+          <div class="mr-3">
+            
   <img src="dtpr_icons/purpose/water.svg" />
 
 
-        </div>
-        <div>
-          <p class="my-0"><small>The purpose of this system is</small></p>
-          <h6 class="my-0">Interaction</h6>
-        </div>
-      </li>
-      
-      <li
-        class="list-group-item d-flex align-items-center px-0 py-2 border-left-0 border-right-0"
-      >
-        <div class="mr-3">
-          
+          </div>
+          <div>
+            <p class="my-0"><small>The purpose of this system is</small></p>
+            <h6 class="my-0">Interaction</h6>
+          </div>
+        </li>
+        
+        <li
+          class="list-group-item d-flex align-items-center px-0 py-1 border-0" style="background:transparent;"
+        >
+          <div class="mr-3">
+            
   <img src="dtpr_icons/tech/light.svg" />
 
 
-        </div>
-        <div>
-          <p class="my-0"><small>The service is provided by</small></p>
-          <h6 class="my-0">Library Dept.</h6>
-        </div>
-      </li>
-      
-      <li
-        class="list-group-item d-flex align-items-center px-0 py-2 border-left-0 border-right-0"
-      >
-        <div class="mr-3">
-          
+          </div>
+          <div>
+            <p class="my-0"><small>The service is provided by</small></p>
+            <h6 class="my-0">Library Dept.</h6>
+          </div>
+        </li>
+        
+        <li
+          class="list-group-item d-flex align-items-center px-0 py-1 border-0" style="background:transparent;"
+        >
+          <div class="mr-3">
+            
   <div class="align-middle hex-icon">
     <img src="images/hexagon.svg" />
     <i class="material-icons md-24">room_service</i>
   </div>
 
 
-        </div>
-        <div>
-          <p class="my-0"><small>The user’s symmetrical interface is </small></p>
-          <h6 class="my-0">Personal AI</h6>
-        </div>
-      </li>
-      
-      <li
-        class="list-group-item d-flex align-items-center px-0 py-2 border-left-0 border-right-0"
-      >
-        <div class="mr-3">
-          
+          </div>
+          <div>
+            <p class="my-0"><small>The user’s interface is </small></p>
+            <h6 class="my-0">Personal AI</h6>
+          </div>
+        </li>
+        
+        <li
+          class="list-group-item d-flex align-items-center px-0 py-1 border-0" style="background:transparent;"
+        >
+          <div class="mr-3">
+            
   <div class="align-middle hex-icon">
     <img src="images/hexagon.svg" />
     <i class="material-icons md-24">favorite</i>
   </div>
 
 
-        </div>
-        <div>
-          <p class="my-0"><small>The relationship with this system is</small></p>
-          <h6 class="my-0">Temporary</h6>
-        </div>
-      </li>
-      
-    </ul>
+          </div>
+          <div>
+            <p class="my-0"><small>The relationship is</small></p>
+            <h6 class="my-0">Temporary</h6>
+          </div>
+        </li>
+        
+      </ul>
+    </div>
   </div>
   
   <div class="d-none d-md-block col-md-8"></div>
@@ -4538,7 +4933,7 @@
 
 </div>
 
-<div class="container">
+<div class="container pb-4">
   <div class="row">
   
 
@@ -4573,13 +4968,13 @@
   
 >
   <div
-  style="text-align: center; width: 100%; height: 100vh; position: relative;"
+  style="text-align: center; width: 100%; height: 100vh; position: relative;background-image: url(images/Frame_Background.png);"
   class="d-flex align-items-center"
 >
-  <div class="align-middle container">
+  <div class="container align-middle step-image">
     <div class="row">
       
-      <div class="col-12 col-md-8"><img src="images/Frame_1.png" width="100%" /></div>
+      <div class="col-12 col-md-8"><img src="images/Frame_Subject.svg" width="100%" /></div>
     </div>
   </div>
 </div>
@@ -4590,7 +4985,7 @@
   
   <div class="d-none d-md-block col-md-8"></div>
   
-  <div class="col-3 col-md-1 text-center d-flex align-items-center flex-column">
+  <!-- <div class="col-3 col-md-1 text-center d-flex align-items-center flex-column">
     <div>
   <img src="dtpr_icons/purpose/water.svg" />
 
@@ -4615,12 +5010,14 @@
   </div>
 
 </div>
-  </div>
-  <div class="col-9 col-md-3">
-    <h5>Trace your steps</h5>
-    <h6>
-      The security helps you trace your steps back to the food court, you get directions there.
-    </h6>
+  </div> -->
+  <div class="col-12 col-md-4">
+    <div class="card pb-2">
+      <h3>Trace your steps</h3>
+      <p>
+        The security helps you trace your steps back to the food court, you get directions there.
+      </p>
+    </div>
   </div>
   
 </div>
@@ -4628,83 +5025,85 @@
   
   <div class="d-none d-md-block col-md-8"></div>
   
-  <div class="col-12 col-md-4">
-    <ul class="list-group mt-5 mb-5">
-      
-      <li
-        class="list-group-item d-flex align-items-center px-0 py-2 border-left-0 border-right-0"
-      >
-        <div class="mr-3">
-          
+  <div class="col-12 col-md-4 mt-2">
+    <div class="card card-lightblue py-2">
+      <ul class="list-group">
+        
+        <li
+          class="list-group-item d-flex align-items-center px-0 py-1 border-0" style="background:transparent;"
+        >
+          <div class="mr-3">
+            
   <img src="dtpr_icons/purpose/water.svg" />
 
 
-        </div>
-        <div>
-          <p class="my-0"><small>The purpose of this system is</small></p>
-          <h6 class="my-0">Agency</h6>
-        </div>
-      </li>
-      
-      <li
-        class="list-group-item d-flex align-items-center px-0 py-2 border-left-0 border-right-0"
-      >
-        <div class="mr-3">
-          
+          </div>
+          <div>
+            <p class="my-0"><small>The purpose of this system is</small></p>
+            <h6 class="my-0">Agency</h6>
+          </div>
+        </li>
+        
+        <li
+          class="list-group-item d-flex align-items-center px-0 py-1 border-0" style="background:transparent;"
+        >
+          <div class="mr-3">
+            
   <img src="dtpr_icons/tech/light.svg" />
 
 
-        </div>
-        <div>
-          <p class="my-0"><small>The service is provided by</small></p>
-          <h6 class="my-0">Library Dept.</h6>
-        </div>
-      </li>
-      
-      <li
-        class="list-group-item d-flex align-items-center px-0 py-2 border-left-0 border-right-0"
-      >
-        <div class="mr-3">
-          
+          </div>
+          <div>
+            <p class="my-0"><small>The service is provided by</small></p>
+            <h6 class="my-0">Library Dept.</h6>
+          </div>
+        </li>
+        
+        <li
+          class="list-group-item d-flex align-items-center px-0 py-1 border-0" style="background:transparent;"
+        >
+          <div class="mr-3">
+            
   <div class="align-middle hex-icon">
     <img src="images/hexagon.svg" />
     <i class="material-icons md-24">room_service</i>
   </div>
 
 
-        </div>
-        <div>
-          <p class="my-0"><small>The user’s symmetrical interface is </small></p>
-          <h6 class="my-0">Place Chatbot</h6>
-        </div>
-      </li>
-      
-      <li
-        class="list-group-item d-flex align-items-center px-0 py-2 border-left-0 border-right-0"
-      >
-        <div class="mr-3">
-          
+          </div>
+          <div>
+            <p class="my-0"><small>The user’s interface is </small></p>
+            <h6 class="my-0">Place Chatbot</h6>
+          </div>
+        </li>
+        
+        <li
+          class="list-group-item d-flex align-items-center px-0 py-1 border-0" style="background:transparent;"
+        >
+          <div class="mr-3">
+            
   <div class="align-middle hex-icon">
     <img src="images/hexagon.svg" />
     <i class="material-icons md-24">favorite</i>
   </div>
 
 
-        </div>
-        <div>
-          <p class="my-0"><small>The relationship with this system is</small></p>
-          <h6 class="my-0">Temporary</h6>
-        </div>
-      </li>
-      
-    </ul>
+          </div>
+          <div>
+            <p class="my-0"><small>The relationship is</small></p>
+            <h6 class="my-0">Temporary</h6>
+          </div>
+        </li>
+        
+      </ul>
+    </div>
   </div>
   
 </div>
 
 </div>
 
-<div class="container">
+<div class="container pb-4">
   <div class="row">
   
   <div class="col-8 d-none d-md-block"></div>
@@ -4737,15 +5136,15 @@
   
 >
   <div
-  style="text-align: center; width: 100%; height: 100vh; position: relative;"
+  style="text-align: center; width: 100%; height: 100vh; position: relative;background-image: url(images/Frame_Background.png);"
   class="d-flex align-items-center"
 >
-  <div class="align-middle container">
+  <div class="container align-middle step-image">
     <div class="row">
       
       <div class="col-4 d-none d-md-block"></div>
       
-      <div class="col-12 col-md-8"><img src="images/Frame_2.png" width="100%" /></div>
+      <div class="col-12 col-md-8"><img src="images/Frame_Subject.svg" width="100%" /></div>
     </div>
   </div>
 </div>
@@ -4754,7 +5153,7 @@
 <div class="container">
 <div class="row">
   
-  <div class="col-3 col-md-1 text-center d-flex align-items-center flex-column">
+  <!-- <div class="col-3 col-md-1 text-center d-flex align-items-center flex-column">
     <div>
   <img src="dtpr_icons/purpose/water.svg" />
 
@@ -4779,12 +5178,14 @@
   </div>
 
 </div>
-  </div>
-  <div class="col-9 col-md-3">
-    <h5>On your way</h5>
-    <h6>
-      After getting your bag back, you unlock 2 bikes, one for your friend, and head home together.
-    </h6>
+  </div> -->
+  <div class="col-12 col-md-4">
+    <div class="card pb-2">
+      <h3>On your way</h3>
+      <p>
+        After getting your bag back, you unlock 2 bikes, one for your friend, and head home together.
+      </p>
+    </div>
   </div>
   
   <div class="d-none d-md-block col-md-8"></div>
@@ -4792,76 +5193,78 @@
 </div>
 <div class="row">
   
-  <div class="col-12 col-md-4">
-    <ul class="list-group mt-5 mb-5">
-      
-      <li
-        class="list-group-item d-flex align-items-center px-0 py-2 border-left-0 border-right-0"
-      >
-        <div class="mr-3">
-          
+  <div class="col-12 col-md-4 mt-2">
+    <div class="card card-lightblue py-2">
+      <ul class="list-group">
+        
+        <li
+          class="list-group-item d-flex align-items-center px-0 py-1 border-0" style="background:transparent;"
+        >
+          <div class="mr-3">
+            
   <img src="dtpr_icons/purpose/water.svg" />
 
 
-        </div>
-        <div>
-          <p class="my-0"><small>The purpose of this system is</small></p>
-          <h6 class="my-0">Borrowing</h6>
-        </div>
-      </li>
-      
-      <li
-        class="list-group-item d-flex align-items-center px-0 py-2 border-left-0 border-right-0"
-      >
-        <div class="mr-3">
-          
+          </div>
+          <div>
+            <p class="my-0"><small>The purpose of this system is</small></p>
+            <h6 class="my-0">Borrowing</h6>
+          </div>
+        </li>
+        
+        <li
+          class="list-group-item d-flex align-items-center px-0 py-1 border-0" style="background:transparent;"
+        >
+          <div class="mr-3">
+            
   <img src="dtpr_icons/tech/light.svg" />
 
 
-        </div>
-        <div>
-          <p class="my-0"><small>The service is provided by</small></p>
-          <h6 class="my-0">Library Dept.</h6>
-        </div>
-      </li>
-      
-      <li
-        class="list-group-item d-flex align-items-center px-0 py-2 border-left-0 border-right-0"
-      >
-        <div class="mr-3">
-          
+          </div>
+          <div>
+            <p class="my-0"><small>The service is provided by</small></p>
+            <h6 class="my-0">Library Dept.</h6>
+          </div>
+        </li>
+        
+        <li
+          class="list-group-item d-flex align-items-center px-0 py-1 border-0" style="background:transparent;"
+        >
+          <div class="mr-3">
+            
   <div class="align-middle hex-icon">
     <img src="images/hexagon.svg" />
     <i class="material-icons md-24">room_service</i>
   </div>
 
 
-        </div>
-        <div>
-          <p class="my-0"><small>The user’s symmetrical interface is </small></p>
-          <h6 class="my-0">Personal AI</h6>
-        </div>
-      </li>
-      
-      <li
-        class="list-group-item d-flex align-items-center px-0 py-2 border-left-0 border-right-0"
-      >
-        <div class="mr-3">
-          
+          </div>
+          <div>
+            <p class="my-0"><small>The user’s interface is </small></p>
+            <h6 class="my-0">Personal AI</h6>
+          </div>
+        </li>
+        
+        <li
+          class="list-group-item d-flex align-items-center px-0 py-1 border-0" style="background:transparent;"
+        >
+          <div class="mr-3">
+            
   <div class="align-middle hex-icon">
     <img src="images/hexagon.svg" />
     <i class="material-icons md-24">favorite</i>
   </div>
 
 
-        </div>
-        <div>
-          <p class="my-0"><small>The relationship with this system is</small></p>
-          <h6 class="my-0">Membership</h6>
-        </div>
-      </li>
-      
-    </ul>
+          </div>
+          <div>
+            <p class="my-0"><small>The relationship is</small></p>
+            <h6 class="my-0">Membership</h6>
+          </div>
+        </li>
+        
+      </ul>
+    </div>
   </div>
   
   <div class="d-none d-md-block col-md-8"></div>
@@ -4870,7 +5273,7 @@
 
 </div>
 
-<div class="container">
+<div class="container pb-4">
   <div class="row">
   
 
@@ -4902,31 +5305,65 @@
     <!-- / SECTION 6 -->
 
     <!-- SECTION 7 -->
-    <div class="step" data-step="section-1">
+    
+    <div class="step" data-step="section-7">
       <div class="sticky-section-header">
-        <div class="container">
+        <div class="container sticky-nav">
   <div class="row">
-    <div class="col-3 col-md-1" style="">
-      <div class="prehead mt-1">
-        Review
-      </div>
+    <div class="col-10">
+      <h4 class="mb-0">
+        
+          
+  <div class="align-middle number-icon">
+    7
+  </div>
+
+
+        
+        <span class="pl-1">How might we offer time-bound data sharing with ongoing control of choices?</span>
+      </h4>
     </div>
-    <div class="col-9  col-sm-11" style="margin-top:2px;">
-      <h6 class="mt-1">
-        A standard way for people to review their data footprint, delete transactions, and save other for later.
-      </h6>
+    <div class="col-2 menu">
+      
+  <div class="align-middle circle-icon">
+    <i class="material-icons md-18">arrow_upward</i>
+  </div>
+
+
+      
+  <div class="align-middle circle-icon">
+    <i class="material-icons md-18">arrow_downward</i>
+  </div>
+
+
+      
+  <div class="align-middle circle-icon">
+    <i class="material-icons md-18">apps</i>
+  </div>
+
+
     </div>
   </div>
 </div>
       </div>
-      <div class="container">
-        
-  <div class="row" style="margin-top:150px;margin-bottom:150px;">
+      <div class="step-banner">
+        <div class="container">
+          <div class="row">
+  <div class="col">
+    <div class="card card-darkblue d-flex scenario-card big-card" style="background-image:url(images/Vision_Chapter_Image.png);">
+      <div class="w-50">
+        <h3><span class="badge">7</span>How might we...</h3>
+        <h1>offer time-bound data sharing with ongoing control of choices?</h1>
+      </div>
+    </div>
+  </div>
+</div>
+  <!-- <div class="row" style="margin-top:150px;margin-bottom:150px;">
     <div class="col-6 offset-3 col-md-3 offset-md-0">
       <img src="images/Seal_Sensor.png" width="100%" />
     </div>
     <div class="col-12 col-md-7 offset-md-1">
-      <h1 class="display-4 text-center text-md-left">Review<br />&amp; Edit</h1>
+      <h1 class="display-4 text-center text-md-left"></h1>
       <p class="lead text-center text-md-left">
         A standard way for people to review their data footprint, delete transactions, and save other for later.
       </p>
@@ -4992,8 +5429,9 @@
         <h6>Alerts can be set based on geographic areas and a person’s familiarity with that place.</h6>
       </div>
     
-  </div>
+  </div> -->
 
+        </div>
       </div>
       <div>
         <div class="sticky-image" 
@@ -5002,13 +5440,13 @@
   
 >
   <div
-  style="text-align: center; width: 100%; height: 100vh; position: relative;"
+  style="text-align: center; width: 100%; height: 100vh; position: relative;background-image: url(images/Frame_Background.png);"
   class="d-flex align-items-center"
 >
-  <div class="align-middle container">
+  <div class="container align-middle step-image">
     <div class="row">
       
-      <div class="col-12 col-md-8"><img src="images/Frame_1.png" width="100%" /></div>
+      <div class="col-12 col-md-8"><img src="images/Frame_Subject.svg" width="100%" /></div>
     </div>
   </div>
 </div>
@@ -5019,7 +5457,7 @@
   
   <div class="d-none d-md-block col-md-8"></div>
   
-  <div class="col-3 col-md-1 text-center d-flex align-items-center flex-column">
+  <!-- <div class="col-3 col-md-1 text-center d-flex align-items-center flex-column">
     <div>
   <img src="dtpr_icons/purpose/water.svg" />
 
@@ -5044,12 +5482,14 @@
   </div>
 
 </div>
-  </div>
-  <div class="col-9 col-md-3">
-    <h5>Cycle the green wave</h5>
-    <h6>
-      As you wait at a light, you opt into the green wave for this journey. This considers your journey in light changes.
-    </h6>
+  </div> -->
+  <div class="col-12 col-md-4">
+    <div class="card pb-2">
+      <h3>Cycle the green wave</h3>
+      <p>
+        As you wait at a light, you opt into the green wave for this journey. This considers your journey in light changes.
+      </p>
+    </div>
   </div>
   
 </div>
@@ -5057,83 +5497,85 @@
   
   <div class="d-none d-md-block col-md-8"></div>
   
-  <div class="col-12 col-md-4">
-    <ul class="list-group mt-5 mb-5">
-      
-      <li
-        class="list-group-item d-flex align-items-center px-0 py-2 border-left-0 border-right-0"
-      >
-        <div class="mr-3">
-          
+  <div class="col-12 col-md-4 mt-2">
+    <div class="card card-lightblue py-2">
+      <ul class="list-group">
+        
+        <li
+          class="list-group-item d-flex align-items-center px-0 py-1 border-0" style="background:transparent;"
+        >
+          <div class="mr-3">
+            
   <img src="dtpr_icons/purpose/water.svg" />
 
 
-        </div>
-        <div>
-          <p class="my-0"><small>The purpose of this system is</small></p>
-          <h6 class="my-0">Shopping</h6>
-        </div>
-      </li>
-      
-      <li
-        class="list-group-item d-flex align-items-center px-0 py-2 border-left-0 border-right-0"
-      >
-        <div class="mr-3">
-          
+          </div>
+          <div>
+            <p class="my-0"><small>The purpose of this system is</small></p>
+            <h6 class="my-0">Shopping</h6>
+          </div>
+        </li>
+        
+        <li
+          class="list-group-item d-flex align-items-center px-0 py-1 border-0" style="background:transparent;"
+        >
+          <div class="mr-3">
+            
   <img src="dtpr_icons/tech/light.svg" />
 
 
-        </div>
-        <div>
-          <p class="my-0"><small>The service is provided by</small></p>
-          <h6 class="my-0">Bikeshare Co.</h6>
-        </div>
-      </li>
-      
-      <li
-        class="list-group-item d-flex align-items-center px-0 py-2 border-left-0 border-right-0"
-      >
-        <div class="mr-3">
-          
+          </div>
+          <div>
+            <p class="my-0"><small>The service is provided by</small></p>
+            <h6 class="my-0">Bikeshare Co.</h6>
+          </div>
+        </li>
+        
+        <li
+          class="list-group-item d-flex align-items-center px-0 py-1 border-0" style="background:transparent;"
+        >
+          <div class="mr-3">
+            
   <div class="align-middle hex-icon">
     <img src="images/hexagon.svg" />
     <i class="material-icons md-24">room_service</i>
   </div>
 
 
-        </div>
-        <div>
-          <p class="my-0"><small>The user’s symmetrical interface is </small></p>
-          <h6 class="my-0">Sensor Chatbot</h6>
-        </div>
-      </li>
-      
-      <li
-        class="list-group-item d-flex align-items-center px-0 py-2 border-left-0 border-right-0"
-      >
-        <div class="mr-3">
-          
+          </div>
+          <div>
+            <p class="my-0"><small>The user’s interface is </small></p>
+            <h6 class="my-0">Sensor Chatbot</h6>
+          </div>
+        </li>
+        
+        <li
+          class="list-group-item d-flex align-items-center px-0 py-1 border-0" style="background:transparent;"
+        >
+          <div class="mr-3">
+            
   <div class="align-middle hex-icon">
     <img src="images/hexagon.svg" />
     <i class="material-icons md-24">favorite</i>
   </div>
 
 
-        </div>
-        <div>
-          <p class="my-0"><small>The relationship with this system is</small></p>
-          <h6 class="my-0">Temporary</h6>
-        </div>
-      </li>
-      
-    </ul>
+          </div>
+          <div>
+            <p class="my-0"><small>The relationship is</small></p>
+            <h6 class="my-0">Temporary</h6>
+          </div>
+        </li>
+        
+      </ul>
+    </div>
   </div>
   
 </div>
 
 </div>
 
-<div class="container">
+<div class="container pb-4">
   <div class="row">
   
   <div class="col-8 d-none d-md-block"></div>
@@ -5166,15 +5608,15 @@
   
 >
   <div
-  style="text-align: center; width: 100%; height: 100vh; position: relative;"
+  style="text-align: center; width: 100%; height: 100vh; position: relative;background-image: url(images/Frame_Background.png);"
   class="d-flex align-items-center"
 >
-  <div class="align-middle container">
+  <div class="container align-middle step-image">
     <div class="row">
       
       <div class="col-4 d-none d-md-block"></div>
       
-      <div class="col-12 col-md-8"><img src="images/Frame_2.png" width="100%" /></div>
+      <div class="col-12 col-md-8"><img src="images/Frame_Subject.svg" width="100%" /></div>
     </div>
   </div>
 </div>
@@ -5183,7 +5625,7 @@
 <div class="container">
 <div class="row">
   
-  <div class="col-3 col-md-1 text-center d-flex align-items-center flex-column">
+  <!-- <div class="col-3 col-md-1 text-center d-flex align-items-center flex-column">
     <div>
   <img src="dtpr_icons/purpose/water.svg" />
 
@@ -5208,12 +5650,14 @@
   </div>
 
 </div>
-  </div>
-  <div class="col-9 col-md-3">
-    <h5>Unlock door</h5>
-    <h6>
-      You unlock your door with your Personal AI, and your friend can see your home data policies.
-    </h6>
+  </div> -->
+  <div class="col-12 col-md-4">
+    <div class="card pb-2">
+      <h3>Unlock door</h3>
+      <p>
+        You unlock your door with your Personal AI, and your friend can see your home data policies.
+      </p>
+    </div>
   </div>
   
   <div class="d-none d-md-block col-md-8"></div>
@@ -5221,76 +5665,78 @@
 </div>
 <div class="row">
   
-  <div class="col-12 col-md-4">
-    <ul class="list-group mt-5 mb-5">
-      
-      <li
-        class="list-group-item d-flex align-items-center px-0 py-2 border-left-0 border-right-0"
-      >
-        <div class="mr-3">
-          
+  <div class="col-12 col-md-4 mt-2">
+    <div class="card card-lightblue py-2">
+      <ul class="list-group">
+        
+        <li
+          class="list-group-item d-flex align-items-center px-0 py-1 border-0" style="background:transparent;"
+        >
+          <div class="mr-3">
+            
   <img src="dtpr_icons/purpose/water.svg" />
 
 
-        </div>
-        <div>
-          <p class="my-0"><small>The purpose of this system is</small></p>
-          <h6 class="my-0">Interaction</h6>
-        </div>
-      </li>
-      
-      <li
-        class="list-group-item d-flex align-items-center px-0 py-2 border-left-0 border-right-0"
-      >
-        <div class="mr-3">
-          
+          </div>
+          <div>
+            <p class="my-0"><small>The purpose of this system is</small></p>
+            <h6 class="my-0">Interaction</h6>
+          </div>
+        </li>
+        
+        <li
+          class="list-group-item d-flex align-items-center px-0 py-1 border-0" style="background:transparent;"
+        >
+          <div class="mr-3">
+            
   <img src="dtpr_icons/tech/light.svg" />
 
 
-        </div>
-        <div>
-          <p class="my-0"><small>The service is provided by</small></p>
-          <h6 class="my-0">Library Dept.</h6>
-        </div>
-      </li>
-      
-      <li
-        class="list-group-item d-flex align-items-center px-0 py-2 border-left-0 border-right-0"
-      >
-        <div class="mr-3">
-          
+          </div>
+          <div>
+            <p class="my-0"><small>The service is provided by</small></p>
+            <h6 class="my-0">Library Dept.</h6>
+          </div>
+        </li>
+        
+        <li
+          class="list-group-item d-flex align-items-center px-0 py-1 border-0" style="background:transparent;"
+        >
+          <div class="mr-3">
+            
   <div class="align-middle hex-icon">
     <img src="images/hexagon.svg" />
     <i class="material-icons md-24">room_service</i>
   </div>
 
 
-        </div>
-        <div>
-          <p class="my-0"><small>The user’s symmetrical interface is </small></p>
-          <h6 class="my-0">Personal AI</h6>
-        </div>
-      </li>
-      
-      <li
-        class="list-group-item d-flex align-items-center px-0 py-2 border-left-0 border-right-0"
-      >
-        <div class="mr-3">
-          
+          </div>
+          <div>
+            <p class="my-0"><small>The user’s interface is </small></p>
+            <h6 class="my-0">Personal AI</h6>
+          </div>
+        </li>
+        
+        <li
+          class="list-group-item d-flex align-items-center px-0 py-1 border-0" style="background:transparent;"
+        >
+          <div class="mr-3">
+            
   <div class="align-middle hex-icon">
     <img src="images/hexagon.svg" />
     <i class="material-icons md-24">favorite</i>
   </div>
 
 
-        </div>
-        <div>
-          <p class="my-0"><small>The relationship with this system is</small></p>
-          <h6 class="my-0">Temporary</h6>
-        </div>
-      </li>
-      
-    </ul>
+          </div>
+          <div>
+            <p class="my-0"><small>The relationship is</small></p>
+            <h6 class="my-0">Temporary</h6>
+          </div>
+        </li>
+        
+      </ul>
+    </div>
   </div>
   
   <div class="d-none d-md-block col-md-8"></div>
@@ -5299,7 +5745,7 @@
 
 </div>
 
-<div class="container">
+<div class="container pb-4">
   <div class="row">
   
 
@@ -5334,13 +5780,13 @@
   
 >
   <div
-  style="text-align: center; width: 100%; height: 100vh; position: relative;"
+  style="text-align: center; width: 100%; height: 100vh; position: relative;background-image: url(images/Frame_Background.png);"
   class="d-flex align-items-center"
 >
-  <div class="align-middle container">
+  <div class="container align-middle step-image">
     <div class="row">
       
-      <div class="col-12 col-md-8"><img src="images/Frame_1.png" width="100%" /></div>
+      <div class="col-12 col-md-8"><img src="images/Frame_Subject.svg" width="100%" /></div>
     </div>
   </div>
 </div>
@@ -5351,7 +5797,7 @@
   
   <div class="d-none d-md-block col-md-8"></div>
   
-  <div class="col-3 col-md-1 text-center d-flex align-items-center flex-column">
+  <!-- <div class="col-3 col-md-1 text-center d-flex align-items-center flex-column">
     <div>
   <img src="dtpr_icons/purpose/water.svg" />
 
@@ -5376,12 +5822,14 @@
   </div>
 
 </div>
-  </div>
-  <div class="col-9 col-md-3">
-    <h5>Review transactions from the day</h5>
-    <h6>
-      Looking back, you're able to see the digital interactions you had throughout the day. You can edit them, delete some, and set future preferences.
-    </h6>
+  </div> -->
+  <div class="col-12 col-md-4">
+    <div class="card pb-2">
+      <h3>Review transactions from the day</h3>
+      <p>
+        Looking back, you're able to see the digital interactions you had throughout the day. You can edit them, delete some, and set future preferences.
+      </p>
+    </div>
   </div>
   
 </div>
@@ -5389,83 +5837,85 @@
   
   <div class="d-none d-md-block col-md-8"></div>
   
-  <div class="col-12 col-md-4">
-    <ul class="list-group mt-5 mb-5">
-      
-      <li
-        class="list-group-item d-flex align-items-center px-0 py-2 border-left-0 border-right-0"
-      >
-        <div class="mr-3">
-          
+  <div class="col-12 col-md-4 mt-2">
+    <div class="card card-lightblue py-2">
+      <ul class="list-group">
+        
+        <li
+          class="list-group-item d-flex align-items-center px-0 py-1 border-0" style="background:transparent;"
+        >
+          <div class="mr-3">
+            
   <img src="dtpr_icons/purpose/water.svg" />
 
 
-        </div>
-        <div>
-          <p class="my-0"><small>The purpose of this system is</small></p>
-          <h6 class="my-0">Agency</h6>
-        </div>
-      </li>
-      
-      <li
-        class="list-group-item d-flex align-items-center px-0 py-2 border-left-0 border-right-0"
-      >
-        <div class="mr-3">
-          
+          </div>
+          <div>
+            <p class="my-0"><small>The purpose of this system is</small></p>
+            <h6 class="my-0">Agency</h6>
+          </div>
+        </li>
+        
+        <li
+          class="list-group-item d-flex align-items-center px-0 py-1 border-0" style="background:transparent;"
+        >
+          <div class="mr-3">
+            
   <img src="dtpr_icons/tech/light.svg" />
 
 
-        </div>
-        <div>
-          <p class="my-0"><small>The service is provided by</small></p>
-          <h6 class="my-0">Library Dept.</h6>
-        </div>
-      </li>
-      
-      <li
-        class="list-group-item d-flex align-items-center px-0 py-2 border-left-0 border-right-0"
-      >
-        <div class="mr-3">
-          
+          </div>
+          <div>
+            <p class="my-0"><small>The service is provided by</small></p>
+            <h6 class="my-0">Library Dept.</h6>
+          </div>
+        </li>
+        
+        <li
+          class="list-group-item d-flex align-items-center px-0 py-1 border-0" style="background:transparent;"
+        >
+          <div class="mr-3">
+            
   <div class="align-middle hex-icon">
     <img src="images/hexagon.svg" />
     <i class="material-icons md-24">room_service</i>
   </div>
 
 
-        </div>
-        <div>
-          <p class="my-0"><small>The user’s symmetrical interface is </small></p>
-          <h6 class="my-0">Place Chatbot</h6>
-        </div>
-      </li>
-      
-      <li
-        class="list-group-item d-flex align-items-center px-0 py-2 border-left-0 border-right-0"
-      >
-        <div class="mr-3">
-          
+          </div>
+          <div>
+            <p class="my-0"><small>The user’s interface is </small></p>
+            <h6 class="my-0">Place Chatbot</h6>
+          </div>
+        </li>
+        
+        <li
+          class="list-group-item d-flex align-items-center px-0 py-1 border-0" style="background:transparent;"
+        >
+          <div class="mr-3">
+            
   <div class="align-middle hex-icon">
     <img src="images/hexagon.svg" />
     <i class="material-icons md-24">favorite</i>
   </div>
 
 
-        </div>
-        <div>
-          <p class="my-0"><small>The relationship with this system is</small></p>
-          <h6 class="my-0">Temporary</h6>
-        </div>
-      </li>
-      
-    </ul>
+          </div>
+          <div>
+            <p class="my-0"><small>The relationship is</small></p>
+            <h6 class="my-0">Temporary</h6>
+          </div>
+        </li>
+        
+      </ul>
+    </div>
   </div>
   
 </div>
 
 </div>
 
-<div class="container">
+<div class="container pb-4">
   <div class="row">
   
   <div class="col-8 d-none d-md-block"></div>
@@ -5498,15 +5948,15 @@
   
 >
   <div
-  style="text-align: center; width: 100%; height: 100vh; position: relative;"
+  style="text-align: center; width: 100%; height: 100vh; position: relative;background-image: url(images/Frame_Background.png);"
   class="d-flex align-items-center"
 >
-  <div class="align-middle container">
+  <div class="container align-middle step-image">
     <div class="row">
       
       <div class="col-4 d-none d-md-block"></div>
       
-      <div class="col-12 col-md-8"><img src="images/Frame_2.png" width="100%" /></div>
+      <div class="col-12 col-md-8"><img src="images/Frame_Subject.svg" width="100%" /></div>
     </div>
   </div>
 </div>
@@ -5515,7 +5965,7 @@
 <div class="container">
 <div class="row">
   
-  <div class="col-3 col-md-1 text-center d-flex align-items-center flex-column">
+  <!-- <div class="col-3 col-md-1 text-center d-flex align-items-center flex-column">
     <div>
   <img src="dtpr_icons/purpose/water.svg" />
 
@@ -5540,12 +5990,14 @@
   </div>
 
 </div>
-  </div>
-  <div class="col-9 col-md-3">
-    <h5>Feedback</h5>
-    <h6>
-      You choose to share the busker you saw with a friend.
-    </h6>
+  </div> -->
+  <div class="col-12 col-md-4">
+    <div class="card pb-2">
+      <h3>Feedback</h3>
+      <p>
+        You choose to share the busker you saw with a friend.
+      </p>
+    </div>
   </div>
   
   <div class="d-none d-md-block col-md-8"></div>
@@ -5553,76 +6005,78 @@
 </div>
 <div class="row">
   
-  <div class="col-12 col-md-4">
-    <ul class="list-group mt-5 mb-5">
-      
-      <li
-        class="list-group-item d-flex align-items-center px-0 py-2 border-left-0 border-right-0"
-      >
-        <div class="mr-3">
-          
+  <div class="col-12 col-md-4 mt-2">
+    <div class="card card-lightblue py-2">
+      <ul class="list-group">
+        
+        <li
+          class="list-group-item d-flex align-items-center px-0 py-1 border-0" style="background:transparent;"
+        >
+          <div class="mr-3">
+            
   <img src="dtpr_icons/purpose/water.svg" />
 
 
-        </div>
-        <div>
-          <p class="my-0"><small>The purpose of this system is</small></p>
-          <h6 class="my-0">Borrowing</h6>
-        </div>
-      </li>
-      
-      <li
-        class="list-group-item d-flex align-items-center px-0 py-2 border-left-0 border-right-0"
-      >
-        <div class="mr-3">
-          
+          </div>
+          <div>
+            <p class="my-0"><small>The purpose of this system is</small></p>
+            <h6 class="my-0">Borrowing</h6>
+          </div>
+        </li>
+        
+        <li
+          class="list-group-item d-flex align-items-center px-0 py-1 border-0" style="background:transparent;"
+        >
+          <div class="mr-3">
+            
   <img src="dtpr_icons/tech/light.svg" />
 
 
-        </div>
-        <div>
-          <p class="my-0"><small>The service is provided by</small></p>
-          <h6 class="my-0">Library Dept.</h6>
-        </div>
-      </li>
-      
-      <li
-        class="list-group-item d-flex align-items-center px-0 py-2 border-left-0 border-right-0"
-      >
-        <div class="mr-3">
-          
+          </div>
+          <div>
+            <p class="my-0"><small>The service is provided by</small></p>
+            <h6 class="my-0">Library Dept.</h6>
+          </div>
+        </li>
+        
+        <li
+          class="list-group-item d-flex align-items-center px-0 py-1 border-0" style="background:transparent;"
+        >
+          <div class="mr-3">
+            
   <div class="align-middle hex-icon">
     <img src="images/hexagon.svg" />
     <i class="material-icons md-24">room_service</i>
   </div>
 
 
-        </div>
-        <div>
-          <p class="my-0"><small>The user’s symmetrical interface is </small></p>
-          <h6 class="my-0">Personal AI</h6>
-        </div>
-      </li>
-      
-      <li
-        class="list-group-item d-flex align-items-center px-0 py-2 border-left-0 border-right-0"
-      >
-        <div class="mr-3">
-          
+          </div>
+          <div>
+            <p class="my-0"><small>The user’s interface is </small></p>
+            <h6 class="my-0">Personal AI</h6>
+          </div>
+        </li>
+        
+        <li
+          class="list-group-item d-flex align-items-center px-0 py-1 border-0" style="background:transparent;"
+        >
+          <div class="mr-3">
+            
   <div class="align-middle hex-icon">
     <img src="images/hexagon.svg" />
     <i class="material-icons md-24">favorite</i>
   </div>
 
 
-        </div>
-        <div>
-          <p class="my-0"><small>The relationship with this system is</small></p>
-          <h6 class="my-0">Membership</h6>
-        </div>
-      </li>
-      
-    </ul>
+          </div>
+          <div>
+            <p class="my-0"><small>The relationship is</small></p>
+            <h6 class="my-0">Membership</h6>
+          </div>
+        </li>
+        
+      </ul>
+    </div>
   </div>
   
   <div class="d-none d-md-block col-md-8"></div>
@@ -5631,7 +6085,7 @@
 
 </div>
 
-<div class="container">
+<div class="container pb-4">
   <div class="row">
   
 
