@@ -9965,6 +9965,11 @@ body {
   color: #002684;
 }
 
+.container,
+.navbar .container {
+  padding: 0 20px;
+}
+
 .btn {
   background-color: #002684;
   color: #fff;
@@ -9999,11 +10004,21 @@ h1 {
   font-size: 48px;
   font-weight: 700;
 }
+@media (max-width: 767.98px) {
+  h1 {
+    font-size: 36px;
+  }
+}
 
 h2 {
   font-size: 36px;
   font-weight: 700;
   line-height: 2.75rem;
+}
+@media (max-width: 767.98px) {
+  h2 {
+    font-size: 32px;
+  }
 }
 
 h3 {
@@ -10093,9 +10108,6 @@ h6 {
 .card h4 {
   margin-top: -4px;
 }
-.card i {
-  margin-top: -4px;
-}
 .card .badge {
   width: 32px;
   height: 32px;
@@ -10151,6 +10163,16 @@ h6 {
   font-size: 24px;
   text-align: center;
   padding-bottom: 24px;
+}
+@media (max-width: 767.98px) {
+  .card.big-card .headers {
+    width: 100%;
+  }
+}
+@media (min-width: 768px) {
+  .card.big-card .headers {
+    width: 50%;
+  }
 }
 .card.card-image {
   background-size: cover;
@@ -10215,9 +10237,11 @@ h6 {
 }
 
 .section-image {
-  height: 640px;
   background-size: cover;
   background-repeat: no-repeat;
+}
+.section-image img {
+  width: 100%;
 }
 
 .site-header {
@@ -10245,7 +10269,7 @@ h6 {
 .hex-icon i {
   position: absolute;
   left: 6px;
-  top: 10px;
+  top: 6px;
   color: #000;
 }
 
@@ -10273,6 +10297,9 @@ h6 {
   font-size: 16px;
 }
 
+.sticky-nav .circle-icon {
+  cursor: pointer;
+}
 .sticky-nav .menu {
   text-align: right;
 }
@@ -10386,6 +10413,23 @@ h6 {
 
 .ai-option {
   background: transparent;
+  border-radius: 20px;
+  border: 0.5px solid rgba(0, 0, 0, 0);
+  cursor: pointer;
+}
+.ai-option .icon-checked {
+  display: none;
+}
+.ai-option.selected {
+  background: #ffffff;
+  border: 0.5px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 8px 16px rgba(131, 137, 174, 0.3);
+}
+.ai-option.selected .icon-checked {
+  display: inline-block;
+}
+.ai-option.selected .icon-unchecked {
+  display: none;
 }
 .ai-option h3 {
   padding: 24px 0 0 0;
@@ -10395,36 +10439,25 @@ h6 {
   padding: 4px 0 16px 0;
   margin: 0;
 }
-
 .ai-option .radio {
   height: 96px;
   line-height: 96px;
   width: 65px;
   margin: 0 4px 0 20px;
 }
-
 .ai-option .avatar {
   height: 96px;
   line-height: 96px;
   width: 65px;
   margin: 0 10px 0 0;
 }
-
 .ai-option .title {
   padding: 24px 0 0 0;
-}
-
-.ai-option.selected {
-  background: #ffffff;
-  border: 0.5px solid rgba(0, 0, 0, 0.1);
-  box-shadow: 0px 8px 16px rgba(131, 137, 174, 0.3);
-  border-radius: 20px;
 }
 
 .ai-options {
   background: transparent;
 }
-
 .ai-options .list-group-item {
   padding: 0;
   background: transparent;
