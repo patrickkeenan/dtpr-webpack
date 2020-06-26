@@ -1,18 +1,14 @@
 <div class="container sticky-nav">
   <div class="row">
-    <div class="col-10">
+    <div class="col-7">
       <h4 class="mb-0">
-        <% if(index<0){ %>
-          <%= require("ejs-loader!./icon.ejs")({icon:"circle-icon-lock"}) %>
-        <% }else{ %>
-          <%= require("ejs-loader!./icon.ejs")({icon:"number-icon-"+(index+1)}) %>
-        <% } %>
+        <span class="nav-current-section"><%= require("ejs-loader!./icon.ejs")({icon:icon}) %></span>
         <span class="pl-1"><%= title %></span>
       </h4>
     </div>
-    <div class="col-2 menu">
-      <%= require("ejs-loader!./icon.ejs")({icon:"circle-icon-arrow_upward"}) %>
-      <%= require("ejs-loader!./icon.ejs")({icon:"circle-icon-arrow_downward"}) %>
+    <div class="col-5 menu">
+      <span class="nav-prev-section"><%= require("ejs-loader!./icon.ejs")({icon:"circle-icon-arrow_upward"}) %></span>
+      <span class="nav-next-section"><%= require("ejs-loader!./icon.ejs")({icon:"circle-icon-arrow_downward"}) %></span>
       <%= require("ejs-loader!./icon.ejs")({icon:"circle-icon-apps"}) %>
     </div>
   </div>

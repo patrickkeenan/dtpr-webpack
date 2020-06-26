@@ -35,6 +35,10 @@ body {
   font-family: "Red Hat Text", sans-serif;
   color: $blue;
 }
+.container,
+.navbar .container {
+  padding: 0 20px;
+}
 
 .btn {
   background-color: #002684;
@@ -67,11 +71,17 @@ body {
 h1 {
   font-size: 48px;
   font-weight: 700;
+  @include media-breakpoint-down(sm) {
+    font-size: 36px;
+  }
 }
 h2 {
   font-size: 36px;
   font-weight: 700;
   line-height: 2.75rem;
+  @include media-breakpoint-down(sm) {
+    font-size: 32px;
+  }
 }
 h3 {
   font-size: 24px;
@@ -156,7 +166,6 @@ h6 {
     margin-top: -4px;
   }
   i {
-    margin-top: -4px;
   }
   .badge {
     width: 32px;
@@ -215,6 +224,14 @@ h6 {
       font-size: 24px;
       text-align: center;
       padding-bottom: 24px;
+    }
+    .headers {
+      @include media-breakpoint-down(sm) {
+        width: 100%;
+      }
+      @include media-breakpoint-up(md) {
+        width: 50%;
+      }
     }
   }
   &.card-image {
@@ -287,9 +304,11 @@ h6 {
 }
 
 .section-image {
-  height: 640px;
   background-size: cover;
   background-repeat: no-repeat;
+  img {
+    width: 100%;
+  }
 }
 
 .site-header {
@@ -313,7 +332,7 @@ h6 {
 .hex-icon i {
   position: absolute;
   left: 6px;
-  top: 10px;
+  top: 6px;
   color: #000;
 }
 .circle-icon {
@@ -340,6 +359,9 @@ h6 {
 }
 
 .sticky-nav {
+  .circle-icon {
+    cursor: pointer;
+  }
   .menu {
     text-align: right;
     .circle-icon {
@@ -456,6 +478,24 @@ h6 {
 }
 .ai-option {
   background: transparent;
+  border-radius: 20px;
+  border: 0.5px solid rgba(0, 0, 0, 0);
+  cursor: pointer;
+  // transition: ease-in-out height 0.15s;
+  .icon-checked {
+    display: none;
+  }
+  &.selected {
+    background: #ffffff;
+    border: 0.5px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 8px 16px rgba(131, 137, 174, 0.3);
+    .icon-checked {
+      display: inline-block;
+    }
+    .icon-unchecked {
+      display: none;
+    }
+  }
   h3 {
     padding: 24px 0 0 0;
     margin: 0;
@@ -464,33 +504,27 @@ h6 {
     padding: 4px 0 16px 0;
     margin: 0;
   }
-}
-.ai-option .radio {
-  height: 96px;
-  line-height: 96px;
-  width: 65px;
-  margin: 0 4px 0 20px;
-}
-.ai-option .avatar {
-  height: 96px;
-  line-height: 96px;
-  width: 65px;
-  margin: 0 10px 0 0;
-}
-.ai-option .title {
-  padding: 24px 0 0 0;
-}
-.ai-option.selected {
-  background: #ffffff;
-  border: 0.5px solid rgba(0, 0, 0, 0.1);
-  box-shadow: 0px 8px 16px rgba(131, 137, 174, 0.3);
-  border-radius: 20px;
+  .radio {
+    height: 96px;
+    line-height: 96px;
+    width: 65px;
+    margin: 0 4px 0 20px;
+  }
+  .avatar {
+    height: 96px;
+    line-height: 96px;
+    width: 65px;
+    margin: 0 10px 0 0;
+  }
+  .title {
+    padding: 24px 0 0 0;
+  }
 }
 .ai-options {
   background: transparent;
-}
-.ai-options .list-group-item {
-  padding: 0;
-  background: transparent;
-  border: 0 none;
+  .list-group-item {
+    padding: 0;
+    background: transparent;
+    border: 0 none;
+  }
 }
