@@ -11,6 +11,10 @@ $theme-colors: (
   "danger": $red,
 );
 
+.text-green {
+  color: $green;
+}
+
 $spacer: 2.5rem;
 
 $grid-columns: 12;
@@ -39,6 +43,97 @@ body {
 .navbar .container {
   padding: 0 20px;
 }
+.dtpr-logo {
+  position: relative;
+  display: inline-block;
+}
+.menu-overlay-scrim {
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1200;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  // transition: linear opacity 0.3s;
+  // opacity: 0;
+}
+.menu-overlay-container {
+  z-index: 1500;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  display: none;
+}
+.menu-overlay {
+  z-index: 1500;
+  position: fixed;
+  top: 0;
+  background: $lightblue;
+  width: 100vw;
+  box-shadow: 0 0 32px rgba(0, 0, 0, 1);
+  .menu-overlay-logo {
+    font-size: 20px;
+    font-weight: 500;
+    img {
+      margin-right: 10px;
+    }
+  }
+  .btn-primary {
+    margin-right: 10px;
+    margin-top: 1px;
+    height: 32px;
+    font-size: 14px;
+    line-height: 30px;
+    padding: 0 16px;
+  }
+  .nav-open-menu .icon-36 {
+    margin-top: -2px;
+    margin-right: 8px;
+    margin-left: 2px;
+    cursor: pointer;
+  }
+  .menu {
+    padding-top: 1px;
+    .circle-icon {
+      margin-right: 10px;
+    }
+  }
+  .top {
+    padding-top: 15px;
+  }
+
+  .btn-card {
+    border-radius: 20px;
+    background-color: transparent;
+    border: 1px solid transparentize($color: $blue, $amount: 0.8);
+    color: $blue;
+    display: block;
+    width: 100%;
+    height: 104px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    padding: 0;
+    font-size: 20px;
+    @include media-breakpoint-down(sm) {
+      font-size: 14px;
+      font-weight: 500;
+    }
+    &:hover {
+      background-color: $blue;
+      color: $lightblue;
+    }
+    .smaller {
+      font-weight: 500;
+      font-size: 14px;
+    }
+    .bigger {
+      font-size: 48px;
+      line-height: 48px;
+      font-weight: bold;
+    }
+  }
+}
 
 .btn {
   background-color: #002684;
@@ -47,6 +142,39 @@ body {
   font-size: 16px;
   border-radius: 32px;
   padding: 10px 20px;
+}
+.btn-green {
+  border: solid $green 1px;
+  color: $green;
+  background: transparent;
+}
+
+.table-taxonomy {
+  @extend .mt-4;
+  td,
+  th {
+    color: $green;
+    border-top: 1px solid transparentize($color: $green, $amount: 0.8);
+    vertical-align: middle;
+    overflow: hidden;
+  }
+  @include media-breakpoint-down(sm) {
+    th:last-child,
+    td:last-child {
+      display: none;
+    }
+  }
+  thead th {
+    border-bottom: 0 none;
+  }
+  a {
+    color: $green;
+    border-bottom: 1px dotted;
+    &:hover {
+      text-decoration: none;
+      border-bottom: 1px solid;
+    }
+  }
 }
 
 .nav-container {
@@ -150,6 +278,12 @@ h6 {
   background: #fff;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   // border-top: 1px solid rgba(0, 0, 0, 0.2);
+  &.green {
+    color: $green;
+    .circle-icon {
+      background-color: $green;
+    }
+  }
 }
 
 .card {
@@ -359,7 +493,8 @@ h6 {
 }
 
 .sticky-nav {
-  .circle-icon {
+  .circle-icon,
+  .section-title {
     cursor: pointer;
   }
   .menu {

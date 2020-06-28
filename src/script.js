@@ -20,10 +20,23 @@ $(function () {
     iFrame.attr("src", iFrame.attr("data-src"));
   });
   const scroller = scrollama();
-  $(".nav-current-section").click(function () {
+
+  $("[data-link]").click(function () {
+    console.log($(this).data("link"));
+    scrollToSection("#" + $(this).data("link"));
+  });
+
+  $(".nav-open-menu").click(function () {
+    console.log(this);
+    $(".menu-overlay-container").show();
+  });
+  $(".menu-overlay-container").click(function () {
+    $(".menu-overlay-container").hide();
+  });
+  $(".section-title").click(function () {
     console.log($(currentSection).next(".step"));
     $("html, body").animate(
-      { scrollTop: $(currentSection).offset().top },
+      { scrollTop: $(this).parents(".step").offset().top },
       1000
     );
   });
@@ -74,3 +87,6 @@ $(function () {
   // setup resize event
   window.addEventListener("resize", scroller.resize);
 });
+function scrollToSection(sectionSelector) {
+  $("html, body").animate({ scrollTop: $(sectionSelector).offset().top }, 1000);
+}
