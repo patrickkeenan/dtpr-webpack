@@ -1,6 +1,9 @@
 @charset "UTF-8";
 .text-green {
-  color: #0f5153;
+  color: #0f5153 !important;
+}
+.text-green a {
+  color: #0f5153 !important;
 }
 
 /*!
@@ -10068,6 +10071,21 @@ body {
   font-weight: bold;
 }
 
+#section-about,
+#section-vision,
+#section-agent,
+#section-tools,
+#section-license,
+#section-taxonomy,
+#section-taxonomy-purpose,
+#section-taxonomy-technology,
+#section-taxonomy-data_type,
+#section-taxonomy-processing,
+#section-taxonomy-access,
+#section-taxonomy-storage {
+  background: #fff;
+}
+
 .btn {
   background-color: #002684;
   color: #fff;
@@ -10200,6 +10218,18 @@ h6 {
   text-transform: uppercase;
 }
 
+#tapestry {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  z-index: -1;
+  transition: transform 0.5s;
+}
+#tapestry img {
+  transition: transform 0.5s;
+  opacity: 0.8;
+}
+
 .sticky-image {
   position: -webkit-sticky;
   position: sticky;
@@ -10229,6 +10259,24 @@ h6 {
 }
 .sticky-section-header.green .circle-icon {
   background-color: #0f5153;
+}
+
+.btn-float, .scenarios-toc .scenario-card {
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+.btn-float:hover, .scenarios-toc .scenario-card:hover {
+  transform: translateY(-2px) scale(1.01);
+  box-shadow: 0 2px 32px rgba(0, 0, 0, 0.7);
+}
+
+.btn-float-small, .card .btn-circle {
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+.btn-float-small:hover, .card .btn-circle:hover {
+  transform: translateY(-1px) scale(1.01);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
 }
 
 .card {
@@ -10271,6 +10319,7 @@ h6 {
   padding: 0;
   margin-top: -8px;
   text-align: center;
+  cursor: pointer;
 }
 .card .btn-circle i {
   margin: auto;
@@ -10355,6 +10404,14 @@ h6 {
 .step-banner {
   background-color: #002684;
   color: #bae6ed;
+  position: relative;
+  z-index: 1;
+}
+
+.step-footer {
+  background: #fff;
+  position: relative;
+  z-index: 1;
 }
 
 .link-list a {
@@ -10552,6 +10609,7 @@ h6 {
   border-radius: 20px;
   border: 0.5px solid rgba(0, 0, 0, 0);
   cursor: pointer;
+  margin-bottom: 10px;
 }
 .ai-option .icon-checked {
   display: none;
@@ -10566,6 +10624,12 @@ h6 {
 }
 .ai-option.selected .icon-unchecked {
   display: none;
+}
+.ai-option.selected:hover {
+  background: #fff;
+}
+.ai-option:hover {
+  background: rgba(186, 230, 237, 0.2);
 }
 .ai-option h3 {
   padding: 24px 0 0 0;

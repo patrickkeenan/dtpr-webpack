@@ -26,6 +26,9 @@
     <!-- NAVIGATION -->
     <%=
     require("ejs-loader!./templates/header.ejs")({}) %>
+    <div id="tapestry">
+      <img src="images/Tapestry.jpg" />
+    </div>
     <div id="section-about" class="step" data-step="section-about">
       <div class="sticky-section-header">
         <%=
@@ -73,7 +76,7 @@
             </div>
           </div>
         </div>
-        <div class="row flex-nowrap overflow-auto">
+        <div class="row flex-nowrap overflow-auto cards-principles">
           <div class="col-10 col-md-4 d-flex mt-2">
             <div class="card card-lightred">
               <div class="btn-circle"><i class="material-icons md-24">arrow_forward</i></div>
@@ -149,7 +152,7 @@
             </div>
           </div>
         </div>
-        <div class="row flex-nowrap overflow-auto">
+        <div class="row flex-nowrap overflow-auto cards-projects">
           <div class="col-10 col-md-4 d-flex mt-2">
             <div class="card card-lightgreen">
               <div class="btn-circle"><i class="material-icons md-24">arrow_forward</i></div>
@@ -186,7 +189,7 @@
           </div>
         </div>
         <div class="row pb-4">
-          <div class="col-12 col-md-4 mt-4">
+          <div class="col-12 col-md-4 mt-4 text-green">
             <h2>More Projects</h2>
             <div class="link-list">
               <div><a href="#">Civic Data Trust</a></div>
@@ -197,7 +200,7 @@
               <div><a href="#">Civic Data Trust</a></div>
             </div>
           </div>
-          <div class="col-12 col-md-4 mt-4">
+          <div class="col-12 col-md-4 mt-4 text-green">
             <h2>More Projects</h2>
             <div class="link-list">
               <div><a href="#">Civic Data Trust</a></div>
@@ -238,7 +241,7 @@
       ]; 
       %>
 
-      <div class="container pt-1">
+      <div class="container pt-1 scenarios-toc">
         <%= require("ejs-loader!./templates/vision-intro.ejs")({
           prehead:"A Vision", 
           title:"Join us on journey that rejects the false dichotomy between privacy & convenience.", 
@@ -262,7 +265,7 @@
           title: "First, choose<br /> your agent", 
           lead: "The following scenarios propose a personal AI agent, offered to you by an organization of your choosing.", 
           buttons: [
-            { title: "titl", label: "Skip to the prototype", classes: "btn-primary" },
+            { label: "Skip to the prototype", classes: "btn-primary",link:"section-scenario-1" },
           ],
           options: [
             { icon:"location_city", title: "City Dept.", label: "A department in your municipal government" },
@@ -277,6 +280,7 @@
     
     <!-- SECTION 1 -->
     <% 
+      var currentFrame = 0;
       var currentIndex = 0;
       var currentStepData = stepData[currentIndex];
     %>
@@ -325,9 +329,14 @@
             { title: "The purpose of this system is", icon: "dtpr_icons/purpose/water.svg", description: "Mobility" }, 
             { title: "The service is provided by", icon: "dtpr_icons/tech/light.svg", description: orgBike }, 
             { title: "The user’s interface is ", icon: "hex-icon-room_service", description: "Personal AI" }, 
-            { title: "The relationship is", icon: "hex-icon-favorite", description: "Membership" }, 
-          ]
+            { title: "The relationship is", icon: "hex-icon-favorite", description: "Membership" },
+          ],
+          index:currentIndex,
+          frame:currentFrame,
         }) %>
+        <% 
+          currentFrame++;
+        %>
       </div>
       <div>
         <%= require("ejs-loader!./templates/step-holder.ejs")({
@@ -345,8 +354,13 @@
             { title: "The service is provided by", icon: "dtpr_icons/tech/light.svg", description: orgLibrary }, 
             { title: "The user’s interface is ", icon: "hex-icon-room_service", description: "Place Chatbot" }, 
             { title: "The relationship is", icon: "hex-icon-favorite", description: "Membership" }, 
-          ]
+          ],
+          index:currentIndex,
+          frame:currentFrame,
         }) %>
+        <% 
+          currentFrame++;
+        %>
       </div>
       <div>
         <%= require("ejs-loader!./templates/step-holder.ejs")({
@@ -363,9 +377,14 @@
             { title: "The purpose of this system is", icon: "dtpr_icons/purpose/water.svg", description: "Agency" }, 
             { title: "The service is provided by", icon: "dtpr_icons/tech/light.svg", description: orgLibrary }, 
             { title: "The user’s interface is ", icon: "hex-icon-room_service", description: "Place Chatbot" }, 
-            { title: "The relationship is", icon: "hex-icon-favorite", description: "Membership" }, 
-          ]
+            { title: "The relationship is", icon: "hex-icon-favorite", description: "Membership" },
+          ],
+          index:currentIndex,
+          frame:currentFrame,
         }) %>
+        <% 
+          currentFrame++;
+        %>
       </div>
       <div>
         <%= require("ejs-loader!./templates/step-holder.ejs")({
@@ -383,19 +402,26 @@
             { title: "The service is provided by", icon: "dtpr_icons/tech/light.svg", description: orgLibrary }, 
             { title: "The user’s interface is ", icon: "hex-icon-room_service", description: "Personal AI" }, 
             { title: "The relationship is", icon: "hex-icon-favorite", description: "Membership" }, 
-          ]
+          ],
+          index:currentIndex,
+          frame:currentFrame,
         }) %>
+        <% 
+          currentFrame++;
+        %>
       </div>
-      <div class="container">
-        <%= require("ejs-loader!./templates/step-footer.ejs")({ 
-          description: "In this scenario we learned about a standardised way to describe the systems, sensors, and technologies in a given area.", 
-          features: [ 
-            { title: "Agency for people", label: "label", icon: "hex-icon-accessibility_new", description: "Publishing place definitons allows people to know what functionality is available in a given place." }, 
-            { title: "Interoperable access", label: "label", icon: "hex-icon-power", description: "Rather than relying on a single app, an interoperable API ensures many channels of access." }, 
-            { title: "Data exchange receipts", label: "label", icon: "hex-icon-receipt", description: "Each personal interaction that is digitally recorded is able to be audited and edited by that person." }, 
-            { title: "Zone-based notice",label: "label", icon: "hex-icon-place", description: "Alerts can be set based on geographic areas and a person’s familiarity with that place." }, 
-          ], 
-        }) %>
+      <div class="step-footer">
+        <div class="container">
+          <%= require("ejs-loader!./templates/step-footer.ejs")({ 
+            description: "In this scenario we learned about a standardised way to describe the systems, sensors, and technologies in a given area.", 
+            features: [ 
+              { title: "Agency for people", label: "label", icon: "hex-icon-accessibility_new", description: "Publishing place definitons allows people to know what functionality is available in a given place." }, 
+              { title: "Interoperable access", label: "label", icon: "hex-icon-power", description: "Rather than relying on a single app, an interoperable API ensures many channels of access." }, 
+              { title: "Data exchange receipts", label: "label", icon: "hex-icon-receipt", description: "Each personal interaction that is digitally recorded is able to be audited and edited by that person." }, 
+              { title: "Zone-based notice",label: "label", icon: "hex-icon-place", description: "Alerts can be set based on geographic areas and a person’s familiarity with that place." }, 
+            ], 
+          }) %>
+        </div>
       </div>
     </div>
     <!-- / SECTION 1 -->
@@ -403,6 +429,7 @@
     <!-- SECTION 2 -->
     <% 
       var currentIndex = 1;
+      var currentFrame = 0;
       var currentStepData = stepData[currentIndex];
     %>
     <div id="section-scenario-2" class="step" data-step="section-scenario-2">
@@ -450,9 +477,14 @@
             { title: "The purpose of this system is", icon: "dtpr_icons/purpose/water.svg", description: "Shopping" }, 
             { title: "The service is provided by", icon: "dtpr_icons/tech/light.svg", description: orgBike }, 
             { title: "The user’s interface is ", icon: "hex-icon-room_service", description: "Sensor Chatbot" }, 
-            { title: "The relationship is", icon: "hex-icon-favorite", description: "Temporary" }, 
-          ]
+            { title: "The relationship is", icon: "hex-icon-favorite", description: "Temporary" },
+          ],
+          index:currentIndex,
+          frame:currentFrame,
         }) %>
+        <% 
+          currentFrame++;
+        %>
       </div>
       <div>
         <%= require("ejs-loader!./templates/step-holder.ejs")({
@@ -470,8 +502,13 @@
             { title: "The service is provided by", icon: "dtpr_icons/tech/light.svg", description: orgLibrary }, 
             { title: "The user’s interface is ", icon: "hex-icon-room_service", description: "Personal AI" }, 
             { title: "The relationship is", icon: "hex-icon-favorite", description: "Temporary" }, 
-          ]
+          ],
+          index:currentIndex,
+          frame:currentFrame,
         }) %>
+        <% 
+          currentFrame++;
+        %>
       </div>
       <div>
         <%= require("ejs-loader!./templates/step-holder.ejs")({
@@ -488,9 +525,14 @@
             { title: "The purpose of this system is", icon: "dtpr_icons/purpose/water.svg", description: "Agency" }, 
             { title: "The service is provided by", icon: "dtpr_icons/tech/light.svg", description: orgLibrary }, 
             { title: "The user’s interface is ", icon: "hex-icon-room_service", description: "Place Chatbot" }, 
-            { title: "The relationship is", icon: "hex-icon-favorite", description: "Temporary" }, 
-          ]
+            { title: "The relationship is", icon: "hex-icon-favorite", description: "Temporary" },
+          ],
+          index:currentIndex,
+          frame:currentFrame,
         }) %>
+        <% 
+          currentFrame++;
+        %>
       </div>
       <div>
         <%= require("ejs-loader!./templates/step-holder.ejs")({
@@ -508,19 +550,26 @@
             { title: "The service is provided by", icon: "dtpr_icons/tech/light.svg", description: orgLibrary }, 
             { title: "The user’s interface is ", icon: "hex-icon-room_service", description: "Personal AI" }, 
             { title: "The relationship is", icon: "hex-icon-favorite", description: "Membership" }, 
-          ]
+          ],
+          index:currentIndex,
+          frame:currentFrame,
         }) %>
+        <% 
+          currentFrame++;
+        %>
       </div>
-      <div class="container">
-        <%= require("ejs-loader!./templates/step-footer.ejs")({ 
-          description: "In this scenario we learned about a standardised way to describe the systems, sensors, and technologies in a given area.", 
-          features: [ 
-            { title: "Agency for people", label: "label", icon: "hex-icon-accessibility_new", description: "Publishing place definitons allows people to know what functionality is available in a given place." }, 
-            { title: "Interoperable access", label: "label", icon: "hex-icon-power", description: "Rather than relying on a single app, an interoperable API ensures many channels of access." }, 
-            { title: "Data exchange receipts", label: "label", icon: "hex-icon-receipt", description: "Each personal interaction that is digitally recorded is able to be audited and edited by that person." }, 
-            { title: "Zone-based notice",label: "label", icon: "hex-icon-place", description: "Alerts can be set based on geographic areas and a person’s familiarity with that place." }, 
-          ], 
-        }) %>
+      <div class="step-footer">
+        <div class="container">
+          <%= require("ejs-loader!./templates/step-footer.ejs")({ 
+            description: "In this scenario we learned about a standardised way to describe the systems, sensors, and technologies in a given area.", 
+            features: [ 
+              { title: "Agency for people", label: "label", icon: "hex-icon-accessibility_new", description: "Publishing place definitons allows people to know what functionality is available in a given place." }, 
+              { title: "Interoperable access", label: "label", icon: "hex-icon-power", description: "Rather than relying on a single app, an interoperable API ensures many channels of access." }, 
+              { title: "Data exchange receipts", label: "label", icon: "hex-icon-receipt", description: "Each personal interaction that is digitally recorded is able to be audited and edited by that person." }, 
+              { title: "Zone-based notice",label: "label", icon: "hex-icon-place", description: "Alerts can be set based on geographic areas and a person’s familiarity with that place." }, 
+            ], 
+          }) %>
+        </div>
       </div>
     </div>
     <!-- / SECTION 2 -->
@@ -528,6 +577,7 @@
     <!-- SECTION 3 -->
     <% 
       var currentIndex = 2;
+      var currentFrame = 0;
       var currentStepData = stepData[currentIndex];
     %>
     <div id="section-scenario-3" class="step" data-step="section-scenario-3">
@@ -575,9 +625,14 @@
             { title: "The purpose of this system is", icon: "dtpr_icons/purpose/water.svg", description: "Shopping" }, 
             { title: "The service is provided by", icon: "dtpr_icons/tech/light.svg", description: orgBike }, 
             { title: "The user’s interface is ", icon: "hex-icon-room_service", description: "Sensor Chatbot" }, 
-            { title: "The relationship is", icon: "hex-icon-favorite", description: "Temporary" }, 
-          ]
+            { title: "The relationship is", icon: "hex-icon-favorite", description: "Temporary" },
+          ],
+          index:currentIndex,
+          frame:currentFrame,
         }) %>
+        <% 
+          currentFrame++;
+        %>
       </div>
       <div>
         <%= require("ejs-loader!./templates/step-holder.ejs")({
@@ -595,8 +650,13 @@
             { title: "The service is provided by", icon: "dtpr_icons/tech/light.svg", description: orgLibrary }, 
             { title: "The user’s interface is ", icon: "hex-icon-room_service", description: "Personal AI" }, 
             { title: "The relationship is", icon: "hex-icon-favorite", description: "Temporary" }, 
-          ]
+          ],
+          index:currentIndex,
+          frame:currentFrame,
         }) %>
+        <% 
+          currentFrame++;
+        %>
       </div>
       <div>
         <%= require("ejs-loader!./templates/step-holder.ejs")({
@@ -613,9 +673,14 @@
             { title: "The purpose of this system is", icon: "dtpr_icons/purpose/water.svg", description: "Agency" }, 
             { title: "The service is provided by", icon: "dtpr_icons/tech/light.svg", description: orgLibrary }, 
             { title: "The user’s interface is ", icon: "hex-icon-room_service", description: "Place Chatbot" }, 
-            { title: "The relationship is", icon: "hex-icon-favorite", description: "Temporary" }, 
-          ]
+            { title: "The relationship is", icon: "hex-icon-favorite", description: "Membership" }, 
+          ],
+          index:currentIndex,
+          frame:currentFrame,
         }) %>
+        <% 
+          currentFrame++;
+        %>
       </div>
       <div>
         <%= require("ejs-loader!./templates/step-holder.ejs")({
@@ -633,19 +698,26 @@
             { title: "The service is provided by", icon: "dtpr_icons/tech/light.svg", description: orgLibrary }, 
             { title: "The user’s interface is ", icon: "hex-icon-room_service", description: "Personal AI" }, 
             { title: "The relationship is", icon: "hex-icon-favorite", description: "Membership" }, 
-          ]
+          ],
+          index:currentIndex,
+          frame:currentFrame,
         }) %>
+        <% 
+          currentFrame++;
+        %>
       </div>
-      <div class="container">
-        <%= require("ejs-loader!./templates/step-footer.ejs")({ 
-          description: "In this scenario we learned about a standardised way to describe the systems, sensors, and technologies in a given area.", 
-          features: [ 
-            { title: "Agency for people", label: "label", icon: "hex-icon-accessibility_new", description: "Publishing place definitons allows people to know what functionality is available in a given place." }, 
-            { title: "Interoperable access", label: "label", icon: "hex-icon-power", description: "Rather than relying on a single app, an interoperable API ensures many channels of access." }, 
-            { title: "Data exchange receipts", label: "label", icon: "hex-icon-receipt", description: "Each personal interaction that is digitally recorded is able to be audited and edited by that person." }, 
-            { title: "Zone-based notice",label: "label", icon: "hex-icon-place", description: "Alerts can be set based on geographic areas and a person’s familiarity with that place." }, 
-          ], 
-        }) %>
+      <div class="step-footer">
+        <div class="container">
+          <%= require("ejs-loader!./templates/step-footer.ejs")({ 
+            description: "In this scenario we learned about a standardised way to describe the systems, sensors, and technologies in a given area.", 
+            features: [ 
+              { title: "Agency for people", label: "label", icon: "hex-icon-accessibility_new", description: "Publishing place definitons allows people to know what functionality is available in a given place." }, 
+              { title: "Interoperable access", label: "label", icon: "hex-icon-power", description: "Rather than relying on a single app, an interoperable API ensures many channels of access." }, 
+              { title: "Data exchange receipts", label: "label", icon: "hex-icon-receipt", description: "Each personal interaction that is digitally recorded is able to be audited and edited by that person." }, 
+              { title: "Zone-based notice",label: "label", icon: "hex-icon-place", description: "Alerts can be set based on geographic areas and a person’s familiarity with that place." }, 
+            ], 
+          }) %>
+        </div>
       </div>
     </div>
     <!-- / SECTION 3 -->
@@ -653,6 +725,7 @@
     <!-- SECTION 4 -->
     <% 
       var currentIndex = 3;
+      var currentFrame = 0;
       var currentStepData = stepData[currentIndex];
     %>
     <div id="section-scenario-4" class="step" data-step="section-scenario-4">
@@ -700,9 +773,14 @@
             { title: "The purpose of this system is", icon: "dtpr_icons/purpose/water.svg", description: "Shopping" }, 
             { title: "The service is provided by", icon: "dtpr_icons/tech/light.svg", description: orgBike }, 
             { title: "The user’s interface is ", icon: "hex-icon-room_service", description: "Sensor Chatbot" }, 
-            { title: "The relationship is", icon: "hex-icon-favorite", description: "Temporary" }, 
-          ]
+            { title: "The relationship is", icon: "hex-icon-favorite", description: "Temporary" },
+          ],
+          index:currentIndex,
+          frame:currentFrame,
         }) %>
+        <% 
+          currentFrame++;
+        %>
       </div>
       <div>
         <%= require("ejs-loader!./templates/step-holder.ejs")({
@@ -720,8 +798,13 @@
             { title: "The service is provided by", icon: "dtpr_icons/tech/light.svg", description: orgLibrary }, 
             { title: "The user’s interface is ", icon: "hex-icon-room_service", description: "Personal AI" }, 
             { title: "The relationship is", icon: "hex-icon-favorite", description: "Temporary" }, 
-          ]
+          ],
+          index:currentIndex,
+          frame:currentFrame,
         }) %>
+        <% 
+          currentFrame++;
+        %>
       </div>
       <!-- TODO: Put in numina sensor prototype -->
       <div>
@@ -739,9 +822,14 @@
             { title: "The purpose of this system is", icon: "dtpr_icons/purpose/water.svg", description: "Agency" }, 
             { title: "The service is provided by", icon: "dtpr_icons/tech/light.svg", description: orgLibrary }, 
             { title: "The user’s interface is ", icon: "hex-icon-room_service", description: "Place Chatbot" }, 
-            { title: "The relationship is", icon: "hex-icon-favorite", description: "Temporary" }, 
-          ]
+            { title: "The relationship is", icon: "hex-icon-favorite", description: "Temporary" },
+          ],
+          index:currentIndex,
+          frame:currentFrame,
         }) %>
+        <% 
+          currentFrame++;
+        %>
       </div>
       <div>
         <%= require("ejs-loader!./templates/step-holder.ejs")({
@@ -759,19 +847,26 @@
             { title: "The service is provided by", icon: "dtpr_icons/tech/light.svg", description: orgLibrary }, 
             { title: "The user’s interface is ", icon: "hex-icon-room_service", description: "Personal AI" }, 
             { title: "The relationship is", icon: "hex-icon-favorite", description: "Membership" }, 
-          ]
+          ],
+          index:currentIndex,
+          frame:currentFrame,
         }) %>
+        <% 
+          currentFrame++;
+        %>
       </div>
-      <div class="container">
-        <%= require("ejs-loader!./templates/step-footer.ejs")({ 
-          description: "In this scenario we learned about a standardised way to describe the systems, sensors, and technologies in a given area.", 
-          features: [ 
-            { title: "Agency for people", label: "label", icon: "hex-icon-accessibility_new", description: "Publishing place definitons allows people to know what functionality is available in a given place." }, 
-            { title: "Interoperable access", label: "label", icon: "hex-icon-power", description: "Rather than relying on a single app, an interoperable API ensures many channels of access." }, 
-            { title: "Data exchange receipts", label: "label", icon: "hex-icon-receipt", description: "Each personal interaction that is digitally recorded is able to be audited and edited by that person." }, 
-            { title: "Zone-based notice",label: "label", icon: "hex-icon-place", description: "Alerts can be set based on geographic areas and a person’s familiarity with that place." }, 
-          ], 
-        }) %>
+      <div class="step-footer">
+        <div class="container">
+          <%= require("ejs-loader!./templates/step-footer.ejs")({ 
+            description: "In this scenario we learned about a standardised way to describe the systems, sensors, and technologies in a given area.", 
+            features: [ 
+              { title: "Agency for people", label: "label", icon: "hex-icon-accessibility_new", description: "Publishing place definitons allows people to know what functionality is available in a given place." }, 
+              { title: "Interoperable access", label: "label", icon: "hex-icon-power", description: "Rather than relying on a single app, an interoperable API ensures many channels of access." }, 
+              { title: "Data exchange receipts", label: "label", icon: "hex-icon-receipt", description: "Each personal interaction that is digitally recorded is able to be audited and edited by that person." }, 
+              { title: "Zone-based notice",label: "label", icon: "hex-icon-place", description: "Alerts can be set based on geographic areas and a person’s familiarity with that place." }, 
+            ], 
+          }) %>
+        </div>
       </div>
     </div>
     <!-- / SECTION 4 -->
@@ -779,6 +874,7 @@
     <!-- SECTION 5 -->
     <% 
       var currentIndex = 4;
+      var currentFrame = 0;
       var currentStepData = stepData[currentIndex];
     %>
     <div id="section-scenario-5" class="step" data-step="section-scenario-5">
@@ -826,9 +922,14 @@
             { title: "The purpose of this system is", icon: "dtpr_icons/purpose/water.svg", description: "Shopping" }, 
             { title: "The service is provided by", icon: "dtpr_icons/tech/light.svg", description: orgBike }, 
             { title: "The user’s interface is ", icon: "hex-icon-room_service", description: "Sensor Chatbot" }, 
-            { title: "The relationship is", icon: "hex-icon-favorite", description: "Temporary" }, 
-          ]
+            { title: "The relationship is", icon: "hex-icon-favorite", description: "Temporary" },
+          ],
+          index:currentIndex,
+          frame:currentFrame,
         }) %>
+        <% 
+          currentFrame++;
+        %>
       </div>
       <div>
         <%= require("ejs-loader!./templates/step-holder.ejs")({
@@ -846,8 +947,13 @@
             { title: "The service is provided by", icon: "dtpr_icons/tech/light.svg", description: orgLibrary }, 
             { title: "The user’s interface is ", icon: "hex-icon-room_service", description: "Personal AI" }, 
             { title: "The relationship is", icon: "hex-icon-favorite", description: "Temporary" }, 
-          ]
+          ],
+          index:currentIndex,
+          frame:currentFrame,
         }) %>
+        <% 
+          currentFrame++;
+        %>
       </div>
       <!-- TODO: Put in numina sensor prototype -->
       <div>
@@ -865,9 +971,14 @@
             { title: "The purpose of this system is", icon: "dtpr_icons/purpose/water.svg", description: "Agency" }, 
             { title: "The service is provided by", icon: "dtpr_icons/tech/light.svg", description: orgLibrary }, 
             { title: "The user’s interface is ", icon: "hex-icon-room_service", description: "Place Chatbot" }, 
-            { title: "The relationship is", icon: "hex-icon-favorite", description: "Temporary" }, 
-          ]
+            { title: "The relationship is", icon: "hex-icon-favorite", description: "Temporary" },
+          ],
+          index:currentIndex,
+          frame:currentFrame,
         }) %>
+        <% 
+          currentFrame++;
+        %>
       </div>
       <div>
         <%= require("ejs-loader!./templates/step-holder.ejs")({
@@ -885,19 +996,26 @@
             { title: "The service is provided by", icon: "dtpr_icons/tech/light.svg", description: orgLibrary }, 
             { title: "The user’s interface is ", icon: "hex-icon-room_service", description: "Personal AI" }, 
             { title: "The relationship is", icon: "hex-icon-favorite", description: "Membership" }, 
-          ]
+          ],
+          index:currentIndex,
+          frame:currentFrame,
         }) %>
+        <% 
+          currentFrame++;
+        %>
       </div>
-      <div class="container">
-        <%= require("ejs-loader!./templates/step-footer.ejs")({ 
-          description: "In this scenario we learned about a standardised way to describe the systems, sensors, and technologies in a given area.", 
-          features: [ 
-            { title: "Agency for people", label: "label", icon: "hex-icon-accessibility_new", description: "Publishing place definitons allows people to know what functionality is available in a given place." }, 
-            { title: "Interoperable access", label: "label", icon: "hex-icon-power", description: "Rather than relying on a single app, an interoperable API ensures many channels of access." }, 
-            { title: "Data exchange receipts", label: "label", icon: "hex-icon-receipt", description: "Each personal interaction that is digitally recorded is able to be audited and edited by that person." }, 
-            { title: "Zone-based notice",label: "label", icon: "hex-icon-place", description: "Alerts can be set based on geographic areas and a person’s familiarity with that place." }, 
-          ], 
-        }) %>
+      <div class="step-footer">
+        <div class="container">
+          <%= require("ejs-loader!./templates/step-footer.ejs")({ 
+            description: "In this scenario we learned about a standardised way to describe the systems, sensors, and technologies in a given area.", 
+            features: [ 
+              { title: "Agency for people", label: "label", icon: "hex-icon-accessibility_new", description: "Publishing place definitons allows people to know what functionality is available in a given place." }, 
+              { title: "Interoperable access", label: "label", icon: "hex-icon-power", description: "Rather than relying on a single app, an interoperable API ensures many channels of access." }, 
+              { title: "Data exchange receipts", label: "label", icon: "hex-icon-receipt", description: "Each personal interaction that is digitally recorded is able to be audited and edited by that person." }, 
+              { title: "Zone-based notice",label: "label", icon: "hex-icon-place", description: "Alerts can be set based on geographic areas and a person’s familiarity with that place." }, 
+            ], 
+          }) %>
+        </div>
       </div>
     </div>
     <!-- / SECTION 5 -->
@@ -905,6 +1023,7 @@
     <!-- SECTION 6 -->
     <% 
       var currentIndex = 5;
+      var currentFrame = 0;
       var currentStepData = stepData[currentIndex];
     %>
     <div id="section-scenario-6" class="step" data-step="section-scenario-6">
@@ -952,9 +1071,14 @@
             { title: "The purpose of this system is", icon: "dtpr_icons/purpose/water.svg", description: "Shopping" }, 
             { title: "The service is provided by", icon: "dtpr_icons/tech/light.svg", description: orgBike }, 
             { title: "The user’s interface is ", icon: "hex-icon-room_service", description: "Sensor Chatbot" }, 
-            { title: "The relationship is", icon: "hex-icon-favorite", description: "Temporary" }, 
-          ]
+            { title: "The relationship is", icon: "hex-icon-favorite", description: "Temporary" },
+          ],
+          index:currentIndex,
+          frame:currentFrame,
         }) %>
+        <% 
+          currentFrame++;
+        %>
       </div>
       <div>
         <%= require("ejs-loader!./templates/step-holder.ejs")({
@@ -972,8 +1096,13 @@
             { title: "The service is provided by", icon: "dtpr_icons/tech/light.svg", description: orgLibrary }, 
             { title: "The user’s interface is ", icon: "hex-icon-room_service", description: "Personal AI" }, 
             { title: "The relationship is", icon: "hex-icon-favorite", description: "Temporary" }, 
-          ]
+          ],
+          index:currentIndex,
+          frame:currentFrame,
         }) %>
+        <% 
+          currentFrame++;
+        %>
       </div>
       <div>
         <%= require("ejs-loader!./templates/step-holder.ejs")({
@@ -990,9 +1119,14 @@
             { title: "The purpose of this system is", icon: "dtpr_icons/purpose/water.svg", description: "Agency" }, 
             { title: "The service is provided by", icon: "dtpr_icons/tech/light.svg", description: orgLibrary }, 
             { title: "The user’s interface is ", icon: "hex-icon-room_service", description: "Place Chatbot" }, 
-            { title: "The relationship is", icon: "hex-icon-favorite", description: "Temporary" }, 
-          ]
+            { title: "The relationship is", icon: "hex-icon-favorite", description: "Temporary" },
+          ],
+          index:currentIndex,
+          frame:currentFrame,
         }) %>
+        <% 
+          currentFrame++;
+        %>
       </div>
       <div>
         <%= require("ejs-loader!./templates/step-holder.ejs")({
@@ -1010,19 +1144,26 @@
             { title: "The service is provided by", icon: "dtpr_icons/tech/light.svg", description: orgLibrary }, 
             { title: "The user’s interface is ", icon: "hex-icon-room_service", description: "Personal AI" }, 
             { title: "The relationship is", icon: "hex-icon-favorite", description: "Membership" }, 
-          ]
+          ],
+          index:currentIndex,
+          frame:currentFrame,
         }) %>
+        <% 
+          currentFrame++;
+        %>
       </div>
-      <div class="container">
-        <%= require("ejs-loader!./templates/step-footer.ejs")({ 
-          description: "In this scenario we learned about a standardised way to describe the systems, sensors, and technologies in a given area.", 
-          features: [ 
-            { title: "Agency for people", label: "label", icon: "hex-icon-accessibility_new", description: "Publishing place definitons allows people to know what functionality is available in a given place." }, 
-            { title: "Interoperable access", label: "label", icon: "hex-icon-power", description: "Rather than relying on a single app, an interoperable API ensures many channels of access." }, 
-            { title: "Data exchange receipts", label: "label", icon: "hex-icon-receipt", description: "Each personal interaction that is digitally recorded is able to be audited and edited by that person." }, 
-            { title: "Zone-based notice",label: "label", icon: "hex-icon-place", description: "Alerts can be set based on geographic areas and a person’s familiarity with that place." }, 
-          ], 
-        }) %>
+      <div class="step-footer">
+        <div class="container">
+          <%= require("ejs-loader!./templates/step-footer.ejs")({ 
+            description: "In this scenario we learned about a standardised way to describe the systems, sensors, and technologies in a given area.", 
+            features: [ 
+              { title: "Agency for people", label: "label", icon: "hex-icon-accessibility_new", description: "Publishing place definitons allows people to know what functionality is available in a given place." }, 
+              { title: "Interoperable access", label: "label", icon: "hex-icon-power", description: "Rather than relying on a single app, an interoperable API ensures many channels of access." }, 
+              { title: "Data exchange receipts", label: "label", icon: "hex-icon-receipt", description: "Each personal interaction that is digitally recorded is able to be audited and edited by that person." }, 
+              { title: "Zone-based notice",label: "label", icon: "hex-icon-place", description: "Alerts can be set based on geographic areas and a person’s familiarity with that place." }, 
+            ], 
+          }) %>
+        </div>
       </div>
     </div>
     <!-- / SECTION 6 -->
@@ -1030,6 +1171,7 @@
     <!-- SECTION 7 -->
     <% 
       var currentIndex = 6;
+      var currentFrame = 0;
       var currentStepData = stepData[currentIndex];
     %>
     <div id="section-scenario-7" class="step" data-step="section-scenario-7">
@@ -1077,9 +1219,14 @@
             { title: "The purpose of this system is", icon: "dtpr_icons/purpose/water.svg", description: "Shopping" }, 
             { title: "The service is provided by", icon: "dtpr_icons/tech/light.svg", description: orgBike }, 
             { title: "The user’s interface is ", icon: "hex-icon-room_service", description: "Sensor Chatbot" }, 
-            { title: "The relationship is", icon: "hex-icon-favorite", description: "Temporary" }, 
-          ]
+            { title: "The relationship is", icon: "hex-icon-favorite", description: "Temporary" },
+          ],
+          index:currentIndex,
+          frame:currentFrame,
         }) %>
+        <% 
+          currentFrame++;
+        %>
       </div>
       <div>
         <%= require("ejs-loader!./templates/step-holder.ejs")({
@@ -1097,8 +1244,13 @@
             { title: "The service is provided by", icon: "dtpr_icons/tech/light.svg", description: orgLibrary }, 
             { title: "The user’s interface is ", icon: "hex-icon-room_service", description: "Personal AI" }, 
             { title: "The relationship is", icon: "hex-icon-favorite", description: "Temporary" }, 
-          ]
+          ],
+          index:currentIndex,
+          frame:currentFrame,
         }) %>
+        <% 
+          currentFrame++;
+        %>
       </div>
       <div>
         <%= require("ejs-loader!./templates/step-holder.ejs")({
@@ -1115,9 +1267,14 @@
             { title: "The purpose of this system is", icon: "dtpr_icons/purpose/water.svg", description: "Agency" }, 
             { title: "The service is provided by", icon: "dtpr_icons/tech/light.svg", description: orgLibrary }, 
             { title: "The user’s interface is ", icon: "hex-icon-room_service", description: "Place Chatbot" }, 
-            { title: "The relationship is", icon: "hex-icon-favorite", description: "Temporary" }, 
-          ]
+            { title: "The relationship is", icon: "hex-icon-favorite", description: "Temporary" },
+          ],
+          index:currentIndex,
+          frame:currentFrame,
         }) %>
+        <% 
+          currentFrame++;
+        %>
       </div>
       <div>
         <%= require("ejs-loader!./templates/step-holder.ejs")({
@@ -1135,25 +1292,32 @@
             { title: "The service is provided by", icon: "dtpr_icons/tech/light.svg", description: orgLibrary }, 
             { title: "The user’s interface is ", icon: "hex-icon-room_service", description: "Personal AI" }, 
             { title: "The relationship is", icon: "hex-icon-favorite", description: "Membership" }, 
-          ]
+          ],
+          index:currentIndex,
+          frame:currentFrame,
         }) %>
+        <% 
+          currentFrame++;
+        %>
       </div>
-      <div class="container">
-        <%= require("ejs-loader!./templates/step-footer.ejs")({ 
-          description: "In this scenario we learned about a standardised way to describe the systems, sensors, and technologies in a given area.", 
-          features: [ 
-            { title: "Agency for people", label: "label", icon: "hex-icon-accessibility_new", description: "Publishing place definitons allows people to know what functionality is available in a given place." }, 
-            { title: "Interoperable access", label: "label", icon: "hex-icon-power", description: "Rather than relying on a single app, an interoperable API ensures many channels of access." }, 
-            { title: "Data exchange receipts", label: "label", icon: "hex-icon-receipt", description: "Each personal interaction that is digitally recorded is able to be audited and edited by that person." }, 
-            { title: "Zone-based notice",label: "label", icon: "hex-icon-place", description: "Alerts can be set based on geographic areas and a person’s familiarity with that place." }, 
-          ], 
-        }) %>
+      <div class="step-footer">
+        <div class="container">
+          <%= require("ejs-loader!./templates/step-footer.ejs")({ 
+            description: "In this scenario we learned about a standardised way to describe the systems, sensors, and technologies in a given area.", 
+            features: [ 
+              { title: "Agency for people", label: "label", icon: "hex-icon-accessibility_new", description: "Publishing place definitons allows people to know what functionality is available in a given place." }, 
+              { title: "Interoperable access", label: "label", icon: "hex-icon-power", description: "Rather than relying on a single app, an interoperable API ensures many channels of access." }, 
+              { title: "Data exchange receipts", label: "label", icon: "hex-icon-receipt", description: "Each personal interaction that is digitally recorded is able to be audited and edited by that person." }, 
+              { title: "Zone-based notice",label: "label", icon: "hex-icon-place", description: "Alerts can be set based on geographic areas and a person’s familiarity with that place." }, 
+            ], 
+          }) %>
+        </div>
       </div>
     </div>
     <!-- / SECTION 7 -->
 
     <!-- Tools -->
-    <div id="section-tools" class="step" data-step="section-tools">
+    <div id="section-tools" class="step pb-5" data-step="section-tools">
       <div class="sticky-section-header">
         <%=
         require("ejs-loader!./templates/section-divider.ejs")({
@@ -1219,7 +1383,7 @@
             <div class="card card-image" style="background-image: url(images/Tools_Components.png);height: 480px;"></div>
           </div>
         </div>
-        <div class="row flex-nowrap overflow-auto">
+        <div class="row flex-nowrap overflow-auto cards-projects">
           <div class="col-10 col-md-4 d-flex mt-2">
             <div class="card card-lightgreen">
               <div class="btn-circle"><i class="material-icons md-24">arrow_forward</i></div>
@@ -1283,7 +1447,7 @@
         </div>
       </div>
     </div>
-    <div class="step border my-5 py-5" data-step="section-license">
+    <div id="section-license" class="step borderpy-5" data-step="section-license">
       <div class="container">
         <div class="row">
           <div class="col-12 col-md-9">

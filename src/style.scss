@@ -12,7 +12,10 @@ $theme-colors: (
 );
 
 .text-green {
-  color: $green;
+  color: $green !important;
+  a {
+    color: $green !important;
+  }
 }
 
 $spacer: 2.5rem;
@@ -135,6 +138,21 @@ body {
   }
 }
 
+#section-about,
+#section-vision,
+#section-agent,
+#section-tools,
+#section-license,
+#section-taxonomy,
+#section-taxonomy-purpose,
+#section-taxonomy-technology,
+#section-taxonomy-data_type,
+#section-taxonomy-processing,
+#section-taxonomy-access,
+#section-taxonomy-storage {
+  background: #fff;
+}
+
 .btn {
   background-color: #002684;
   color: #fff;
@@ -255,6 +273,22 @@ h6 {
   text-transform: uppercase;
 }
 
+#tapestry {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  z-index: -1;
+  transition: transform 0.5s;
+  img {
+    // transform: translateX(-396x) translateY(-532px);
+    transition: transform 0.5s;
+    // position: relative;
+    // left: -1174px;
+    // top: -946px;
+    opacity: 0.8;
+  }
+}
+
 .sticky-image {
   position: -webkit-sticky;
   position: sticky;
@@ -283,6 +317,27 @@ h6 {
     .circle-icon {
       background-color: $green;
     }
+  }
+}
+.btn-float {
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  &:hover {
+    transform: translateY(-2px) scale(1.01);
+    box-shadow: 0 2px 32px rgba(0, 0, 0, 0.7);
+  }
+}
+.btn-float-small {
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  &:hover {
+    transform: translateY(-1px) scale(1.01);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+  }
+}
+.scenarios-toc {
+  .scenario-card {
+    @extend .btn-float;
   }
 }
 
@@ -324,6 +379,7 @@ h6 {
   }
   .btn-circle {
     @extend .float-right;
+    @extend .btn-float-small;
     background-color: $lightblue;
     color: $blue;
     width: 48px;
@@ -332,6 +388,7 @@ h6 {
     padding: 0;
     margin-top: -8px;
     text-align: center;
+    cursor: pointer;
     i {
       margin: auto;
       line-height: 48px;
@@ -340,7 +397,6 @@ h6 {
   &.scenario-card {
     background-size: 40%;
     background-position: bottom right;
-    cursor: pointer;
   }
   &.big-card {
     background-size: 35%;
@@ -414,12 +470,19 @@ h6 {
 .step-banner {
   background-color: $blue;
   color: $lightblue;
+  position: relative;
+  z-index: 1;
 }
 .step-image {
   img {
     // position: absolute;
     // left: 0;
   }
+}
+.step-footer {
+  background: #fff;
+  position: relative;
+  z-index: 1;
 }
 
 .link-list {
@@ -617,6 +680,7 @@ h6 {
   border-radius: 20px;
   border: 0.5px solid rgba(0, 0, 0, 0);
   cursor: pointer;
+  margin-bottom: 10px;
   // transition: ease-in-out height 0.15s;
   .icon-checked {
     display: none;
@@ -631,6 +695,12 @@ h6 {
     .icon-unchecked {
       display: none;
     }
+    &:hover {
+      background: #fff;
+    }
+  }
+  &:hover {
+    background: transparentize($color: $lightblue, $amount: 0.8);
   }
   h3 {
     padding: 24px 0 0 0;
