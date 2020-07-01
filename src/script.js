@@ -122,25 +122,30 @@ $(function () {
       var el = $(response.element);
       var x, y;
 
+      var sideMargin = 0;
       if (el.is(".step-holder-left")) {
         x = bgPositions[index][frame][0];
         y = bgPositions[index][frame][1];
-        $("#tapestry").css("transform", "translate(20vw, 0)");
+        if ($(window).width() > 576) sideMargin = 20;
         $("#tapestry img").css(
           "transform",
           "translate(-" + x + "px, -" + y + "px)"
         );
+        $("#tapestry").css("transform", "translate(" + sideMargin + "vw, 0)");
         console.log(bgPositions[index][frame]);
       } else if (el.is(".step-holder-right")) {
         x = bgPositions[index][frame][0];
         y = bgPositions[index][frame][1];
-        $("#tapestry").css("transform", "translate(-20vw, 0)");
+        if ($(window).width() > 768) sideMargin = -20;
+
         $("#tapestry img").css(
           "transform",
           "translate(-" + x + "px, -" + y + "px)"
         );
+        $("#tapestry").css("transform", "translate(" + sideMargin + "vw, 0)");
         console.log(bgPositions[index][frame]);
       }
+      console.log($(window).width());
       // if (el.is(".step-holder")) {
       //   $("#tapestry").show();
       // } else {
