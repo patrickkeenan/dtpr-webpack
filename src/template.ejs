@@ -19,8 +19,10 @@
     <% 
       // Story Variables
       var orgBike = "Bikeshare Co."
-      var orgLibrary ="Library Dept.";
-      var orgStore ="Shop Co.";
+      var orgLibrary ="Library Dept."
+      var orgStore ="Shop Co."
+      var orgBank = "Bank Co."
+      var orgGov = "Gov Dept.";
     %> 
 
     <!-- NAVIGATION -->
@@ -60,8 +62,8 @@
           </div>
           <div class="col-12 col-md-5 mt-2 d-flex">
             <div class="card card-lightblue">
-              <h3>When it comes to performance, even operators aren’t confident the technology is achieving its goal. Whether seeking safety, sustainability, accessibility, or just usefulness, many are left asking: did it work?</h3>
-              <p>New advances have led to new vulnerabilities. This makes it harder for operators of spaces, who now have to deal with new levels of security threats or malfunctioning systems. We’ve also seen that much technology in the built environment lacks controls for people. Our common experience of technology on our devices is that we can install, remove, change, and share what we want. Our physical spaces don’t meet that standard of user-centered design.</p>
+              <h3>How can we be confident the technology is achieving its goal? Whether seeking safety, sustainability, accessibility, or just usefulness, many are left asking: what does it do, and did it work?</h3>
+              <p>Digital technology is all around us, but often invisible. But there’s little transparency about what data these technologies are collecting, by whom, and for what purposes. We’ve also seen that much technology in the built environment lacks controls for people. Our common experience of technology on our devices is that we can install, remove, change, and share what we want. Our physical spaces don’t meet that standard of user-centered design.</p>
             </div>
           </div>
         </div>
@@ -86,7 +88,7 @@
           <div class="col-10 col-md-5 d-flex mt-2">
             <div class="card card-lightred">
               <h6>Provide transparency</h6>
-              <p>We want to help people increase their awareness of how digital technology in the public realm works and give them avenues to learn more or follow up.</p>
+              <p>We want to help people increase their awareness of how digital technology in physical spaces works and give them avenues to learn more or follow up.</p>
             </div>
           </div>
           <div class="col-10 col-md-5 d-flex mt-2">
@@ -104,7 +106,7 @@
           <div class="col-10 col-md-5 d-flex mt-2">
             <div class="card card-lightred">
               <h6>Design for adaptation</h6>
-              <p>We know this is just a first take, and we intend for others to build on this work.</p>
+              <p>We know this is just an initial take, and we intend for others to build on this work.</p>
             </div>
           </div>
           <div class="col-10 col-md-5 d-flex mt-2">
@@ -129,7 +131,7 @@
             <div class="card card-lightred">
               <h6>Conversational UI emerged as a possible solution to addressing the many questions we started with:</h6>
               <ul>
-                <li>Support visual, auditory and tactile modalitie</li>
+                <li>Support visual, auditory and tactile modalities</li>
                 <li>Rapidly surface diverse information</li>
                 <li>Can provide links, schematics, or documentation</li>
                 <li>Level of information detail can adapt to user interest</li>
@@ -143,7 +145,7 @@
           <div class="col-12 col-md-7 d-flex mt-2">
             <div class="card card-green">
               <h3>The Solution</h3>
-              <h1 class="pb-3">We’re working on a standard and some patterns to promote transparency, accountability, and control for people.</h1>
+              <h1 class="pb-3">We’re working on a communication standard and some design patterns to promote transparency, accountability, and control for people.</h1>
             </div>
           </div>
           <div class="col-12 col-md-5 d-flex mt-2">
@@ -245,7 +247,7 @@
         <%= require("ejs-loader!./templates/vision-intro.ejs")({
           prehead:"A Vision", 
           title:"Join us on journey that rejects the false dichotomy between privacy & convenience.", 
-          lead:"The following scenarios walk through how people might have more agency in digitally enabled environments.", 
+          lead:"The following scenarios imagine how five years in the future, people might have more agency in digitally enabled spaces.", 
           features:stepData,
         })%>
       </div>
@@ -255,7 +257,7 @@
         <%=
         require("ejs-loader!./templates/section-divider.ejs")({
           section:"Vision",
-          title: "Your Ai",
+          title: "Your Digital Personal Assistant",
           icon:"circle-icon-support_agent",
         }) %>
       </div>
@@ -263,15 +265,15 @@
         <%= require("ejs-loader!./templates/vision-pai.ejs")({
           section:"part 1", 
           title: "First, choose<br /> your agent", 
-          lead: "The following scenarios propose a personal AI agent, offered to you by an organization of your choosing.", 
+          lead: "Five years from now, you have your own digital personal assistant, provided by an organization you trust. Imagine some of your daily tasks, e.g: Paying for parking, buying something, showing ID to buy wine. In each case, you exchange data with a company or entity. Everyone has different levels of comfort sharing data in different situations. To ensure you maintain control of your data, these scenarios imagine a world where everyone has their own digital personal assistant. This assistant is provided by an organization of your choice. You have already set up your assistant to save your preferences, and offer assistance when you ask. Your assistant is there to help you in the following scenarios.", 
           buttons: [
             { label: "Skip to the prototype", classes: "btn-primary",link:"section-scenario-1" },
           ],
           options: [
-            { icon:"location_city", title: "City Dept.", label: "A department in your municipal government" },
-            { icon:"local_library", title: "Library Dept.", label: "A department of your local library" },
-            { icon:"account_balance", title: "Bank Co.", label: "An offering from associated with your bank account" },
-            { icon:"local_phone", title: "Phone Co.", label: "An account offering from your phone provider" },
+            { icon:"location_city", title: "Government", label: "Offered by your national, regional or local government" },
+            { icon:"local_library", title: "Library Dept.", label: "Provided by your library" },
+            { icon:"account_balance", title: "Bank Co.", label: "An offering associated with your bank account" },
+            { icon:"local_phone", title: "Phone Co.", label: "An account provided by your phone provider" },
             { icon:"help", title: "Other...", label: "Who would you trust to help?" },
           ],
         }) %>
@@ -393,7 +395,7 @@
           prototypeUrl:"https://framer.com/share/Step1-ghD2K7KlMUDR3jc4Am7m/UXM1Lab84",
           
           title:"Head out to the street",
-          description:"As you leave, the book is checked out with your library card. You can examine the transaction, but you simply continue to the street.",
+          description:"As you leave, the book is checked out with your library card. You continue to the street - you know you can examine the transaction later.",
           image:"images/Frame_Subject.svg",
           frame:"images/Frame_Background.png",
           sign:["dtpr_icons/purpose/water.svg","dtpr_icons/tech/light.svg","hex-icon-room_service","hex-icon-favorite"],
@@ -413,9 +415,9 @@
       <div class="step-footer">
         <div class="container">
           <%= require("ejs-loader!./templates/step-footer.ejs")({ 
-            description: "In this scenario we learned about a standardised way to describe the systems, sensors, and technologies in a given area.", 
+            description: "In this scenario we learned about how a personal AI could interact with places, if the systems, sensors, and technologies in a given area were described in a standardised way.", 
             features: [ 
-              { title: "Agency for people", label: "label", icon: "hex-icon-accessibility_new", description: "Publishing place definitons allows people to know what functionality is available in a given place." }, 
+              { title: "Agency for people", label: "label", icon: "hex-icon-accessibility_new", description: "Publishing place definitions allows people to know what functionality is available in a given place." }, 
               { title: "Interoperable access", label: "label", icon: "hex-icon-power", description: "Rather than relying on a single app, an interoperable API ensures many channels of access." }, 
               { title: "Data exchange receipts", label: "label", icon: "hex-icon-receipt", description: "Each personal interaction that is digitally recorded is able to be audited and edited by that person." }, 
               { title: "Zone-based notice",label: "label", icon: "hex-icon-place", description: "Alerts can be set based on geographic areas and a person’s familiarity with that place." }, 
@@ -454,7 +456,7 @@
               { title: "titl", label: "See an example definition", classes: "btn-secondary" },
             ], 
             features: [ 
-              { title: "Agency for people", label: "label", icon: "hex-icon-accessibility_new", description: "Publishing place definitons allows people to know what functionality is available in a given place." }, 
+              { title: "Agency for people", label: "label", icon: "hex-icon-accessibility_new", description: "Publishing place definitions allows people to know what functionality is available in a given place." }, 
               { title: "Interoperable access", label: "label", icon: "hex-icon-power", description: "Rather than relying on a single app, an interoperable API ensures many channels of access." }, 
               { title: "Data exchange receipts", label: "label", icon: "hex-icon-receipt", description: "Each personal interaction that is digitally recorded is able to be audited and edited by that person." }, 
               { title: "Zone-based notice",label: "label", icon: "hex-icon-place", description: "Alerts can be set based on geographic areas and a person’s familiarity with that place." }, 
@@ -475,8 +477,8 @@
           sign:["dtpr_icons/purpose/water.svg","dtpr_icons/tech/light.svg","hex-icon-room_service","hex-icon-favorite"],
           features: [ 
             { title: "The purpose of this system is", icon: "dtpr_icons/purpose/water.svg", description: "Shopping" }, 
-            { title: "The service is provided by", icon: "dtpr_icons/tech/light.svg", description: orgBike }, 
-            { title: "The user’s interface is ", icon: "hex-icon-room_service", description: "Sensor Chatbot" }, 
+            { title: "The service is provided by", icon: "dtpr_icons/tech/light.svg", description: orgStore }, 
+            { title: "The user’s interface is ", icon: "hex-icon-room_service", description: "Personal" }, 
             { title: "The relationship is", icon: "hex-icon-favorite", description: "Temporary" },
           ],
           index:currentIndex,
@@ -499,8 +501,8 @@
           sign:["dtpr_icons/purpose/water.svg","dtpr_icons/tech/light.svg","hex-icon-room_service","hex-icon-favorite"],
           features: [ 
             { title: "The purpose of this system is", icon: "dtpr_icons/purpose/water.svg", description: "Interaction" }, 
-            { title: "The service is provided by", icon: "dtpr_icons/tech/light.svg", description: orgLibrary }, 
-            { title: "The user’s interface is ", icon: "hex-icon-room_service", description: "Personal AI" }, 
+            { title: "The service is provided by", icon: "dtpr_icons/tech/light.svg", description: orgStore }, 
+            { title: "The user’s interface is ", icon: "hex-icon-room_service", description: "System Chatbot" }, 
             { title: "The relationship is", icon: "hex-icon-favorite", description: "Temporary" }, 
           ],
           index:currentIndex,
@@ -523,9 +525,9 @@
           sign:["dtpr_icons/purpose/water.svg","dtpr_icons/tech/light.svg","hex-icon-room_service","hex-icon-favorite"],
           features: [ 
             { title: "The purpose of this system is", icon: "dtpr_icons/purpose/water.svg", description: "Agency" }, 
-            { title: "The service is provided by", icon: "dtpr_icons/tech/light.svg", description: orgLibrary }, 
-            { title: "The user’s interface is ", icon: "hex-icon-room_service", description: "Place Chatbot" }, 
-            { title: "The relationship is", icon: "hex-icon-favorite", description: "Temporary" },
+            { title: "The service is provided by", icon: "dtpr_icons/tech/light.svg", description: orgStore }, 
+            { title: "The user’s interface is ", icon: "hex-icon-room_service", description: "Personal AI" }, 
+            { title: "The relationship is", icon: "hex-icon-favorite", description: "Transaction" },
           ],
           index:currentIndex,
           frame:currentFrame,
@@ -546,10 +548,10 @@
           frame:"images/Frame_Background.png",
           sign:["dtpr_icons/purpose/water.svg","dtpr_icons/tech/light.svg","hex-icon-room_service","hex-icon-favorite"],
           features: [ 
-            { title: "The purpose of this system is", icon: "dtpr_icons/purpose/water.svg", description: "Borrowing" }, 
-            { title: "The service is provided by", icon: "dtpr_icons/tech/light.svg", description: orgLibrary }, 
+            { title: "The purpose of this system is", icon: "dtpr_icons/purpose/water.svg", description: "Purchasing" }, 
+            { title: "The service is provided by", icon: "dtpr_icons/tech/light.svg", description: orgBank }, 
             { title: "The user’s interface is ", icon: "hex-icon-room_service", description: "Personal AI" }, 
-            { title: "The relationship is", icon: "hex-icon-favorite", description: "Membership" }, 
+            { title: "The relationship is", icon: "hex-icon-favorite", description: "Transaction" }, 
           ],
           index:currentIndex,
           frame:currentFrame,
@@ -644,10 +646,10 @@
           description:"Summoning your assistant, you ask to learn more about this busker. You're able to see artist information, and even tip.",
           image:"images/Frame_Subject.svg",
           frame:"images/Frame_Background.png",
-          sign:["dtpr_icons/purpose/water.svg","dtpr_icons/tech/light.svg","hex-icon-room_service","hex-icon-favorite"],
+          sign:["dtpr_icons/purpose/arts.svg","dtpr_icons/tech/light.svg","hex-icon-room_service","hex-icon-favorite"],
           features: [ 
-            { title: "The purpose of this system is", icon: "dtpr_icons/purpose/water.svg", description: "Interaction" }, 
-            { title: "The service is provided by", icon: "dtpr_icons/tech/light.svg", description: orgLibrary }, 
+            { title: "The purpose of this system is", icon: "dtpr_icons/purpose/water.svg", description: "Arts and Culture" }, 
+            { title: "The service is provided by", icon: "dtpr_icons/accountable/org.svg", description: "?? Boston Mall ??" }, 
             { title: "The user’s interface is ", icon: "hex-icon-room_service", description: "Personal AI" }, 
             { title: "The relationship is", icon: "hex-icon-favorite", description: "Temporary" }, 
           ],
@@ -664,16 +666,16 @@
           prototypeType:"dialogflow",
           prototypeUrl:"https://dtpr.sidewalklabs.com/dtpr_chatbot/place.html", 
           sign:["face","hex-icon-face","dtpr_icons/tech/air.svg","dtpr_icons/tech/air.svg"],
-          title:"See wider place",
+          title:"What else is here?",
           description:"The busker is presented on a shared and real-time map of this place. You can see other facilities, businesses, and those who have given you permission.",
           image:"images/Frame_Subject.svg",
           frame:"images/Frame_Background.png",
           sign:["dtpr_icons/purpose/water.svg","dtpr_icons/tech/light.svg","hex-icon-room_service","hex-icon-favorite"],
           features: [ 
-            { title: "The purpose of this system is", icon: "dtpr_icons/purpose/water.svg", description: "Agency" }, 
-            { title: "The service is provided by", icon: "dtpr_icons/tech/light.svg", description: orgLibrary }, 
+            { title: "The purpose of this system is", icon: "dtpr_icons/purpose/inform.svg", description: "Inform" }, 
+            { title: "The service is provided by", icon: "dtpr_icons/tech/light.svg", description: "?? Boston Mall??" }, 
             { title: "The user’s interface is ", icon: "hex-icon-room_service", description: "Place Chatbot" }, 
-            { title: "The relationship is", icon: "hex-icon-favorite", description: "Membership" }, 
+            { title: "The relationship is", icon: "hex-icon-favorite", description: "Temporary" }, 
           ],
           index:currentIndex,
           frame:currentFrame,
@@ -694,10 +696,10 @@
           frame:"images/Frame_Background.png",
           sign:["dtpr_icons/purpose/water.svg","dtpr_icons/tech/light.svg","hex-icon-room_service","hex-icon-favorite"],
           features: [ 
-            { title: "The purpose of this system is", icon: "dtpr_icons/purpose/water.svg", description: "Borrowing" }, 
-            { title: "The service is provided by", icon: "dtpr_icons/tech/light.svg", description: orgLibrary }, 
+            { title: "The purpose of this system is", icon: "dtpr_icons/purpose/water.svg", description: "Social" }, 
+            { title: "The service is provided by", icon: "dtpr_icons/tech/light.svg", description: "?? Boston Mall??" }, 
             { title: "The user’s interface is ", icon: "hex-icon-room_service", description: "Personal AI" }, 
-            { title: "The relationship is", icon: "hex-icon-favorite", description: "Membership" }, 
+            { title: "The relationship is", icon: "hex-icon-favorite", description: "Friends" }, 
           ],
           index:currentIndex,
           frame:currentFrame,
@@ -765,15 +767,15 @@
           prototypeUrl:"https://dtpr.sidewalklabs.com/dtpr_chatbot/place.html", 
           sign:["face","hex-icon-face","dtpr_icons/tech/air.svg","dtpr_icons/tech/air.svg"],
           title:"Order ahead",
-          description:"You select a table and order your meal. You bundle your order with a friend and decide to meet there.",
+          description:"You select a restaurant and order your meal. You bundle your order with a friend and decide to meet at a table near there.",
           image:"images/Frame_Subject.svg",
           frame:"images/Frame_Background.png",
           sign:["dtpr_icons/purpose/water.svg","dtpr_icons/tech/light.svg","hex-icon-room_service","hex-icon-favorite"],
           features: [ 
             { title: "The purpose of this system is", icon: "dtpr_icons/purpose/water.svg", description: "Shopping" }, 
-            { title: "The service is provided by", icon: "dtpr_icons/tech/light.svg", description: orgBike }, 
-            { title: "The user’s interface is ", icon: "hex-icon-room_service", description: "Sensor Chatbot" }, 
-            { title: "The relationship is", icon: "hex-icon-favorite", description: "Temporary" },
+            { title: "The service is provided by", icon: "dtpr_icons/tech/light.svg", description: "?? Boston Mall ??" }, 
+            { title: "The user’s interface is ", icon: "hex-icon-room_service", description: "Personal AI" }, 
+            { title: "The relationship is", icon: "hex-icon-favorite", description: "Transaction" },
           ],
           index:currentIndex,
           frame:currentFrame,
@@ -794,8 +796,8 @@
           frame:"images/Frame_Background.png",
           sign:["dtpr_icons/purpose/water.svg","dtpr_icons/tech/light.svg","hex-icon-room_service","hex-icon-favorite"],
           features: [ 
-            { title: "The purpose of this system is", icon: "dtpr_icons/purpose/water.svg", description: "Interaction" }, 
-            { title: "The service is provided by", icon: "dtpr_icons/tech/light.svg", description: orgLibrary }, 
+            { title: "The purpose of this system is", icon: "dtpr_icons/purpose/mobility.svg", description: "Mobility" }, 
+            { title: "The service is provided by", icon: "dtpr_icons/tech/light.svg", description: "?? Boston Mall ??" }, 
             { title: "The user’s interface is ", icon: "hex-icon-room_service", description: "Personal AI" }, 
             { title: "The relationship is", icon: "hex-icon-favorite", description: "Temporary" }, 
           ],
@@ -819,8 +821,8 @@
           frame:"images/Frame_Background.png",
           sign:["dtpr_icons/purpose/water.svg","dtpr_icons/tech/light.svg","hex-icon-room_service","hex-icon-favorite"],
           features: [ 
-            { title: "The purpose of this system is", icon: "dtpr_icons/purpose/water.svg", description: "Agency" }, 
-            { title: "The service is provided by", icon: "dtpr_icons/tech/light.svg", description: orgLibrary }, 
+            { title: "The purpose of this system is", icon: "dtpr_icons/purpose/inform.svg", description: "Inform" }, 
+            { title: "The service is provided by", icon: "dtpr_icons/tech/light.svg", description: "?? Boston Mall ??" }, 
             { title: "The user’s interface is ", icon: "hex-icon-room_service", description: "Place Chatbot" }, 
             { title: "The relationship is", icon: "hex-icon-favorite", description: "Temporary" },
           ],
@@ -913,15 +915,15 @@
           prototypeType:"dialogflow",
           prototypeUrl:"https://dtpr.sidewalklabs.com/dtpr_chatbot/system.html", 
           sign:["face","hex-icon-face","dtpr_icons/tech/air.svg","dtpr_icons/tech/air.svg"],
-          title:"Recycle",
-          description:"You get guidance from the waste bin. You put the compost in the right bin, and place reusables in a tray.",
+          title:"Right things in the right place",
+          description:"You get guidance from the waste bin. You put the compost in the correct bin, and place reusables on a tray.",
           image:"images/Frame_Subject.svg",
           frame:"images/Frame_Background.png",
           sign:["dtpr_icons/purpose/water.svg","dtpr_icons/tech/light.svg","hex-icon-room_service","hex-icon-favorite"],
           features: [ 
-            { title: "The purpose of this system is", icon: "dtpr_icons/purpose/water.svg", description: "Shopping" }, 
-            { title: "The service is provided by", icon: "dtpr_icons/tech/light.svg", description: orgBike }, 
-            { title: "The user’s interface is ", icon: "hex-icon-room_service", description: "Sensor Chatbot" }, 
+            { title: "The purpose of this system is", icon: "dtpr_icons/purpose/waste.svg", description: "Waste Management" }, 
+            { title: "The service is provided by", icon: "dtpr_icons/tech/light.svg", description: "?? Boston Mall ??" }, 
+            { title: "The user’s interface is ", icon: "hex-icon-room_service", description: "System Screen" }, 
             { title: "The relationship is", icon: "hex-icon-favorite", description: "Temporary" },
           ],
           index:currentIndex,
@@ -937,16 +939,16 @@
           prototypeType:"framer",
           prototypeUrl:"https://framer.com/share/Step1-ghD2K7KlMUDR3jc4Am7m/UXM1Lab84",
           
-          title:"Claim your points",
+          title:"Earn your points",
           description:"If you'd like to participate in the sustainability points program, you can connect anonymously.",
           image:"images/Frame_Subject.svg",
           frame:"images/Frame_Background.png",
           sign:["dtpr_icons/purpose/water.svg","dtpr_icons/tech/light.svg","hex-icon-room_service","hex-icon-favorite"],
           features: [ 
-            { title: "The purpose of this system is", icon: "dtpr_icons/purpose/water.svg", description: "Interaction" }, 
-            { title: "The service is provided by", icon: "dtpr_icons/tech/light.svg", description: orgLibrary }, 
+            { title: "The purpose of this system is", icon: "dtpr_icons/purpose/water.svg", description: "Energy Efficiency" }, 
+            { title: "The service is provided by", icon: "dtpr_icons/tech/light.svg", description: "?? Boston Mall ??" }, 
             { title: "The user’s interface is ", icon: "hex-icon-room_service", description: "Personal AI" }, 
-            { title: "The relationship is", icon: "hex-icon-favorite", description: "Temporary" }, 
+            { title: "The relationship is", icon: "hex-icon-favorite", description: "Anonymous" }, 
           ],
           index:currentIndex,
           frame:currentFrame,
@@ -968,9 +970,9 @@
           frame:"images/Frame_Background.png",
           sign:["dtpr_icons/purpose/water.svg","dtpr_icons/tech/light.svg","hex-icon-room_service","hex-icon-favorite"],
           features: [ 
-            { title: "The purpose of this system is", icon: "dtpr_icons/purpose/water.svg", description: "Agency" }, 
+            { title: "The purpose of this system is", icon: "dtpr_icons/purpose/inform.svg", description: "Inform" }, 
             { title: "The service is provided by", icon: "dtpr_icons/tech/light.svg", description: orgLibrary }, 
-            { title: "The user’s interface is ", icon: "hex-icon-room_service", description: "Place Chatbot" }, 
+            { title: "The user’s interface is ", icon: "hex-icon-room_service", description: "Personal AI" }, 
             { title: "The relationship is", icon: "hex-icon-favorite", description: "Temporary" },
           ],
           index:currentIndex,
@@ -992,10 +994,10 @@
           frame:"images/Frame_Background.png",
           sign:["dtpr_icons/purpose/water.svg","dtpr_icons/tech/light.svg","hex-icon-room_service","hex-icon-favorite"],
           features: [ 
-            { title: "The purpose of this system is", icon: "dtpr_icons/purpose/water.svg", description: "Borrowing" }, 
-            { title: "The service is provided by", icon: "dtpr_icons/tech/light.svg", description: orgLibrary }, 
+            { title: "The purpose of this system is", icon: "dtpr_icons/purpose/water.svg", description: "Energy Efficiency" }, 
+            { title: "The service is provided by", icon: "dtpr_icons/tech/light.svg", description: "?? Boston Mall ??" }, 
             { title: "The user’s interface is ", icon: "hex-icon-room_service", description: "Personal AI" }, 
-            { title: "The relationship is", icon: "hex-icon-favorite", description: "Membership" }, 
+            { title: "The relationship is", icon: "hex-icon-favorite", description: "Temporary" }, 
           ],
           index:currentIndex,
           frame:currentFrame,
@@ -1068,9 +1070,9 @@
           frame:"images/Frame_Background.png",
           sign:["dtpr_icons/purpose/water.svg","dtpr_icons/tech/light.svg","hex-icon-room_service","hex-icon-favorite"],
           features: [ 
-            { title: "The purpose of this system is", icon: "dtpr_icons/purpose/water.svg", description: "Shopping" }, 
-            { title: "The service is provided by", icon: "dtpr_icons/tech/light.svg", description: orgBike }, 
-            { title: "The user’s interface is ", icon: "hex-icon-room_service", description: "Sensor Chatbot" }, 
+            { title: "The purpose of this system is", icon: "dtpr_icons/purpose/security.svg", description: "Safety and Security" }, 
+            { title: "The service is provided by", icon: "dtpr_icons/tech/light.svg", description: "?? Boston Mall ??" }, 
+            { title: "The user’s interface is ", icon: "hex-icon-room_service", description: "System Chatbot" }, 
             { title: "The relationship is", icon: "hex-icon-favorite", description: "Temporary" },
           ],
           index:currentIndex,
@@ -1092,10 +1094,10 @@
           frame:"images/Frame_Background.png",
           sign:["dtpr_icons/purpose/water.svg","dtpr_icons/tech/light.svg","hex-icon-room_service","hex-icon-favorite"],
           features: [ 
-            { title: "The purpose of this system is", icon: "dtpr_icons/purpose/water.svg", description: "Interaction" }, 
-            { title: "The service is provided by", icon: "dtpr_icons/tech/light.svg", description: orgLibrary }, 
+            { title: "The purpose of this system is", icon: "dtpr_icons/purpose/security.svg", description: "Safety and Security" }, 
+            { title: "The service is provided by", icon: "dtpr_icons/tech/light.svg", description: "?? Boston Mall ??" }, 
             { title: "The user’s interface is ", icon: "hex-icon-room_service", description: "Personal AI" }, 
-            { title: "The relationship is", icon: "hex-icon-favorite", description: "Temporary" }, 
+            { title: "The relationship is", icon: "hex-icon-favorite", description: "Secure and authenticated" }, 
           ],
           index:currentIndex,
           frame:currentFrame,
@@ -1116,9 +1118,9 @@
           frame:"images/Frame_Background.png",
           sign:["dtpr_icons/purpose/water.svg","dtpr_icons/tech/light.svg","hex-icon-room_service","hex-icon-favorite"],
           features: [ 
-            { title: "The purpose of this system is", icon: "dtpr_icons/purpose/water.svg", description: "Agency" }, 
-            { title: "The service is provided by", icon: "dtpr_icons/tech/light.svg", description: orgLibrary }, 
-            { title: "The user’s interface is ", icon: "hex-icon-room_service", description: "Place Chatbot" }, 
+            { title: "The purpose of this system is", icon: "dtpr_icons/purpose/mobility.svg", description: "Mobility" }, 
+            { title: "The service is provided by", icon: "dtpr_icons/tech/light.svg", description: "?? Boston Mall ??" }, 
+            { title: "The user’s interface is ", icon: "hex-icon-room_service", description: "Personal AI" }, 
             { title: "The relationship is", icon: "hex-icon-favorite", description: "Temporary" },
           ],
           index:currentIndex,
@@ -1140,8 +1142,8 @@
           frame:"images/Frame_Background.png",
           sign:["dtpr_icons/purpose/water.svg","dtpr_icons/tech/light.svg","hex-icon-room_service","hex-icon-favorite"],
           features: [ 
-            { title: "The purpose of this system is", icon: "dtpr_icons/purpose/water.svg", description: "Borrowing" }, 
-            { title: "The service is provided by", icon: "dtpr_icons/tech/light.svg", description: orgLibrary }, 
+            { title: "The purpose of this system is", icon: "dtpr_icons/purpose/mobility.svg", description: "Mobility" }, 
+            { title: "The service is provided by", icon: "dtpr_icons/tech/light.svg", description: orgBike }, 
             { title: "The user’s interface is ", icon: "hex-icon-room_service", description: "Personal AI" }, 
             { title: "The relationship is", icon: "hex-icon-favorite", description: "Membership" }, 
           ],
@@ -1216,9 +1218,9 @@
           frame:"images/Frame_Background.png",
           sign:["dtpr_icons/purpose/water.svg","dtpr_icons/tech/light.svg","hex-icon-room_service","hex-icon-favorite"],
           features: [ 
-            { title: "The purpose of this system is", icon: "dtpr_icons/purpose/water.svg", description: "Shopping" }, 
-            { title: "The service is provided by", icon: "dtpr_icons/tech/light.svg", description: orgBike }, 
-            { title: "The user’s interface is ", icon: "hex-icon-room_service", description: "Sensor Chatbot" }, 
+            { title: "The purpose of this system is", icon: "dtpr_icons/purpose/mobility.svg", description: "Mobility" }, 
+            { title: "The service is provided by", icon: "dtpr_icons/tech/light.svg", description: orgGov }, 
+            { title: "The user’s interface is ", icon: "hex-icon-room_service", description: "Personal AI" }, 
             { title: "The relationship is", icon: "hex-icon-favorite", description: "Temporary" },
           ],
           index:currentIndex,
@@ -1240,10 +1242,10 @@
           frame:"images/Frame_Background.png",
           sign:["dtpr_icons/purpose/water.svg","dtpr_icons/tech/light.svg","hex-icon-room_service","hex-icon-favorite"],
           features: [ 
-            { title: "The purpose of this system is", icon: "dtpr_icons/purpose/water.svg", description: "Interaction" }, 
-            { title: "The service is provided by", icon: "dtpr_icons/tech/light.svg", description: orgLibrary }, 
+            { title: "The purpose of this system is", icon: "dtpr_icons/purpose/agency.svg", description: "Agency" }, 
+            { title: "The service is provided by", icon: "dtpr_icons/tech/light.svg", description: "?? Your Home ??" }, 
             { title: "The user’s interface is ", icon: "hex-icon-room_service", description: "Personal AI" }, 
-            { title: "The relationship is", icon: "hex-icon-favorite", description: "Temporary" }, 
+            { title: "The relationship is", icon: "hex-icon-favorite", description: "Secure and authenticated" }, 
           ],
           index:currentIndex,
           frame:currentFrame,
@@ -1265,9 +1267,9 @@
           sign:["dtpr_icons/purpose/water.svg","dtpr_icons/tech/light.svg","hex-icon-room_service","hex-icon-favorite"],
           features: [ 
             { title: "The purpose of this system is", icon: "dtpr_icons/purpose/water.svg", description: "Agency" }, 
-            { title: "The service is provided by", icon: "dtpr_icons/tech/light.svg", description: orgLibrary }, 
-            { title: "The user’s interface is ", icon: "hex-icon-room_service", description: "Place Chatbot" }, 
-            { title: "The relationship is", icon: "hex-icon-favorite", description: "Temporary" },
+            { title: "The service is provided by", icon: "dtpr_icons/tech/light.svg", description: "?? Your Personal AI ??" }, 
+            { title: "The user’s interface is ", icon: "hex-icon-room_service", description: "Personal AI" }, 
+            { title: "The relationship is", icon: "hex-icon-favorite", description: "Secure and Authenticated" },
           ],
           index:currentIndex,
           frame:currentFrame,
@@ -1288,10 +1290,10 @@
           frame:"images/Frame_Background.png",
           sign:["dtpr_icons/purpose/water.svg","dtpr_icons/tech/light.svg","hex-icon-room_service","hex-icon-favorite"],
           features: [ 
-            { title: "The purpose of this system is", icon: "dtpr_icons/purpose/water.svg", description: "Borrowing" }, 
-            { title: "The service is provided by", icon: "dtpr_icons/tech/light.svg", description: orgLibrary }, 
+            { title: "The purpose of this system is", icon: "dtpr_icons/purpose/inform.svg", description: "Inform" }, 
+            { title: "The service is provided by", icon: "dtpr_icons/tech/light.svg", description: "?? Personal AI ??" }, 
             { title: "The user’s interface is ", icon: "hex-icon-room_service", description: "Personal AI" }, 
-            { title: "The relationship is", icon: "hex-icon-favorite", description: "Membership" }, 
+            { title: "The relationship is", icon: "hex-icon-favorite", description: "Friend" }, 
           ],
           index:currentIndex,
           frame:currentFrame,
