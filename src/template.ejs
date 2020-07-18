@@ -58,13 +58,13 @@
           <div class="col-12 col-md-7 d-flex">
             <div class="card card-darkblue mt-2 ">
               <h3>The Problem</h3>
-              <h1>Technology can help make our roads safer for people, our buildings greener, and our homes healthier. But is it living up to its promises.</h1>
+              <h1>Technology can help make our roads safer for people, our buildings greener, and our homes healthier. But is it living up to its promises?</h1>
             </div>
           </div>
           <div class="col-12 col-md-5 mt-2 d-flex">
             <div class="card card-lightblue">
-              <h3>How can we be confident the technology is achieving its goal? Whether seeking safety, sustainability, or accessibility, many are left asking: what are the benefits, the risks, and the trade-offs we're making?</h3>
-              <p>Digital technology is all around us, but often invisible. There’s little transparency about what data these technologies are collecting, by whom, and for what purposes. We’ve also seen that much technology in the built environment lacks controls for people. Our common experience of technology on our devices is that we can install, remove, change, and share what we want. Our physical spaces don’t meet those standards.</p>
+              <h3>Digital technology is all around us, but often invisible. There’s little transparency about what data these technologies are collecting, by whom, and for what purposes. </h3>
+              <p>How can we be confident that technology is achieving its goal? Whether seeking safety, sustainability, or accessibility, many are left asking: what are the benefits, the risks, and the trade-offs we're making? <p>We’ve also seen that much technology in the built environment lacks controls for people. Our common experience of technology on our devices is that we can install, remove, change, and share what we want. Our physical spaces don’t meet those standards.</p>
             </div>
           </div>
         </div>
@@ -191,6 +191,7 @@
             <h2>More Projects</h2>
             <div class="link-list">
               <div><a href="#">Tell us about your project</a></div>
+                  <!-- TODO add an input form-->
             </div>
           </div>
         </div>
@@ -237,7 +238,7 @@
         <%=
         require("ejs-loader!./templates/section-divider.ejs")({
           section:"Vision",
-          title: "Your Digital Personal Assistant",
+          title: "Your Personal AI",
           icon:"circle-icon-support_agent",
         }) %>
       </div>
@@ -245,7 +246,7 @@
         <%= require("ejs-loader!./templates/vision-pai.ejs")({
           section:"part 1", 
           title: "First, choose<br /> your agent", 
-          lead: "In you're everyday life, you exchange data with a companies, apps, shops, and people. Everyone has different levels of comfort sharing data depending on the situation. We believe control for people can improve comfort. To ensure you maintain control of your data, these scenarios imagine a world where everyone has their own digital personal assistant.", 
+          lead: "In your everyday life, you exchange data with a companies, apps, shops, and people. Everyone has different levels of comfort sharing data depending on the situation. We believe control for people can improve trust. To ensure you maintain control of your data, these scenarios imagine a world where everyone has their own digital personal AI.", 
           buttons: [
             { label: "Skip to the prototype", classes: "btn-primary",link:"section-scenario-1" },
           ],
@@ -255,6 +256,7 @@
             { icon:"account_balance", title: "Bank Co.", label: "An offering associated with your bank account" },
             { icon:"local_phone", title: "Phone Co.", label: "An account provided by your phone provider" },
             { icon:"help", title: "Other...", label: "Who would you trust to help?" },
+                  <!-- TODO add an input form-->
           ],
         }) %>
       </div>
@@ -550,11 +552,11 @@
       <div class="step-footer">
         <div class="container">
           <%= require("ejs-loader!./templates/step-footer.ejs")({ 
-            description: "In this scenario we learned about a standardised way to learn about technologies and make use of shared devices.", 
+            description: "In this scenario we learned about a standardised way to learn about sensor technologies and convey what kind of processing they're performing, and make use of shared devices.", 
             features: [ 
-              { title: "Agency for people", label: "label", icon: "hex-icon-accessibility_new", description: "Publishing place definitons allows people to know what functionality is available in a given place." }, 
-              { title: "Interoperable access", label: "label", icon: "hex-icon-power", description: "Rather than relying on a single app, an interoperable API ensures many channels of access." }, 
-              { title: "Data exchange receipts", label: "label", icon: "hex-icon-receipt", description: "Each personal interaction that is digitally recorded is able to be audited and edited by that person." }, 
+              { title: "Place descriptions", label: "label", icon: "hex-icon-map", description: "Publishing place definitions allows people to know what functionality is available in a given place." }, 
+              { title: "Ambient interactions", label: "label", icon: "hex-icon-directions_walking", description: "Rather than relying on a single app, an interoperable API ensures many channels of access." }, 
+              { title: "Trusted assistant", label: "label", icon: "hex-icon-room_service", description: "Each personal interaction that is digitally recorded is able to be audited and edited by that person." }, 
               { title: "Zone-based notice",label: "label", icon: "hex-icon-place", description: "Alerts can be set based on geographic areas and a person’s familiarity with that place." }, 
             ], 
           }) %>
@@ -611,10 +613,11 @@
           frame:"images/Frame_Background.png",
           sign:["dtpr_icons/purpose/water.svg","dtpr_icons/tech/light.svg","hex-icon-room_service","hex-icon-favorite"],
           features: [ 
-            { title: "The purpose of this system is", icon: "dtpr_icons/purpose/water.svg", description: "Shopping" }, 
-            { title: "The service is provided by", icon: "dtpr_icons/tech/light.svg", description: orgBike }, 
-            { title: "The user’s interface is ", icon: "hex-icon-room_service", description: "Sensor Chatbot" }, 
-            { title: "The relationship is", icon: "hex-icon-favorite", description: "Temporary" },
+            { title: "The purpose of this system is", icon: "dtpr_icons/purpose/arts.svg", description: "Arts & Culture" }, 
+            { title: "The service is provided by", icon: "hex-icon-location_city", description: orgNeighbourhood }, 
+            { title: "The technology is", icon: "dtpr_icons/tech/wave.svg", description: "Bluetooth" }, 
+            { title: "The interaction mode is", icon: "hex-icon-directions_walking", description: "Hands free" }, 
+            { title: "The relationship is", icon: "hex-icon-meeting_room", description: "Visit" },
           ],
           index:currentIndex,
           frame:currentFrame,
@@ -635,10 +638,11 @@
           frame:"images/Frame_Background.png",
           sign:["dtpr_icons/purpose/arts.svg","dtpr_icons/tech/light.svg","hex-icon-room_service","hex-icon-favorite"],
           features: [ 
-            { title: "The purpose of this system is", icon: "dtpr_icons/purpose/water.svg", description: "Arts and Culture" }, 
-            { title: "The service is provided by", icon: "dtpr_icons/accountable/org.svg", description: "?? Boston Mall ??" }, 
-            { title: "The user’s interface is ", icon: "hex-icon-room_service", description: "Personal AI" }, 
-            { title: "The relationship is", icon: "hex-icon-favorite", description: "Temporary" }, 
+            { title: "The purpose of this system is", icon: "dtpr_icons/purpose/arts.svg", description: "Arts and Culture" }, 
+            { title: "The service is provided by", icon: "hex-icon-music_note", description: "Busker" }, 
+            { title: "The technology is", icon: "dtpr_icons/tech/yellow/wave.svg", description: "Contactless payments" },
+            { title: "The interaction mode is ", icon: "hex-icon-room_service", description: "Personal AI" }, 
+            { title: "The relationship is", icon: "hex-icon-favorite", description: "Supporter" }, 
           ],
           index:currentIndex,
           frame:currentFrame,
@@ -660,9 +664,10 @@
           sign:["dtpr_icons/purpose/water.svg","dtpr_icons/tech/light.svg","hex-icon-room_service","hex-icon-favorite"],
           features: [ 
             { title: "The purpose of this system is", icon: "dtpr_icons/purpose/inform.svg", description: "Inform" }, 
-            { title: "The service is provided by", icon: "dtpr_icons/tech/light.svg", description: "?? Boston Mall??" }, 
-            { title: "The user’s interface is ", icon: "hex-icon-room_service", description: "Place Chatbot" }, 
-            { title: "The relationship is", icon: "hex-icon-favorite", description: "Temporary" }, 
+            { title: "The service is provided by", icon: "hex-icon-location_city", description: orgNeighbourhood },  
+            { title: "The technology is", icon: "dtpr-logo-Black", description: "DTPR API" }, 
+            { title: "The interaction mode is", icon: "hex-icon-smartphone", description: "Personal Device" }, 
+            { title: "The relationship is", icon: "hex-icon-meeting_room", description: "Visit" },
           ],
           index:currentIndex,
           frame:currentFrame,
@@ -683,10 +688,11 @@
           frame:"images/Frame_Background.png",
           sign:["dtpr_icons/purpose/water.svg","dtpr_icons/tech/light.svg","hex-icon-room_service","hex-icon-favorite"],
           features: [ 
-            { title: "The purpose of this system is", icon: "dtpr_icons/purpose/water.svg", description: "Social" }, 
-            { title: "The service is provided by", icon: "dtpr_icons/tech/light.svg", description: "?? Boston Mall??" }, 
+            { title: "The purpose of this system is", icon: "hex-icon-people", description: "Social" }, 
+            { title: "The service is provided by", icon: "hex-icon-call", description: "Phone Co." },  
+            { title: "The technology is", icon: "hex-icon-gps-not_fixed", description: "GPS" }, 
             { title: "The user’s interface is ", icon: "hex-icon-room_service", description: "Personal AI" }, 
-            { title: "The relationship is", icon: "hex-icon-favorite", description: "Friends" }, 
+            { title: "The relationship is", icon: "hex-icon-favorite", description: "Friends" },
           ],
           index:currentIndex,
           frame:currentFrame,
@@ -698,7 +704,7 @@
       <div class="step-footer">
         <div class="container">
           <%= require("ejs-loader!./templates/step-footer.ejs")({ 
-            description: "In this scenario we learned about a standardised way to describe the systems, sensors, and technologies in a given area.", 
+            description: "In this scenario we learned about a way to query information about the places you're in, and the affordances there.", 
             features: [ 
               { title: "Agency for people", label: "label", icon: "hex-icon-accessibility_new", description: "Publishing place definitons allows people to know what functionality is available in a given place." }, 
               { title: "Interoperable access", label: "label", icon: "hex-icon-power", description: "Rather than relying on a single app, an interoperable API ensures many channels of access." }, 
@@ -847,7 +853,7 @@
       <div class="step-footer">
         <div class="container">
           <%= require("ejs-loader!./templates/step-footer.ejs")({ 
-            description: "In this scenario we learned about a standardised way to describe the systems, sensors, and technologies in a given area.", 
+            description: "In this scenario we explore an interoperable way to book, request, and control assets in a shared space.", 
             features: [ 
               { title: "Agency for people", label: "label", icon: "hex-icon-accessibility_new", description: "Publishing place definitons allows people to know what functionality is available in a given place." }, 
               { title: "Interoperable access", label: "label", icon: "hex-icon-power", description: "Rather than relying on a single app, an interoperable API ensures many channels of access." }, 
