@@ -105,6 +105,7 @@ $(function () {
     $(".ai-option.selected").removeClass("selected");
     $(this).addClass("selected");
     currentAgent = $(this).find(".avatar .material-icons").text();
+    window.open("https://me210829.typeform.com/to/cHglkn7x");
   });
 
   // setup the instance, pass callback functions
