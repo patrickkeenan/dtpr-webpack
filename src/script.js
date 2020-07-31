@@ -4,46 +4,46 @@ var currentAgent;
 var scroller = scrollama();
 var bgPositions = [
   [
-    [233, 465],
-    [1206, 332],
-    [558, 889],
-    [960, 934],
+    [400, 275],
+    [700, 300],
+    [800, 275],
+    [900, 250],
   ],
   [
-    [233, 1514],
-    [692, 1802],
-    [1384, 1548],
-    [1047, 2069],
+    [1100, 275],
+    [1275, 500],
+    [1500, 400],
+    [1700, 200],
   ],
   [
-    [97, 2391],
-    [584, 2549],
-    [1047, 2887],
-    [205, 3030],
+    [1900, 275],
+    [2100, 500],
+    [2275, 400],
+    [2500, 200],
   ],
   [
-    [501, 3556],
-    [1263, 3375],
-    [344, 3866],
-    [1238, 3796],
+    [2700, 275],
+    [2900, 500],
+    [3100, 400],
+    [3275, 200],
   ],
   [
-    [393, 4543],
-    [1310, 4628],
-    [393, 5009],
-    [1047, 5077],
+    [3500, 275],
+    [3700, 500],
+    [3900, 400],
+    [4100, 200],
   ],
   [
-    [227, 5575],
-    [920, 5453],
-    [1263, 5612],
-    [414, 5899],
+    [4275, 275],
+    [2750, 500],
+    [4700, 400],
+    [4900, 200],
   ],
   [
-    [135, 6638],
-    [560, 6854],
-    [711, 6422],
-    [1217, 6714],
+    [5100, 275],
+    [5275, 500],
+    [5500, 400],
+    [5700, 200],
   ],
 ];
 $(function () {
@@ -123,30 +123,45 @@ $(function () {
       var el = $(response.element);
       var x, y;
 
-      var sideMargin = 0;
-      if (el.is(".step-holder-left")) {
+      if (index && frame) {
+        var sideMargin = 0;
         x = bgPositions[index][frame][0];
         y = bgPositions[index][frame][1];
-        if ($(window).width() > 576) sideMargin = 20;
+        console.log(x, y);
+        // if ($(window).width() > 576) sideMargin = 20;
         $("#tapestry img").css(
           "transform",
           "translate(-" + x + "px, -" + y + "px)"
         );
-        $("#tapestry").css("transform", "translate(" + sideMargin + "vw, 0)");
-        console.log(bgPositions[index][frame]);
-      } else if (el.is(".step-holder-right")) {
-        x = bgPositions[index][frame][0];
-        y = bgPositions[index][frame][1];
-        if ($(window).width() > 768) sideMargin = -20;
-
-        $("#tapestry img").css(
-          "transform",
-          "translate(-" + x + "px, -" + y + "px)"
-        );
-        $("#tapestry").css("transform", "translate(" + sideMargin + "vw, 0)");
         console.log(bgPositions[index][frame]);
       }
-      console.log($(window).width());
+
+      // $("#tapestry").css("transform", "translate(" + sideMargin + "vw, 0)");
+
+      // if (el.is(".step-holder-left")) {
+      //   x = bgPositions[index][frame][0];
+      //   y = bgPositions[index][frame][1];
+      //   console.log(x, y);
+      //   if ($(window).width() > 576) sideMargin = 20;
+      //   $("#tapestry img").css(
+      //     "transform",
+      //     "translate(-" + x + "px, -" + y + "px)"
+      //   );
+      //   $("#tapestry").css("transform", "translate(" + sideMargin + "vw, 0)");
+      //   console.log(bgPositions[index][frame]);
+      // } else if (el.is(".step-holder-right")) {
+      //   x = bgPositions[index][frame][0];
+      //   y = bgPositions[index][frame][1];
+      //   if ($(window).width() > 768) sideMargin = -20;
+
+      //   $("#tapestry img").css(
+      //     "transform",
+      //     "translate(-" + x + "px, -" + y + "px)"
+      //   );
+      //   $("#tapestry").css("transform", "translate(" + sideMargin + "vw, 0)");
+      //   console.log(bgPositions[index][frame]);
+      // }
+      // console.log($(window).width());
       // if (el.is(".step-holder")) {
       //   $("#tapestry").show();
       // } else {

@@ -1,6 +1,7 @@
+<% contentLeft = false %>
 <div class="row">
   <% if(!contentLeft) { %>
-  <div class="d-none d-md-block col-md-8"></div>
+  <div class="d-none d-md-block col-md-6 col-lg-8"></div>
   <% }%>
   <!-- <div class="col-3 col-md-1 text-center d-flex align-items-center flex-column">
     <div><%= require("ejs-loader!./icon.ejs")({icon:sign[0]}) %></div>
@@ -10,8 +11,8 @@
     </div>
     <div><%= require("ejs-loader!./icon.ejs")({icon:sign[3]}) %></div>
   </div> -->
-  <div class="col-12 col-md-4">
-    <div class="card pb-2">
+  <div class="col-12 col-md-6 col-lg-4">
+    <div class="card pb-2 mt-5">
       <h3><%= title %></h3>
       <p>
         <%= description %>
@@ -19,14 +20,14 @@
     </div>
   </div>
   <% if(contentLeft) { %>
-  <div class="d-none d-md-block col-md-8"></div>
+  <div class="d-none d-md-block col-md-6 col-lg-8"></div>
   <% }%>
 </div>
 <div class="row">
   <% if(!contentLeft) { %>
-  <div class="d-none d-md-block col-md-8"></div>
+  <div class="d-none d-md-block col-md-6 col-lg-8"></div>
   <% }%>
-  <div class="col-12 col-md-4 mt-2">
+  <div class="col-12 col-md-6 col-lg-4 mt-2">
     <div class="card card-lightblue py-2">
       <ul class="list-group">
         <% for (var i =0; i <features.length; i++ ) { %>
@@ -46,6 +47,6 @@
     </div>
   </div>
   <% if(contentLeft) { %>
-  <div class="d-none d-md-block col-md-8"></div>
+  <div class="d-none d-md-block col-md-6 col-lg-8"></div>
   <% }%>
 </div>

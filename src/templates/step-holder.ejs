@@ -1,8 +1,5 @@
 <div data-stepIndex="<%= index %>" data-stepFrame="<%= frame %>" class="step step-holder step-holder-<% if(contentLeft===true) {%>left<% }else{%>right<%} %>">
-  <div class="sticky-image">
-    <%= require("ejs-loader!./step-image.ejs")({
-    image:image,frame:frame, contentLeft:contentLeft, }) %>
-  </div> 
+  
   <div class="container">
   <%=
     require("ejs-loader!./step-description.ejs")({
@@ -14,10 +11,14 @@
     })
     %>
   </div>
+  <div class="sticky-image">
+    <%= require("ejs-loader!./step-image.ejs")({
+    image:image,frame:frame, contentLeft:contentLeft, }) %>
+  </div> 
 
-  <div class="container pb-4">
+  <!-- <div class="container pb-4">
     <%=
     require("ejs-loader!./step-prototype.ejs")({contentLeft:contentLeft,prototypeType:prototypeType,prototypeUrl:prototypeUrl})
     %>
-  </div>
+  </div> -->
 </div>

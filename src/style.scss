@@ -279,6 +279,7 @@ h6 {
   top: 50%;
   z-index: -1;
   transition: transform 0.5s;
+  transform-origin: center left;
   img {
     // transform: translateX(-396x) translateY(-532px);
     transition: transform 0.5s;
@@ -287,6 +288,14 @@ h6 {
     // top: -946px;
     opacity: 0.8;
   }
+}
+#sticky-prototype {
+  position: fixed;
+  left: 30px;
+  width: 25vw;
+  top: 50%;
+  left: 30px;
+  transform: translateY(-50%);
 }
 
 .sticky-image {
