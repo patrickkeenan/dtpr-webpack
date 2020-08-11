@@ -1,50 +1,60 @@
 console.log("jQuery");
 var currentSection;
 var currentAgent;
+var showingPhone = false;
 var scroller = scrollama();
 var bgPositions = [
   [
-    [400, 275],
-    [700, 300],
-    [800, 275],
-    [2000, 250],
+    [385, 540],
+    [1480, 540],
+    [2550, 540],
+    [3140, 540],
   ],
   [
-    [3000, 275],
-    [4000, 500],
-    [5000, 400],
-    [6000, 200],
+    [4690, 540],
+    [6000, 540],
+    [6810, 540],
+    [7850, 540],
   ],
   [
-    [7000, 275],
-    [9000, 500],
-    [11000, 400],
-    [13000, 200],
+    [8760, 540],
+    [9620, 540],
+    [10820, 540],
+    [11830, 540],
   ],
   [
-    [15000, 275],
-    [16000, 500],
-    [18000, 400],
-    [20000, 200],
+    [12720, 540],
+    [13760, 540],
+    [14460, 540],
+    [15880, 540],
   ],
   [
-    [22000, 275],
-    [23000, 500],
-    [26000, 400],
-    [27000, 200],
+    [17030, 540],
+    [17850, 540],
+    [18800, 540],
+    [19800, 540],
   ],
   [
-    [28000, 275],
-    [29000, 500],
-    [30000, 400],
-    [32000, 200],
+    [21240, 540],
+    [21940, 540],
+    [23300, 540],
+    [24460, 540],
   ],
   [
-    [33000, 275],
-    [34000, 500],
-    [36000, 400],
-    [37000, 200],
+    [25360, 540],
+    [26040, 540],
+    [26800, 540],
+    [27760, 540],
   ],
+];
+var phonePositions = [
+  [[275], [700], [1000], [1300]],
+  [[1600], [2000], [2400], [2800]],
+  [[3000], [3300], [3600], [3900]],
+  [[4200], [4500], [4900], [5200]],
+  [[5600], [6000], [6400], [6800]],
+  [[7200], [7600], [8000], [9000]],
+  [[9400], [9600], [10500], [11555]],
 ];
 $(function () {
   scroller = scrollama();
@@ -108,6 +118,13 @@ $(function () {
     window.open("https://me210829.typeform.com/to/cHglkn7x");
   });
 
+  $(".prototype-conversation").click(function () {
+    $(".prototype-modal").scrollTop(0);
+    $(".prototype-modal").css("transform", "translateX(-375px)");
+  });
+  $(".prototype-modal").click(function () {
+    $(".prototype-modal").css("transform", "translateX(0)");
+  });
   // setup the instance, pass callback functions
   scroller
     .setup({
@@ -133,8 +150,22 @@ $(function () {
           "transform",
           "translate(-" + x + "px, -" + y + "px)"
         );
-        console.log(bgPositions[index][frame]);
+        $(".prototype-conversation").css(
+          "transform",
+          "translate(0, -" + phonePositions[index][frame] + "px)"
+        );
+        // if (index != undefined && showingPhone == false) {
+        //   showingPhone = true;
+        //   $("#sticky-prototype").show();
+        // }
+
+        console.log(bgPositions[index][frame], index);
       }
+      // if (index == undefined && showingPhone == true) {
+      //   showingPhone = false;
+      //   $("#sticky-prototype").hide();
+      // }
+      console.log(showingPhone, index);
 
       // $("#tapestry").css("transform", "translate(" + sideMargin + "vw, 0)");
 
@@ -180,9 +211,14 @@ $(function () {
     .onStepProgress((response) => {
       console.log(response);
     });
+  scroller.onStepEnter();
   // setup resize event
   window.addEventListener("resize", scroller.resize);
+  $(window).resize(function () {
+    console.log($(".prototype-content"), $(window).width());
+  });
 });
+
 function scrollToSection(sectionElement) {
   scroller.disable();
   console.log("scroll is", scroller);

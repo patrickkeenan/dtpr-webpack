@@ -151,6 +151,8 @@ body {
 #section-taxonomy-access,
 #section-taxonomy-storage {
   background: #fff;
+  position: relative;
+  z-index: 2;
 }
 
 .btn {
@@ -291,11 +293,58 @@ h6 {
 }
 #sticky-prototype {
   position: fixed;
-  left: 30px;
-  width: 25vw;
   top: 50%;
   left: 30px;
+  bottom: 30px;
+  z-index: 1;
   transform: translateY(-50%);
+  .prototype-content {
+    border: 12px $blue solid;
+    border-radius: 20px;
+    box-shadow: 0 3px 30px rgba(0, 0, 0, 0.5);
+    width: 399px;
+    height: 836px;
+    overflow: hidden;
+    transform: scaleX(0.25) scaleY(0.25);
+    transform-origin: left bottom;
+    transition: all 0.2s ease-out;
+    &:hover {
+      cursor: pointer;
+      transition: all 0.2s ease-in;
+      transform: scaleX(1) scaleY(1);
+    }
+  }
+  .prototype-conversation {
+    width: 375px;
+    height: 812px;
+    background-color: #fff;
+    transition: all 0.2s ease-in-out;
+  }
+  .prototype-conversation img {
+    padding-top: 812px;
+    width: 375px;
+    height: 12797px;
+  }
+  .prototype-conversation {
+    position: absolute;
+    width: 375px;
+    height: 812px;
+    background-color: #fff;
+    transition: all 0.2s ease-in-out;
+  }
+  .prototype-modal {
+    position: absolute;
+    width: 375px;
+    height: 812px;
+    left: 375px;
+    transform: translateX(0);
+    transition: all 0.2s ease-in-out;
+    overflow: auto;
+  }
+  .prototype-modal img {
+    width: 375px;
+    height: 1152px;
+  }
 }
 
 .sticky-image {
@@ -642,7 +691,7 @@ h6 {
 }
 .prototype-container {
   overflow: hidden;
-  display: none;
+  // display: none;
   // height: 757px;
   border-radius: 36px;
   position: absolute;
