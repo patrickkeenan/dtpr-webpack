@@ -293,11 +293,9 @@ h6 {
 }
 #sticky-prototype {
   position: fixed;
-  top: 50%;
   left: 30px;
   bottom: 30px;
   z-index: 1;
-  transform: translateY(-50%);
   .prototype-content {
     border: 12px $blue solid;
     border-radius: 20px;
