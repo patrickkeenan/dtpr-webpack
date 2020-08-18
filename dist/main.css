@@ -10219,11 +10219,9 @@ h6 {
 
 #sticky-prototype {
   position: fixed;
-  top: 50%;
   left: 30px;
   bottom: 30px;
   z-index: 1;
-  transform: translateY(-50%);
 }
 #sticky-prototype .prototype-content {
   border: 12px #002684 solid;
