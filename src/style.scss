@@ -282,6 +282,7 @@ h6 {
   z-index: -1;
   transition: transform 0.5s;
   transform-origin: center left;
+  display: flex;
   img {
     // transform: translateX(-396x) translateY(-532px);
     transition: transform 0.5s;
