@@ -12,7 +12,7 @@
     <ul class="list-group ai-options">
       <% for (var i =0; i <options.length; i++ ) { %>
         <li class="list-group-item">
-          <div class="ai-option <%= (i == 0) ? "selected" : "" %> col d-flex align-items-center">
+          <div class="ai-option <%= (i == 0) ? "selected" : "" %> col d-flex align-items-center" data-icon="<%= options[i].icon %>">
             <div class="radio pr-1">
               <i class="material-icons md-48 align-middle icon-unchecked">radio_button_unchecked</i>
               <i class="material-icons md-48 align-middle icon-checked">radio_button_checked</i>

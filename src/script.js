@@ -1,4 +1,3 @@
-console.log("jQuery");
 var currentSection;
 var currentAgent;
 var showingPhone = false;
@@ -47,6 +46,21 @@ var bgPositions = [
     [27760, 540],
   ],
 ];
+var assistantPositions = [
+  // [715, 156, 42, 48],
+  // [2341, 228, 42, 48],
+  // [2949, 165, 42, 48],
+  // [4420, 159, 25, 29],
+  // [5449, 215, 41, 47],
+  // [6343, 212, 42, 48],
+  // [7816, 161, 55, 63],
+  // [8732, 226, 52, 59],
+  // [9182, 152, 113, 128],
+  // [9673, 199, 79, 89],
+  // [10950, 223, 93, 105],
+  // [12842, 263, 37, 42],
+  [13613, 125, 44, 50],
+];
 var phonePositions = [
   [[275], [700], [1000], [1300]],
   [[1600], [2000], [2400], [2800]],
@@ -58,31 +72,24 @@ var phonePositions = [
 ];
 $(function () {
   scroller = scrollama();
-  console.log("loaded");
   $(".prototype-loader .btn").click(function () {
     var loaderEl = $(this).parents(".prototype-loader");
-    console.log("p", loaderEl);
     var parentEl = loaderEl.parents(".prototype");
     var containerEl = parentEl.find(".prototype-container");
     var iFrame = parentEl.find("iframe");
     containerEl.show();
     loaderEl.hide();
-    console.log(parentEl);
-    console.log(iFrame);
     // iFrame.load(function(){
     //   console.log("loaded frame");
     // })
-    console.log(iFrame, iFrame.attr("data-src"));
     iFrame.attr("src", iFrame.attr("data-src"));
   });
 
   $("[data-link]").click(function () {
-    console.log($(this).data("link"));
     scrollToSection($("#" + $(this).data("link")));
   });
 
   $(".nav-open-menu").click(function () {
-    console.log(this);
     $(".menu-overlay-container").show();
   });
   $(".menu-overlay-container").click(function () {
@@ -93,10 +100,8 @@ $(function () {
   });
   $(".nav-prev-section").click(function () {
     scrollToSection($(currentSection).prev(".step"));
-    console.log($(currentSection).prev(".step"));
   });
   $(".nav-next-section").click(function () {
-    console.log($(currentSection).next(".step"));
     scrollToSection($(currentSection).next(".step"));
   });
   $(".cards-principles .btn-circle").click(function () {
@@ -110,12 +115,15 @@ $(function () {
     $(".cards-projects").animate({ scrollLeft: width }, 500);
   });
   currentAgent = $($(".ai-option.selected .avatar .material-icons")[0]).text();
-  console.log(currentAgent);
   $(".ai-option").click(function () {
     $(".ai-option.selected").removeClass("selected");
     $(this).addClass("selected");
     currentAgent = $(this).find(".avatar .material-icons").text();
-    window.open("https://me210829.typeform.com/to/cHglkn7x");
+    var agentIcon = $(this).data("icon");
+    $(".tapestry-assistant").attr("src", `images/assistant_${agentIcon}.svg`);
+    if (agentIcon == "help") {
+      window.open("https://me210829.typeform.com/to/cHglkn7x");
+    }
   });
 
   $(".prototype-conversation").click(function () {
@@ -136,7 +144,6 @@ $(function () {
       currentSection = response.element;
       var index = $(response.element).attr("data-stepIndex");
       var frame = $(response.element).attr("data-stepFrame");
-      console.log(response, index, frame);
       var el = $(response.element);
       var x, y;
 
@@ -144,9 +151,8 @@ $(function () {
         var sideMargin = 0;
         x = bgPositions[index][frame][0];
         y = bgPositions[index][frame][1];
-        console.log(x, y);
         // if ($(window).width() > 576) sideMargin = 20;
-        $("#tapestry img").css(
+        $("#tapestry .banner").css(
           "transform",
           "translate(-" + x + "px, -" + y + "px)"
         );
@@ -158,14 +164,11 @@ $(function () {
         //   showingPhone = true;
         //   $("#sticky-prototype").show();
         // }
-
-        console.log(bgPositions[index][frame], index);
       }
       // if (index == undefined && showingPhone == true) {
       //   showingPhone = false;
       //   $("#sticky-prototype").hide();
       // }
-      console.log(showingPhone, index);
 
       // $("#tapestry").css("transform", "translate(" + sideMargin + "vw, 0)");
 
@@ -203,25 +206,21 @@ $(function () {
       // }
     })
     .onStepExit((response) => {
-      console.log(response);
       // if (response.direction == "up") {
       //   $(".nav-container").css("top", 0);
       // }
     })
-    .onStepProgress((response) => {
-      console.log(response);
-    });
-  scroller.onStepEnter();
+    .onStepProgress((response) => {});
+  // scroller.onStepEnter();
   // setup resize event
   window.addEventListener("resize", scroller.resize);
-  $(window).resize(function () {
-    console.log($(".prototype-content"), $(window).width());
-  });
+  // $(window).resize(function () {
+  //   console.log($(".prototype-content"), $(window).width());
+  // });
 });
 
 function scrollToSection(sectionElement) {
   scroller.disable();
-  console.log("scroll is", scroller);
   $("html, body").animate(
     {
       scrollTop: sectionElement.offset().top,
