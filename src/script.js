@@ -126,8 +126,12 @@ $(function () {
     }
   });
 
-  $(".prototype-conversation").click(function () {
+  $(".prototype-conversation .prototype-card").click(function () {
+    var step = $(this).data("prototype-step");
+    console.log(step);
     $(".prototype-modal").scrollTop(0);
+    $(".prototype-modal .data-chain").hide();
+    $("#datachain-" + step).show();
     $(".prototype-modal").css("transform", "translateX(-375px)");
   });
   $(".prototype-modal").click(function () {
