@@ -55,14 +55,7 @@
       </div>
     </div>
     <div id="section-about" class="step" data-step="section-about">
-      <div class="sticky-section-header">
-        <%=
-        require("ejs-loader!./templates/section-divider.ejs")({
-          section:"Vision",
-          title: "DTPR",
-          icon:"dtpr-logo-Blue",
-        }) %>
-      </div>
+
       <!-- <div class="sticky-section-header">
         <%= require("ejs-loader!./templates/header.ejs")({}) %>
       </div> -->
@@ -81,10 +74,8 @@
           <div class="col-12 col-md-5 mt-2 d-flex">
             <div class="card card-lightblue">
               <h3>How can we be confident the technology is achieving its goal?</h3> 
-              <p>
               <h3>Whether seeking safety, sustainability, or accessibility, many are left asking: what are the benefits, the risks, and the trade-offs we're making?</h3>
               <p>Digital technology is all around us, but often invisible. There’s little transparency about what data these technologies are collecting, by whom, and for what purposes. We’ve also seen that much technology in the built environment lacks controls for people. </p>
-              <p>We’ve drafted a standard that enables transparency, accountability, and control for people.</p>
             </div>
           </div>
         </div>
@@ -141,8 +132,6 @@
               <div class="thumbnail"></div>
             </div>
           </div>
-        </div>
-
       </div>
     </div>
 
@@ -198,7 +187,7 @@
           </div>
         </div>
       </div>
-
+    </div>
     <!-- Tools -->
     <div id="section-tools" class="step pb-5" data-step="section-tools">
       <div class="sticky-section-header">
@@ -224,12 +213,26 @@
         <div class="row">
           <div class="col-12 col-md-7 mt-2 d-flex">
             <div class="card card-green">
-              <h1>The DTPR Taxonomy, Design Patterns and Prototypes</h1>
-              <p>The core of the DTPR communication standard is a taxonomy of concepts around digital tech and data practices, and a set of icons to quickly and clearly communicate those concepts. These components can then expressed in a number of ways - from physical signage  to digital channels for communication – which together, help visualize and convey how a digital system works.</p>
+              <h1>The DTPR Communication Standard</h1>
+              <p>There are four major components to DTPR – icons, a signage system, and
+                a digital channel for communication – which together, help visualize and
+                convey a taxonomy of key concepts for digital tech and data practices.</p>
             </div>
           </div>
           <div class="col-12 col-md-5 mt-2 d-flex">
             <div class="card card-image" style="background-image: url(images/Tools_Contributors.png);height: 480px;"></div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-12 col-md-5 mt-2 d-flex">
+            <div class="card card-image" style="background-image: url(images/Tools_Components.png);height: 480px;"></div>
+          </div>
+          <div class="col-12 col-md-7 mt-2 d-flex">
+            <div class="card card-green">
+              <h1>The DTPR Design Patterns and Prototypes</h1>
+              <p>The taxonomy can be expressed in a number of ways - from physical signage to digital channels for communication like a website or a chatbot</p>
+            </div>
           </div>
         </div>
         
@@ -278,15 +281,16 @@
         </div>
 
         <div class="row">
-          <div class="col-12 col-md-5 mt-2 d-flex">
-            <div class="card card-image" style="background-image: url(images/Tools_Codesign.png);height: 480px;"></div>
-          </div>
           <div class="col-12 col-md-7 mt-2 d-flex">
             <div class="card card-green">
               <h1>Co-Design Materials and Research Findings</h1>
               <p>You can find the materials used to support the development of this project here</p>
             </div>
           </div>
+          <div class="col-12 col-md-5 mt-2 d-flex">
+            <div class="card card-image" style="background-image: url(images/Tools_Codesign2.png);height: 480px;"></div>
+          </div>
+        </div>
 
         <div class="row flex-nowrap overflow-auto cards-projects">
           <div class="col-10 col-md-4 d-flex mt-2">
@@ -329,6 +333,7 @@
               <h4>2020 Charrette Summaries</h4>
               <div class="thumbnail"></div>
             </div>
+          </div>
           <div class="col-10 col-md-3 d-flex mt-2">
             <div class="card card-lightgreen">
               <i class="material-icons md-16 float-right">launch</i>
@@ -359,10 +364,7 @@
           </div>
         </div>
 
-      </div>
-
         <div class="row pb-4">
- 
           <div class="col-12 col-md-4 mt-4 text-green">
             <h2>DTPR Pilots</h2>
             <div class="link-list">
@@ -382,13 +384,6 @@
             </div>
           </div>
         </div>
-      </div>
-
-
-
-    </div>
-    <!-- / Some space -->
-    </div>
 
 <% 
 
