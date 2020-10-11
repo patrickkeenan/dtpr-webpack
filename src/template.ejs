@@ -2011,13 +2011,13 @@ var taxonomy = [
 
       <!-- VISION INTRO -->
       <% var stepData =[ 
-      {image:"images/Vision_Chapter_Image.png", title:"Grab a book", description:"move seamlessly through places we love, and seamfully in places new to us?" }, 
-      { image:"images/Vision_Chapter_Image.png", title:"A new look", description:"understand how sensors work, and what they do for people?" }, 
-      { image:"images/Vision_Chapter_Image.png", title:"Stop to listen", description:"look up from our phones, and strengthen the social fabric?" }, 
-      { image:"images/Vision_Chapter_Image.png", title:"A table for two", description:"gain agency over technology, and only share what we choose?" }, 
-      { image:"images/Vision_Chapter_Image.png", title:"Recycle, recall", description:"get help from the built environment, and leave it better than we found it?" }, 
-      { image:"images/Vision_Chapter_Image.png", title:"Lost & Found", description:"offer eyes on the street, with humans in the loop?" }, 
-      { image:"images/Vision_Chapter_Image.png", title:"Head home", description:"offer time-bound data sharing with ongoing control of choices?" }, 
+      {image:"images/Vision_Chapter_Image_1.svg", title:"Grab a book", description:"move seamlessly through places we love, and seamfully in places new to us?" }, 
+      { image:"images/Vision_Chapter_Image_2.svg", title:"A new look", description:"understand how sensors work, and what they do for people?" }, 
+      { image:"images/Vision_Chapter_Image_3.svg", title:"Stop to listen", description:"look up from our phones, and strengthen the social fabric?" }, 
+      { image:"images/Vision_Chapter_Image_4.svg", title:"A table for two", description:"gain agency over technology, and only share what we choose?" }, 
+      { image:"images/Vision_Chapter_Image_5.svg", title:"Recycle, recall", description:"get help from the built environment, and leave it better than we found it?" }, 
+      { image:"images/Vision_Chapter_Image_6.svg", title:"Lost & Found", description:"offer eyes on the street, with humans in the loop?" }, 
+      { image:"images/Vision_Chapter_Image_7.svg", title:"Head home", description:"offer time-bound data sharing with ongoing control of choices?" }, 
       ]; 
       %>
 
@@ -2077,7 +2077,7 @@ var taxonomy = [
           <%= require("ejs-loader!./templates/step-header.ejs")({ 
             title: currentStepData.description, 
             lead: "A standardised way to describe the systems, sensors, and technologies in a given area.", 
-            image:"images/Vision_Chapter_Image.png",
+            image:"images/Vision_Chapter_Image_1.svg",
             stepNumber:currentIndex+1,
             seal: "Seal_Place.png", 
             buttons: [
@@ -2228,7 +2228,7 @@ var taxonomy = [
           <%= require("ejs-loader!./templates/step-header.ejs")({ 
             title: currentStepData.description, 
             lead: "A standardised way to describe sensors and convey what kind of processing they're performing.", 
-            image:"images/Vision_Chapter_Image.png",
+            image:"images/Vision_Chapter_Image_2.svg",
             stepNumber:currentIndex+1,
             seal: "Seal_Sensor.png", 
             buttons: [
@@ -2380,7 +2380,7 @@ var taxonomy = [
           <%= require("ejs-loader!./templates/step-header.ejs")({ 
             title: currentStepData.description, 
             lead: "A standardised way to query information about the places you're in, and the affordances there.", 
-            image:"images/Vision_Chapter_Image.png",
+            image:"images/Vision_Chapter_Image_3.svg",
             stepNumber:currentIndex+1,
             seal: "Seal_Sensor.png", 
             buttons: [
@@ -2532,7 +2532,7 @@ var taxonomy = [
           <%= require("ejs-loader!./templates/step-header.ejs")({ 
             title: currentStepData.description, 
             lead: "An interoperable way to book, request, and control assets in a shared space.", 
-            image:"images/Vision_Chapter_Image.png",
+            image:"images/Vision_Chapter_Image_4.svg",
             stepNumber:currentIndex+1,
             seal: "Seal_Place.png", 
             buttons: [
@@ -2612,7 +2612,7 @@ var taxonomy = [
           features: [ 
             { title: "The purpose of this system is", icon: "dtpr_icons/purpose/mobility.svg", description: "Mobility" }, 
             { title: "The service is provided by", icon: "hex-icon-location_city", description: orgNeighbourhood },  
-            { title: "The technology is", icon: "hex-icon-gps-not_fixed", description: "GPS" }, 
+            { title: "The technology is", icon: "dtpr_icons/tech/wave.svg", description: "GPS" }, 
             { title: "The interaction mode is", icon: "hex-icon-smartphone", description: "Personal Device" }, 
             { title: "The relationship is", icon: "hex-icon-meeting_room", description: "Temporary" },
           ],
@@ -2683,7 +2683,7 @@ var taxonomy = [
           <%= require("ejs-loader!./templates/step-header.ejs")({ 
             title: currentStepData.description, 
             lead: "A standard way to describe systems within places, and what sensors, processing, and purposes they serve.", 
-            image:"images/Vision_Chapter_Image.png",
+            image:"images/Vision_Chapter_Image_5.svg",
             stepNumber:currentIndex+1,
             seal: "Seal_System.png", 
             buttons: [
@@ -2837,7 +2837,7 @@ var taxonomy = [
           <%= require("ejs-loader!./templates/step-header.ejs")({ 
             title: currentStepData.description, 
             lead: "New methods in preserving privacy while maintaining a way to comply with security operations.", 
-            image:"images/Vision_Chapter_Image.png",
+            image:"images/Vision_Chapter_Image_6.svg",
             stepNumber:currentIndex+1,
             seal: "Seal_Sensor.png", 
             buttons: [
@@ -2989,7 +2989,7 @@ var taxonomy = [
           <%= require("ejs-loader!./templates/step-header.ejs")({ 
             title: currentStepData.description, 
             lead: "A standard way for people to review their data footprint, delete transactions, and save other for later.", 
-            image:"images/Vision_Chapter_Image.png",
+            image:"images/Vision_Chapter_Image_7.svg",
             stepNumber:currentIndex+1,
             seal: "Seal_Sensor.png", 
             buttons: [

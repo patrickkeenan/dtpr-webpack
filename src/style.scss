@@ -412,8 +412,8 @@ h6 {
   .badge {
     width: 32px;
     height: 32px;
-    background-color: $lightblue;
-    color: $blue;
+    background-color: $blue;
+    color: $lightblue;
     border-radius: 32px;
     line-height: 26px;
     margin-right: 12px;
@@ -460,8 +460,8 @@ h6 {
     .badge {
       width: 48px;
       height: 48px;
-      background-color: $lightblue;
-      color: $blue;
+      background-color: $blue;
+      color: $lightblue;
       border-radius: 32px;
       line-height: 36px;
       margin-right: 12px;
@@ -521,8 +521,8 @@ h6 {
   left: 0;
 }
 .step-banner {
-  background-color: $blue;
-  color: $lightblue;
+  background-color: $lightblue;
+  color: $blue;
   position: relative;
   z-index: 1;
 }

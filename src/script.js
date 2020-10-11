@@ -122,7 +122,9 @@ $(function () {
   });
 
   $("[data-link]").click(function () {
-    scrollToSection($("#" + $(this).data("link")));
+    var id = $(this).data("link");
+    scrollToSection($("#" + id));
+    window.location.hash = id;
   });
 
   $(".nav-open-menu").click(function () {
