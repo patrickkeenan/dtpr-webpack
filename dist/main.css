@@ -10347,8 +10347,8 @@ h6 {
 .card .badge {
   width: 32px;
   height: 32px;
-  background-color: #bae6ed;
-  color: #002684;
+  background-color: #002684;
+  color: #bae6ed;
   border-radius: 32px;
   line-height: 26px;
   margin-right: 12px;
@@ -10392,8 +10392,8 @@ h6 {
 .card.big-card .badge {
   width: 48px;
   height: 48px;
-  background-color: #bae6ed;
-  color: #002684;
+  background-color: #002684;
+  color: #bae6ed;
   border-radius: 32px;
   line-height: 36px;
   margin-right: 12px;
@@ -10455,8 +10455,8 @@ h6 {
 }
 
 .step-banner {
-  background-color: #002684;
-  color: #bae6ed;
+  background-color: #bae6ed;
+  color: #002684;
   position: relative;
   z-index: 1;
 }
