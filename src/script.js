@@ -61,16 +61,52 @@ var assistantPositions = [
   // [12842, 263, 37, 42],
   [13613, 125, 44, 50],
 ];
-var phonePositions = [
-  [[275], [700], [1000], [1300]],
-  [[1600], [2000], [2400], [2800]],
-  [[3000], [3300], [3600], [3900]],
-  [[4200], [4500], [4900], [5200]],
-  [[5600], [6000], [6400], [6800]],
-  [[7200], [7600], [8000], [9000]],
-  [[9400], [9600], [10500], [11555]],
+// var phonePositions = [
+//   [[390], [1120], [1490], [1840]],
+//   [[2567], [3071], [3614], [4577]],
+//   [[4923], [6306], [6668], [7091]],
+//   [[9929], [10483], [10853], [11230]],
+//   [[11531], [12546], [13274], [13906]],
+//   [[14186], [15264], [15815], [16868]],
+//   [[17044], [17199], [18072], [18072]],
+// ];
+var phonePositions;
+var prototypeCardIds = [
+  ["scenario-1a", "scenario-1b", "scenario-1c", "scenario-1d"],
+
+  ["scenario-2a", "scenario-2b", "scenario-2b", "scenario-2d"],
+
+  ["scenario-3a", "scenario-3b", "scenario-3c", "scenario-3d"],
+
+  ["scenario-4a", "scenario-4b", "scenario-4c", "scenario-4d"],
+
+  ["scenario-5a", "scenario-5b", "scenario-5c", "scenario-5d"],
+
+  ["scenario-6a", "scenario-6b", "scenario-6c", "scenario-6d"],
+
+  ["scenario-7a", "scenario-7b", "scenario-7c", "scenario-7d"],
 ];
+
 $(function () {
+  phonePositions = [];
+  var cardSection;
+  var yOffset = 0;
+  var lastId = "";
+  $(prototypeCardIds).each(function (i, sectionIds) {
+    sectionPositions = [];
+    $(sectionIds).each(function (j, cardId) {
+      t = $(`#pcard-${cardId}`).position().top;
+      h = $(`#pcard-${cardId}`).height();
+      // y = t + h;
+      if (cardId != lastId) yOffset += h + 16;
+      sectionPositions.push(yOffset);
+      // console.log(yOffset, y, t, h);
+      lastId = cardId;
+    });
+    phonePositions.push(sectionPositions);
+    console.log(i, sectionIds);
+  });
+
   scroller = scrollama();
   $(".prototype-loader .btn").click(function () {
     var loaderEl = $(this).parents(".prototype-loader");
@@ -135,6 +171,10 @@ $(function () {
     $(".prototype-modal").css("transform", "translateX(-375px)");
   });
   $(".prototype-modal").click(function () {
+    $(".prototype-modal .data-chain").hide();
+    var index = $(currentSection).attr("data-stepIndex");
+    var frame = $(currentSection).attr("data-stepFrame");
+    $("#datachain-" + prototypeCardIds[index][frame]).show();
     $(".prototype-modal").css("transform", "translateX(0)");
   });
   // setup the instance, pass callback functions
@@ -146,9 +186,9 @@ $(function () {
     })
     .onStepEnter((response) => {
       currentSection = response.element;
-      var index = $(response.element).attr("data-stepIndex");
-      var frame = $(response.element).attr("data-stepFrame");
-      var el = $(response.element);
+      var index = $(currentSection).attr("data-stepIndex");
+      var frame = $(currentSection).attr("data-stepFrame");
+      var el = $(currentSection);
       var x, y;
 
       if (index && frame) {
@@ -160,6 +200,11 @@ $(function () {
           "transform",
           "translate(-" + x + "px, -" + y + "px)"
         );
+
+        // $(`#pcard-${cardId}`).;
+        // prototypeCardIds[index][frame]
+        $(".prototype-conversation .prototype-card").css("opacity", 0.5);
+        $("#pcard-" + prototypeCardIds[index][frame]).css("opacity", 1);
         $(".prototype-conversation").css(
           "transform",
           "translate(0, -" + phonePositions[index][frame] + "px)"
@@ -218,9 +263,17 @@ $(function () {
   // scroller.onStepEnter();
   // setup resize event
   window.addEventListener("resize", scroller.resize);
-  // $(window).resize(function () {
-  //   console.log($(".prototype-content"), $(window).width());
-  // });
+  $(window).resize(function () {
+    $(".prototype-content").mouseover(function () {
+      var scale = Math.min(1, ($(window).height() - 150) / 812);
+      $(this).css("transform", `scaleX(${scale}) scaleY(${scale})`);
+    });
+    $(".prototype-content").mouseout(function () {
+      $(this).css("transform", `scaleX(.2) scaleY(.2)`);
+    });
+    //   console.log($(".prototype-content"), $(window).width());
+  });
+  $(window).resize();
 });
 
 function scrollToSection(sectionElement) {

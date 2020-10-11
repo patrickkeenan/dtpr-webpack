@@ -10251,17 +10251,20 @@ h6 {
   transform: scaleX(0.25) scaleY(0.25);
   transform-origin: left bottom;
   transition: all 0.2s ease-out;
+  transition: all 0.2s ease-in;
 }
 #sticky-prototype .prototype-content:hover {
   cursor: pointer;
-  transition: all 0.2s ease-in;
-  transform: scaleX(1) scaleY(1);
 }
 #sticky-prototype .prototype-conversation {
   width: 375px;
   height: 812px;
   background-color: #fff;
   transition: all 0.2s ease-in-out;
+  padding-top: 812px;
+}
+#sticky-prototype .prototype-conversation .prototype-card {
+  padding-bottom: 16px;
 }
 #sticky-prototype .prototype-conversation {
   position: absolute;

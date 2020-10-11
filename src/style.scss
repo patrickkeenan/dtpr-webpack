@@ -304,10 +304,10 @@ h6 {
     transform: scaleX(0.25) scaleY(0.25);
     transform-origin: left bottom;
     transition: all 0.2s ease-out;
+    transition: all 0.2s ease-in;
     &:hover {
       cursor: pointer;
-      transition: all 0.2s ease-in;
-      transform: scaleX(1) scaleY(1);
+      // transform: scaleX(1) scaleY(1);
     }
   }
   .prototype-conversation {
@@ -315,11 +315,10 @@ h6 {
     height: 812px;
     background-color: #fff;
     transition: all 0.2s ease-in-out;
-  }
-  .prototype-conversation img {
-    // padding-top: 812px;
-    // width: 375px;
-    // height: 12797px;
+    padding-top: 812px;
+    .prototype-card {
+      padding-bottom: 16px;
+    }
   }
   .prototype-conversation {
     position: absolute;
