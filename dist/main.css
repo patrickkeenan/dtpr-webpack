@@ -10136,6 +10136,37 @@ body {
   background: transparent;
 }
 
+.taxonomy-step .taxonomy-container {
+  height: 350px;
+}
+.taxonomy-step .taxonomy-seemore {
+  background: white;
+  background: linear-gradient(0deg, white 0%, white 25%, rgba(255, 255, 255, 0) 100%);
+  height: 300px;
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  text-align: center;
+  z-index: 1;
+}
+.taxonomy-step .taxonomy-seemore .btn-seemore {
+  display: inline-block;
+  padding: 8px 16px;
+  font-size: 12px;
+  font-weight: bold;
+  border: solid rgba(15, 81, 83, 0.2) 2px;
+  background-color: #fff;
+  color: #0f5153;
+  border-radius: 40px;
+  margin-top: 200px;
+  cursor: pointer;
+}
+.taxonomy-step .taxonomy-seemore .btn-seemore:hover {
+  color: #fff;
+  background-color: #0f5153;
+}
+
 .table-taxonomy td,
 .table-taxonomy th {
   color: #0f5153;
@@ -10267,6 +10298,11 @@ h6 {
   transition: transform 0.5s;
 }
 
+#chat-client {
+  position: absolute;
+  z-index: 1100;
+}
+
 #sticky-prototype {
   position: fixed;
   left: 30px;
@@ -10295,16 +10331,10 @@ h6 {
   background-color: #fff;
   transition: all 0.2s ease-in-out;
   padding-top: 812px;
+  position: absolute;
 }
 #sticky-prototype .prototype-conversation .prototype-card {
   padding-bottom: 16px;
-}
-#sticky-prototype .prototype-conversation {
-  position: absolute;
-  width: 375px;
-  height: 812px;
-  background-color: #fff;
-  transition: all 0.2s ease-in-out;
 }
 #sticky-prototype .prototype-modal {
   position: absolute;

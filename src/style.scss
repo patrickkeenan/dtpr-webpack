@@ -360,6 +360,10 @@ h6 {
     transition: transform 0.5s;
   }
 }
+#chat-client {
+  position: absolute;
+  z-index: 1100;
+}
 #sticky-prototype {
   position: fixed;
   left: 30px;
