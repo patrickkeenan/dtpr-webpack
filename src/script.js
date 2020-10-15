@@ -126,6 +126,10 @@ $(function () {
     scrollToSection($("#" + id));
     window.location.hash = id;
   });
+  $(".btn-seemore").click(function () {
+    $(this).parents(".taxonomy-container").css("height", "auto");
+    $(this).parents(".taxonomy-seemore").hide();
+  });
 
   $(".nav-open-menu").click(function () {
     $(".menu-overlay-container").show();
