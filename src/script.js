@@ -100,11 +100,9 @@ $(function () {
       // y = t + h;
       if (cardId != lastId) yOffset += h + 16;
       sectionPositions.push(yOffset);
-      // console.log(yOffset, y, t, h);
       lastId = cardId;
     });
     phonePositions.push(sectionPositions);
-    console.log(i, sectionIds);
   });
 
   scroller = scrollama();
@@ -115,9 +113,7 @@ $(function () {
     var iFrame = parentEl.find("iframe");
     containerEl.show();
     loaderEl.hide();
-    // iFrame.load(function(){
-    //   console.log("loaded frame");
-    // })
+
     iFrame.attr("src", iFrame.attr("data-src"));
   });
 
@@ -170,7 +166,6 @@ $(function () {
 
   $(".prototype-conversation .prototype-card").click(function () {
     var step = $(this).data("prototype-step");
-    console.log(step);
     $(".prototype-modal").scrollTop(0);
     $(".prototype-modal .data-chain").hide();
     $("#datachain-" + step).show();
@@ -201,72 +196,36 @@ $(function () {
         var sideMargin = 0;
         x = bgPositions[index][frame][0];
         y = bgPositions[index][frame][1];
-        // if ($(window).width() > 576) sideMargin = 20;
-        $("#tapestry .banner").css(
-          "transform",
-          "translate(-" + x + "px, -" + y + "px)"
-        );
+        if (frame == 0) {
+          $("#sticky-prototype").hide();
+          $("#chat-client").show();
+          $("#tapestry .banner").css({
+            transition: "transform 0s",
+            transform: "translate(-" + x + "px, -" + y + "px)",
+          });
+        } else {
+          $("#sticky-prototype").show();
+          $("#chat-client").hide();
+          $("#tapestry .banner").css({
+            transition: "transform 0.5s",
+            transform: "translate(-" + x + "px, -" + y + "px)",
+          });
+        }
 
-        // $(`#pcard-${cardId}`).;
-        // prototypeCardIds[index][frame]
         $(".prototype-conversation .prototype-card").css("opacity", 0.5);
         $("#pcard-" + prototypeCardIds[index][frame]).css("opacity", 1);
         $(".prototype-conversation").css(
           "transform",
           "translate(0, -" + phonePositions[index][frame] + "px)"
         );
-        // if (index != undefined && showingPhone == false) {
-        //   showingPhone = true;
-        //   $("#sticky-prototype").show();
-        // }
+      } else {
+        $("#sticky-prototype").hide();
+        $("#chat-client").hide();
       }
-      // if (index == undefined && showingPhone == true) {
-      //   showingPhone = false;
-      //   $("#sticky-prototype").hide();
-      // }
-
-      // $("#tapestry").css("transform", "translate(" + sideMargin + "vw, 0)");
-
-      // if (el.is(".step-holder-left")) {
-      //   x = bgPositions[index][frame][0];
-      //   y = bgPositions[index][frame][1];
-      //   console.log(x, y);
-      //   if ($(window).width() > 576) sideMargin = 20;
-      //   $("#tapestry img").css(
-      //     "transform",
-      //     "translate(-" + x + "px, -" + y + "px)"
-      //   );
-      //   $("#tapestry").css("transform", "translate(" + sideMargin + "vw, 0)");
-      //   console.log(bgPositions[index][frame]);
-      // } else if (el.is(".step-holder-right")) {
-      //   x = bgPositions[index][frame][0];
-      //   y = bgPositions[index][frame][1];
-      //   if ($(window).width() > 768) sideMargin = -20;
-
-      //   $("#tapestry img").css(
-      //     "transform",
-      //     "translate(-" + x + "px, -" + y + "px)"
-      //   );
-      //   $("#tapestry").css("transform", "translate(" + sideMargin + "vw, 0)");
-      //   console.log(bgPositions[index][frame]);
-      // }
-      // console.log($(window).width());
-      // if (el.is(".step-holder")) {
-      //   $("#tapestry").show();
-      // } else {
-      //   $("#tapestry").hide();
-      // }
-      // if (response.direction == "down") {
-      //   $(".nav-container").css("top", -48);
-      // }
     })
-    .onStepExit((response) => {
-      // if (response.direction == "up") {
-      //   $(".nav-container").css("top", 0);
-      // }
-    })
+    .onStepExit((response) => {})
     .onStepProgress((response) => {});
-  // scroller.onStepEnter();
+
   // setup resize event
   window.addEventListener("resize", scroller.resize);
   $(window).resize(function () {
@@ -277,7 +236,6 @@ $(function () {
     $(".prototype-content").mouseout(function () {
       $(this).css("transform", `scaleX(.2) scaleY(.2)`);
     });
-    //   console.log($(".prototype-content"), $(window).width());
   });
   $(window).resize();
 });

@@ -3,7 +3,7 @@
   <div class="container">
   <%=
     require("ejs-loader!./step-description.ejs")({
-      contentLeft:contentLeft, 
+      contentLeft:(frame == 0) ? true : false, 
       sign:sign,
       title:title,
       description:description,
@@ -11,14 +11,6 @@
     })
     %>
   </div>
-  <div class="sticky-image">
-    <%= require("ejs-loader!./step-image.ejs")({
-    image:image,frame:frame, contentLeft:contentLeft, }) %>
-  </div> 
 
-  <!-- <div class="container pb-4">
-    <%=
-    require("ejs-loader!./step-prototype.ejs")({contentLeft:contentLeft,prototypeType:prototypeType,prototypeUrl:prototypeUrl})
-    %>
-  </div> -->
+
 </div>

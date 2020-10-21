@@ -10524,6 +10524,10 @@ h6 {
   z-index: 1;
 }
 
+.step-holder {
+  padding-bottom: 200px;
+}
+
 .step-footer {
   background: #fff;
   position: relative;
