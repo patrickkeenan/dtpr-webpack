@@ -198,14 +198,14 @@ $(function () {
         y = bgPositions[index][frame][1];
         if (frame == 0) {
           $("#sticky-prototype").hide();
-          $("#chat-client").show();
+          // $("#chat-client").show();
           $("#tapestry .banner").css({
             transition: "transform 0s",
             transform: "translate(-" + x + "px, -" + y + "px)",
           });
         } else {
           $("#sticky-prototype").show();
-          $("#chat-client").hide();
+          // $("#chat-client").hide();
           $("#tapestry .banner").css({
             transition: "transform 0.5s",
             transform: "translate(-" + x + "px, -" + y + "px)",
@@ -220,7 +220,7 @@ $(function () {
         );
       } else {
         $("#sticky-prototype").hide();
-        $("#chat-client").hide();
+        // $("#chat-client").hide();
       }
     })
     .onStepExit((response) => {})
@@ -251,4 +251,48 @@ function scrollToSection(sectionElement) {
       scroller.enable();
     }
   );
+}
+
+// CHAT BOT CODE
+{
+  /* 
+  
+  <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+    <div id="chat-client" style="display:none">
+      <!-- injected configured chat client -->
+    </div>
+    <style>
+      df-messenger {
+      --df-messenger-button-titlebar-font-color:#333333;
+      --df-messenger-bot-message: #FAFAFA;
+      --df-messenger-button-titlebar-color: #ffffff;
+      --df-messenger-chat-background-color: #fafafa;
+      --df-messenger-font-color: #000000;
+      --df-messenger-send-icon: #000000;
+      --df-messenger-user-message: #bae6ed;
+      }
+    </style>
+    
+    <script>
+      // intial configuration of the conversation
+      // Docs: https://cloud.google.com/dialogflow/es/docs/integrations/dialogflow-messenger
+      var chatConfig = {
+        agentId: "f92d33ee-bfa0-4c27-9a5d-852381c861c2", // this is the dialog-flow id for the specific agent which should handle the requests
+        // startingIntent: "learn-about-component", // the intent that the conversation will start on - also persisted under the originalIntent
+        placeId: "recHJJkuqk0AYjHa9", // the place that the system or component is in - id corresponds to DTPR Airtable place id
+        componentId: "recT9MVNlQBhjSBSE", // Airtable 'components' id of the mirror computer vision system
+      };
+      // Element is injected dynamically to allow chatConfig to be written into the chat client on start up
+      // We make use of the user-id string which is passed to the Dialog-Flow fulfillment code to transport
+      // a JSON formatted string of configuration information
+      
+      // document.getElementById("chat-client").innerHTML = `<df-messenger
+      //   user-id=${JSON.stringify(chatConfig)}
+      //   intent="WELCOME"
+      //   chat-title="Learn About the Computer Vision Mirror"
+      //   agent-id=${chatConfig.agentId}
+      //   chat-icon="https://helpfulplaces.com/dtpr_prototype/icon.png"
+      //   language-code="en">
+      // </df-messenger>`;
+    </script> */
 }
